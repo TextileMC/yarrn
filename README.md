@@ -1,6 +1,6 @@
 # Yarrn
 
-Yarrn is [Yarn](https://github.com/FabricMC/Yarn)
+Yarrn is [Yarn](https://github.com/FabricMC/Yarn) but infdev!
 
 ## Usage
 To obtain a deobfuscated Minecraft jar, [`./gradlew mapNamedJar`](#mapNamedJar) will generate a jar named like `<minecraft version>-named.jar`, which can be sent to a decompiler for deobfuscated code.
