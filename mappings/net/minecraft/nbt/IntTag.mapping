@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_6 net/minecraft/nbt/IntTag
+	FIELD field_5 data I

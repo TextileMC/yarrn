@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_1 net/minecraft/util/MathUtils
+	METHOD method_1 sqrt (D)F
+	METHOD method_2 sin (F)F
+	METHOD method_3 floor (D)I
+	METHOD method_4 cos (F)F
+	METHOD method_5 sqrt (F)F
+	METHOD method_6 floor (F)I
+	METHOD method_7 abs (F)F

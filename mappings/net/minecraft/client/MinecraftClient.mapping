@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
+	FIELD field_944 fullscreen Z
+	FIELD field_947 canvas Ljava/awt/Canvas;
+	FIELD field_952 width I
+	FIELD field_953 height I
+	FIELD field_957 mcDir Ljava/io/File;
+	FIELD field_959 initTime J
+	FIELD field_961 width2 I
+	FIELD field_962 height2 I
+	FIELD field_967 sessionData Lnet/minecraft/class_270;
+	FIELD field_968 host Ljava/lang/String;
+	FIELD field_975 loadmapUser Ljava/lang/String;
+	FIELD field_976 loadmapId I
+	FIELD field_983 running Z
+	METHOD <init> (Ljava/awt/Canvas;Lnet/minecraft/class_158;IIZ)V
+		ARG 3 width
+		ARG 4 height
+		ARG 5 fullscreen
+	METHOD method_600 getMinecraftDirectory ()Ljava/io/File;
+	METHOD method_608 stop ()V

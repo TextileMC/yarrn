@@ -1,0 +1,17 @@
+CLASS net/minecraft/class_140 net/minecraft/entity/Entity
+	FIELD field_440 fallDistance F
+	FIELD field_450 fireTime I
+	FIELD field_453 airTime I
+	FIELD field_454 skinLocation Ljava/lang/String;
+	FIELD field_461 world Lnet/minecraft/class_101;
+	FIELD field_465 x D
+	FIELD field_466 y D
+	FIELD field_467 z D
+	FIELD field_468 motionX D
+	FIELD field_469 motionY D
+	FIELD field_470 motionZ D
+	METHOD method_330 saveData (Lnet/minecraft/class_5;)V
+	METHOD method_334 packDoubles ([D)Lnet/minecraft/class_8;
+	METHOD method_341 loadData (Lnet/minecraft/class_5;)V
+	METHOD method_349 save (Lnet/minecraft/class_5;)V
+	METHOD method_350 load (Lnet/minecraft/class_5;)V

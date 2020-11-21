@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_35 net/minecraft/block/tile/TileEntity
+	FIELD field_74 x I
+	FIELD field_75 y I
+	FIELD field_76 z I
+	FIELD field_77 NAME2CLASS_MAP Ljava/util/Map;
+	FIELD field_78 CLASS2NAME_MAP Ljava/util/Map;
+	METHOD method_70 addTileEntity (Ljava/lang/Class;Ljava/lang/String;)V

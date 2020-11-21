@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_108 net/minecraft/recipe/MaterialBlockRecipes
+	FIELD field_323 items [[Ljava/lang/Object;
+	METHOD method_300 register (Lnet/minecraft/class_110;)V

@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_123 net/minecraft/item/Item
+	FIELD field_338 STICK Lnet/minecraft/class_123;
+	FIELD field_339 BOWL Lnet/minecraft/class_123;
+	FIELD field_340 MUSHROOM_STEW Lnet/minecraft/class_123;
+	FIELD field_345 STRING Lnet/minecraft/class_123;
+	FIELD field_346 FEATHER Lnet/minecraft/class_123;
+	FIELD field_365 RANDOM Ljava/util/Random;
+	FIELD field_378 FLINT Lnet/minecraft/class_123;
+	FIELD field_381 PAINTING Lnet/minecraft/class_123;
+	FIELD field_383 SIGN Lnet/minecraft/class_123;
+	FIELD field_384 DOOR Lnet/minecraft/class_123;
+	FIELD field_385 BUCKET Lnet/minecraft/class_123;
+	FIELD field_388 MINECART Lnet/minecraft/class_123;
+	FIELD field_389 id I
+	FIELD field_392 ITEMS [Lnet/minecraft/class_123;
+	FIELD field_396 FLINT_AND_STEEL Lnet/minecraft/class_123;
+	FIELD field_398 BOW Lnet/minecraft/class_123;
+	FIELD field_399 ARROW Lnet/minecraft/class_123;
+	FIELD field_400 COAL Lnet/minecraft/class_123;
+	FIELD field_402 IRON_INGOT Lnet/minecraft/class_123;

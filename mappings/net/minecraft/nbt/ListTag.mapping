@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_8 net/minecraft/nbt/ListTag
+	FIELD field_7 list Ljava/util/List;
+	FIELD field_8 listType B
+	METHOD method_29 get (I)Lnet/minecraft/class_12;
+	METHOD method_30 add (Lnet/minecraft/class_12;)V
+	METHOD method_31 size ()I

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_13 net/minecraft/nbt/StringTag
+	FIELD field_13 data Ljava/lang/String;

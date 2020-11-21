@@ -1,0 +1,21 @@
+CLASS net/minecraft/class_101 net/minecraft/world/World
+	FIELD field_284 worldDir Ljava/io/File;
+	FIELD field_285 playerTag Lnet/minecraft/class_5;
+	FIELD field_287 time J
+	FIELD field_290 player Lnet/minecraft/class_140;
+	FIELD field_294 spawnX I
+	FIELD field_295 spawnY I
+	FIELD field_296 spawnZ I
+	FIELD field_297 newWorld Z
+	FIELD field_298 seed J
+	FIELD field_299 diskSize J
+	METHOD <init> (Ljava/io/File;Ljava/lang/String;)V
+		ARG 1 mcDir
+	METHOD <init> (Ljava/io/File;Ljava/lang/String;J)V
+		ARG 1 mcDir
+		ARG 3 seed
+	METHOD method_212 getChunk (II)Lnet/minecraft/class_99;
+	METHOD method_213 getBlockAtPosition (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

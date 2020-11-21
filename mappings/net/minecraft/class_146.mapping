@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_146
+	FIELD field_492 health I
+	FIELD field_494 age I

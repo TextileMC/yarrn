@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_99 net/minecraft/world/Chunk
+	FIELD field_260 x I
+	FIELD field_261 z I
+	FIELD field_262 terrainPopulated Z
+	FIELD field_266 blocks [B
+	FIELD field_268 world Lnet/minecraft/class_101;
+	FIELD field_272 heightMap [B
+	FIELD field_274 tileEntities Ljava/util/Map;
+	FIELD field_275 entities [Ljava/util/List;
+	METHOD <init> (Lnet/minecraft/class_101;[BII)V
+		ARG 1 world
+		ARG 2 blocks
+		ARG 3 x
+		ARG 4 z
+	METHOD method_185 getBlock (III)I

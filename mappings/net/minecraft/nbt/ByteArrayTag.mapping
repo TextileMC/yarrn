@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_11 net/minecraft/nbt/ByteArrayTag
+	FIELD field_11 data [B

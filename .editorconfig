@@ -1,0 +1,2 @@
+[*.{gradle,mapping}]
+indent_style = tab

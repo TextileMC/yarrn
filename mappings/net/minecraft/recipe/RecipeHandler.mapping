@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_110 net/minecraft/recipe/RecipeHandler
+	FIELD field_326 INSTANCE Lnet/minecraft/class_110;
+	FIELD field_327 recipes Ljava/util/List;
+	METHOD method_302 getInstance ()Lnet/minecraft/class_110;
+	METHOD method_303 addRecipe (Lnet/minecraft/class_127;[Ljava/lang/Object;)V

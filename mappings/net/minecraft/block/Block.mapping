@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_39 net/minecraft/block/Block
+	FIELD field_107 IRON_BLOCK Lnet/minecraft/class_39;
+	FIELD field_109 COBBLESTONE_SLAB Lnet/minecraft/class_39;
+	FIELD field_111 TNT Lnet/minecraft/class_39;
+	FIELD field_130 TORCH Lnet/minecraft/class_39;
+	FIELD field_132 CHEST Lnet/minecraft/class_39;
+	FIELD field_136 CRAFTING_TABLE Lnet/minecraft/class_39;
+	FIELD field_139 FURNACE Lnet/minecraft/class_39;
+	FIELD field_143 LADDER Lnet/minecraft/class_39;
+	FIELD field_144 RAIL Lnet/minecraft/class_39;
+	FIELD field_146 id I
+	FIELD field_153 BLOCKS [Lnet/minecraft/class_39;
+	FIELD field_161 COBBLESTONE Lnet/minecraft/class_39;
+	FIELD field_162 PLANKS Lnet/minecraft/class_39;
+	FIELD field_174 LOG Lnet/minecraft/class_39;

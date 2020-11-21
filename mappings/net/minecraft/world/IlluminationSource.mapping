@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_94 net/minecraft/world/IlluminationSource
+	FIELD field_246 defaultLight I
