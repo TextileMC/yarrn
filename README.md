@@ -1,13 +1,8 @@
-# Yarn
+# Yarrn
 
-Yarn is a set of open, unencumbered Minecraft mappings, free for everyone to use under the Creative Commons Zero license. The intention is to let 
-everyone mod Minecraft freely and openly, while also being able to innovate and process the mappings as they see fit.
-
-To see the current version being targeted, check the branch name!
+Yarrn is [Yarn](https://github.com/FabricMC/Yarn)
 
 ## Usage
-To use yarn-deobfuscated Minecraft for Minecraft modding or as a dependency in a Java project, you can use [loom](https://github.com/fabricmc/fabric-loom) Gradle plugin. See [fabric wiki tutorial](https://fabricmc.net/wiki/tutorial:setup) for more information.
-
 To obtain a deobfuscated Minecraft jar, [`./gradlew mapNamedJar`](#mapNamedJar) will generate a jar named like `<minecraft version>-named.jar`, which can be sent to a decompiler for deobfuscated code.
 
 ## Contributing
