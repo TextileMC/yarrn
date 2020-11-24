@@ -199,7 +199,7 @@ task downloadIntermediary(type: Download) {
 
 task downloadIntermediaryV2(type: Download) {
 	group = buildMappingGroup
-	def url = "https://maven.fabricmc.net/net/fabricmc/intermediary/${minecraft_version}/intermediary-${minecraft_version}-v2.jar"
+	def url = "https://maven.concern.i.ng/jars/intermediary/${minecraft_version}/intermediary-${minecraft_version}-v2.jar"
 	src com.google.common.net.UrlEscapers.urlFragmentEscaper().escape(url)
 	dest new File(cacheFilesMinecraft, "${minecraft_version}-intermediary-v2.jar")
 }
