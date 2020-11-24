@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_53 net/minecraft/block/StoneSlab
+	FIELD field_184 notSlab Z
