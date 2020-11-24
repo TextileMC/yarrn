@@ -1,2 +1,2 @@
-CLASS net/minecraft/class_145 net/minecraft/entity/nonliving/PrimedTnt
+CLASS net/minecraft/class_145 net/minecraft/entity/nonliving/PrimedTNT
 	FIELD field_488 fuseLength I

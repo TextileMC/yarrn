@@ -12,6 +12,7 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_139 FURNACE Lnet/minecraft/class_39;
 	FIELD field_143 LADDER Lnet/minecraft/class_39;
 	FIELD field_144 RAIL Lnet/minecraft/class_39;
+	FIELD field_145 textureIndex I
 	FIELD field_146 id I
 	FIELD field_153 BLOCKS [Lnet/minecraft/class_39;
 	FIELD field_161 COBBLESTONE Lnet/minecraft/class_39;
@@ -19,4 +20,7 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_169 SAND Lnet/minecraft/class_39;
 	FIELD field_173 COAL_ORE Lnet/minecraft/class_39;
 	FIELD field_174 LOG Lnet/minecraft/class_39;
+	METHOD method_85 getTextureIndex (I)I
+		ARG 1 side
+			COMMENT a number from 0 to 5, depending on which side the texture is for. 0 is bottom, 1 is top.
 	METHOD method_87 getDrop (ILjava/util/Random;)I
