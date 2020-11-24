@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_146 net/minecraft/entity/nonliving/DroppedItem
+	FIELD field_492 health I
+	FIELD field_493 item Lnet/minecraft/class_127;
+	FIELD field_494 age I

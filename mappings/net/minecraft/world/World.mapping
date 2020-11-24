@@ -11,11 +11,15 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 	FIELD field_299 diskSize J
 	METHOD <init> (Ljava/io/File;Ljava/lang/String;)V
 		ARG 1 mcDir
+		ARG 2 worldName
 	METHOD <init> (Ljava/io/File;Ljava/lang/String;J)V
 		ARG 1 mcDir
+		ARG 2 worldName
 		ARG 3 seed
 	METHOD method_212 getChunk (II)Lnet/minecraft/class_99;
 	METHOD method_213 getBlockAtPosition (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_229 spawnEntity (Lnet/minecraft/class_140;)V
+	METHOD method_231 playSound (Lnet/minecraft/class_140;Ljava/lang/String;FF)V

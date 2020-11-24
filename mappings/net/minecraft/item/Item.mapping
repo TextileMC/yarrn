@@ -4,9 +4,29 @@ CLASS net/minecraft/class_123 net/minecraft/item/Item
 	FIELD field_340 MUSHROOM_STEW Lnet/minecraft/class_123;
 	FIELD field_345 STRING Lnet/minecraft/class_123;
 	FIELD field_346 FEATHER Lnet/minecraft/class_123;
+	FIELD field_347 GUNPOWDER Lnet/minecraft/class_123;
+	FIELD field_354 WHEAT Lnet/minecraft/class_123;
+	FIELD field_355 BREAD Lnet/minecraft/class_123;
+	FIELD field_356 CLOTH_HELMET Lnet/minecraft/class_123;
+	FIELD field_357 CLOTH_CHESTPLATE Lnet/minecraft/class_123;
+	FIELD field_358 CLOTH_LEGGINGS Lnet/minecraft/class_123;
+	FIELD field_359 CLOTH_BOOTS Lnet/minecraft/class_123;
 	FIELD field_365 RANDOM Ljava/util/Random;
+	FIELD field_366 IRON_HELMET Lnet/minecraft/class_123;
+	FIELD field_367 IRON_CHESTPLATE Lnet/minecraft/class_123;
+	FIELD field_368 IRON_LEGGINGS Lnet/minecraft/class_123;
+	FIELD field_369 IRON_BOOTS Lnet/minecraft/class_123;
+	FIELD field_370 DIAMOND_HELMET Lnet/minecraft/class_123;
+	FIELD field_371 DIAMOND_CHESTPLATE Lnet/minecraft/class_123;
+	FIELD field_372 DIAMOND_LEGGINGS Lnet/minecraft/class_123;
+	FIELD field_373 DIAMOND_BOOTS Lnet/minecraft/class_123;
+	FIELD field_374 GOLD_HELMET Lnet/minecraft/class_123;
+	FIELD field_375 GOLD_CHESTPLATE Lnet/minecraft/class_123;
+	FIELD field_376 GOLD_LEGGINGS Lnet/minecraft/class_123;
+	FIELD field_377 GOLD_BOOTS Lnet/minecraft/class_123;
 	FIELD field_378 FLINT Lnet/minecraft/class_123;
 	FIELD field_381 PAINTING Lnet/minecraft/class_123;
+	FIELD field_382 FABRICORD_COULD_NOT_DECIDE_APPLE Lnet/minecraft/class_123;
 	FIELD field_383 SIGN Lnet/minecraft/class_123;
 	FIELD field_384 DOOR Lnet/minecraft/class_123;
 	FIELD field_385 BUCKET Lnet/minecraft/class_123;
@@ -14,7 +34,15 @@ CLASS net/minecraft/class_123 net/minecraft/item/Item
 	FIELD field_389 id I
 	FIELD field_392 ITEMS [Lnet/minecraft/class_123;
 	FIELD field_396 FLINT_AND_STEEL Lnet/minecraft/class_123;
+	FIELD field_397 APPLE Lnet/minecraft/class_123;
 	FIELD field_398 BOW Lnet/minecraft/class_123;
 	FIELD field_399 ARROW Lnet/minecraft/class_123;
 	FIELD field_400 COAL Lnet/minecraft/class_123;
+	FIELD field_401 DIAMOND Lnet/minecraft/class_123;
 	FIELD field_402 IRON_INGOT Lnet/minecraft/class_123;
+	FIELD field_403 GOLD_INGOT Lnet/minecraft/class_123;
+	METHOD method_310 onUse (Lnet/minecraft/class_127;Lnet/minecraft/class_101;Lnet/minecraft/class_152;)Lnet/minecraft/class_127;
+	METHOD method_311 onUseAtLocation (Lnet/minecraft/class_127;Lnet/minecraft/class_152;Lnet/minecraft/class_101;IIII)Z
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
