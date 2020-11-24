@@ -6,6 +6,7 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_111 TNT Lnet/minecraft/class_39;
 	FIELD field_130 TORCH Lnet/minecraft/class_39;
 	FIELD field_132 CHEST Lnet/minecraft/class_39;
+	FIELD field_134 DIAMOND_ORE Lnet/minecraft/class_39;
 	FIELD field_135 DIAMOND_BLOCK Lnet/minecraft/class_39;
 	FIELD field_136 CRAFTING_TABLE Lnet/minecraft/class_39;
 	FIELD field_139 FURNACE Lnet/minecraft/class_39;
@@ -16,4 +17,6 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_161 COBBLESTONE Lnet/minecraft/class_39;
 	FIELD field_162 PLANKS Lnet/minecraft/class_39;
 	FIELD field_169 SAND Lnet/minecraft/class_39;
+	FIELD field_173 COAL_ORE Lnet/minecraft/class_39;
 	FIELD field_174 LOG Lnet/minecraft/class_39;
+	METHOD method_87 getDrop (ILjava/util/Random;)I
