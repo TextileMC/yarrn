@@ -74,7 +74,6 @@ def intermediaryJar = file("${minecraft_version}-intermediary.jar")
 def namedJar = file("${minecraft_version}-named.jar")
 def versionFile = new File(cacheFilesMinecraft, "${minecraft_version}.json")
 def clientJar = new File(cacheFilesMinecraft, "${minecraft_version}-client.jar")
-def serverJar = new File(cacheFilesMinecraft, "${minecraft_version}-server.jar")
 def libraries = new File(cacheFilesMinecraft, "libraries")
 def libs = new File("build/libs/")
 
@@ -166,11 +165,11 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 	group = setupGroup
 	inputs.files versionFile
 
-	outputs.files(clientJar, serverJar)
+	outputs.files(clientJar)
 
 	outputs.upToDateWhen {
 		def version = new JsonSlurper().parseText(FileUtils.readFileToString(versionFile))
-		return clientJar.exists() && serverJar.exists() && validateChecksum(clientJar, version.downloads.client.sha1)// && validateChecksum(serverJar, version.downloads.server.sha1)
+		return clientJar.exists() && validateChecksum(clientJar, version.downloads.client.sha1)
 	}
 
 	doLast {
@@ -188,18 +187,12 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 			dest clientJar
 			overwrite false
 		}
-
-		download {					//    server      modified for infdev
-			src new URL(version.downloads.client.url)
-			dest serverJar
-			overwrite false
-		}
 	}
 }
 
 task downloadIntermediary(type: Download) {
 	group = buildMappingGroup
-	def url = "file:///C:/Users/steve/stitch/build/libs/${minecraft_version}.tiny"
+	def url = "https://maven.concern.i.ng/mappings/intermediary/${minecraft_version}.tiny"
 	src com.google.common.net.UrlEscapers.urlFragmentEscaper().escape(url)
 	dest new File(cacheFilesMinecraft, "${minecraft_version}-intermediary.tiny")
 }
@@ -228,14 +221,13 @@ task mergeJars(dependsOn: downloadMcJars) {
 	doLast {
 		logger.lifecycle(":merging jars")
 		def client = inputs.files.files.find { it.name.endsWith("-client.jar") }
-		def server = inputs.files.files.find { it.name.endsWith("-server.jar") }
 		def merged = mergedFile
 
 		if (merged.exists()) {
 			return
 		}
 
-		def jarMerger = new JarMerger(client, server, merged)
+		def jarMerger = new JarMerger(client, client, merged)
 		jarMerger.merge()
 		jarMerger.close()
 	}
