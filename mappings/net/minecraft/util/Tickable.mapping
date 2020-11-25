@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_251 net/minecraft/util/Tickable
+	FIELD field_1014 ticks F
+	METHOD <init> (F)V
+		ARG 1 ticks

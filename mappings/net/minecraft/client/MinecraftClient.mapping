@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
+	COMMENT The Main entrypoint for the client. Ran right after MinecraftApplet has started.
 	FIELD field_944 fullscreen Z
+	FIELD field_946 ticks Lnet/minecraft/class_251;
 	FIELD field_947 canvas Ljava/awt/Canvas;
 	FIELD field_952 width I
 	FIELD field_953 height I
@@ -15,6 +17,8 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	FIELD field_976 loadmapId I
 	FIELD field_983 running Z
 	METHOD <init> (Ljava/awt/Canvas;Lnet/minecraft/class_158;IIZ)V
+		ARG 1 window
+		ARG 2 args
 		ARG 3 width
 		ARG 4 height
 		ARG 5 fullscreen
