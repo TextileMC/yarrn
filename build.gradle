@@ -26,10 +26,8 @@ plugins {
 def minecraft_version = "inf-20100618"
 
 def ENV = System.getenv()
-// Fetch build number from Jenkins
-def build_number = ENV.BUILD_NUMBER ?: "local"
 
-def yarnVersion = "${minecraft_version}+build.$build_number"
+def yarnVersion = "${minecraft_version}"
 
 repositories {
 	mavenCentral()
@@ -192,14 +190,14 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 
 task downloadIntermediary(type: Download) {
 	group = buildMappingGroup
-	def url = "https://maven.concern.i.ng/mappings/intermediary/${minecraft_version}.tiny"
+	def url = "https://maven.concern.i.ng/net/textilemc/intermediary/${minecraft_version}/${minecraft_version}.tiny"
 	src com.google.common.net.UrlEscapers.urlFragmentEscaper().escape(url)
 	dest new File(cacheFilesMinecraft, "${minecraft_version}-intermediary.tiny")
 }
 
 task downloadIntermediaryV2(type: Download) {
 	group = buildMappingGroup
-	def url = "https://maven.concern.i.ng/jars/intermediary/${minecraft_version}/intermediary-${minecraft_version}-v2.jar"
+	def url = "https://maven.concern.i.ng/net/textilemc/intermediary/${minecraft_version}/intermediary-${minecraft_version}-v2.jar"
 	src com.google.common.net.UrlEscapers.urlFragmentEscaper().escape(url)
 	dest new File(cacheFilesMinecraft, "${minecraft_version}-intermediary-v2.jar")
 }
@@ -725,8 +723,8 @@ task javadocJar(type: Jar, dependsOn: ["javadoc"]) {
 publishing {
 	publications {
 		maven(MavenPublication) {
-			groupId 'net.fabricmc'
-			artifactId "yarn"
+			groupId 'net.textilemc'
+			artifactId "yarrn"
 			version yarnVersion
 
 			artifact(compressTiny.output) {
@@ -746,13 +744,7 @@ publishing {
 	}
 	repositories {
 		maven {
-			url "http://mavenupload.modmuss50.me/"
-			if (project.hasProperty('mavenPass')) {
-				credentials {
-					username 'buildslave'
-					password project.getProperty('mavenPass')
-				}
-			}
+			url "C:/Users/steve/maven"
 		}
 	}
 }
