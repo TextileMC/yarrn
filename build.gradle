@@ -27,7 +27,9 @@ def minecraft_version = "inf-20100618"
 
 def ENV = System.getenv()
 
-def yarnVersion = "${minecraft_version}"
+def build_version = "20d331"
+
+def yarnVersion = "${minecraft_version}+build${build_version}"
 
 repositories {
 	mavenCentral()

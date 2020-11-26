@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_237 net/minecraft/client/gui/screen/SelectWorldScreen
+	FIELD field_918 parent Lnet/minecraft/class_236;
+	FIELD field_919 titleText Ljava/lang/String;

@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_235 net/minecraft/client/gui/screen/YesNoScreen
+	FIELD field_908 parent Lnet/minecraft/class_236;
+	FIELD field_909 line1 Ljava/lang/String;
+	FIELD field_910 line2 Ljava/lang/String;

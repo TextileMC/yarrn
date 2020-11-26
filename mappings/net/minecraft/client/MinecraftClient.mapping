@@ -15,6 +15,7 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	FIELD field_968 host Ljava/lang/String;
 	FIELD field_975 loadmapUser Ljava/lang/String;
 	FIELD field_976 loadmapId I
+	FIELD field_980 options Lnet/minecraft/class_275;
 	FIELD field_983 running Z
 	METHOD <init> (Ljava/awt/Canvas;Lnet/minecraft/class_158;IIZ)V
 		ARG 1 window
@@ -23,5 +24,6 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 		ARG 4 height
 		ARG 5 fullscreen
 	METHOD method_600 getMinecraftDirectory ()Ljava/io/File;
+	METHOD method_607 showScreen (Lnet/minecraft/class_236;)V
 	METHOD method_608 stop ()V
 	METHOD method_613 toggleFullscreen ()V

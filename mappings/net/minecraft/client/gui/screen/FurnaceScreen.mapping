@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_220 net/minecraft/client/gui/screen/FurnaceScreen
+	FIELD field_876 furnace Lnet/minecraft/class_36;

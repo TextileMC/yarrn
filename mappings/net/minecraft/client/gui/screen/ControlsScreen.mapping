@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_241 net/minecraft/client/gui/screen/ControlsScreen
+	FIELD field_931 parent Lnet/minecraft/class_236;
+	FIELD field_932 titleText Ljava/lang/String;
+	FIELD field_933 options Lnet/minecraft/class_275;

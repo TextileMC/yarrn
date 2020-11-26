@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_276 net/minecraft/client/gui/screen/TitleScreen
+	FIELD field_1101 sinNum F
+	FIELD field_1102 splashes [Ljava/lang/String;
+	FIELD field_1103 selectedSplash Ljava/lang/String;

@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_228 net/minecraft/client/gui/screen/EditSignScreen
+	FIELD field_897 titleText Ljava/lang/String;
+	FIELD field_898 sign Lnet/minecraft/class_38;

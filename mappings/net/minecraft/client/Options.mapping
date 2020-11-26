@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_275 net/minecraft/client/Options
+	FIELD field_1073 mc Lnet/minecraft/class_243;
+	FIELD field_1074 optionsFile Ljava/io/File;
+	FIELD field_1084 forward Lnet/minecraft/class_263;
+	FIELD field_1085 left Lnet/minecraft/class_263;
+	FIELD field_1086 back Lnet/minecraft/class_263;
+	FIELD field_1087 right Lnet/minecraft/class_263;
+	FIELD field_1088 jump Lnet/minecraft/class_263;
+	FIELD field_1089 inventory Lnet/minecraft/class_263;
+	FIELD field_1090 drop Lnet/minecraft/class_263;
+	FIELD field_1091 toggleFog Lnet/minecraft/class_263;
+	FIELD field_1092 saveLocation Lnet/minecraft/class_263;
+	FIELD field_1093 loadLocation Lnet/minecraft/class_263;
+	FIELD field_1094 allKeybindings [Lnet/minecraft/class_263;
+	FIELD field_1100 chat Lnet/minecraft/class_263;
+	METHOD method_664 load ()V

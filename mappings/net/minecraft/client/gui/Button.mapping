@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_242 net/minecraft/client/gui/Button
+	FIELD field_936 id I
+	FIELD field_937 canClick Z

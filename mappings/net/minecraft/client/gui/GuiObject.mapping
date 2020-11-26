@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_239 net/minecraft/client/gui/GuiObject
+	METHOD method_593 renderText (Lnet/minecraft/class_238;Ljava/lang/String;III)V
