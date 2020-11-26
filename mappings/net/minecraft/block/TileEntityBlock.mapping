@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_71 net/minecraft/block/TileEntityBlock
+	METHOD method_152 createTileEntity ()Lnet/minecraft/class_35;

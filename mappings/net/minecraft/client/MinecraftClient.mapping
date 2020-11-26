@@ -11,11 +11,13 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	FIELD field_962 height2 I
 	FIELD field_963 world Lnet/minecraft/class_101;
 	FIELD field_965 player Lnet/minecraft/class_264;
+	FIELD field_966 particleManager Lnet/minecraft/class_255;
 	FIELD field_967 sessionData Lnet/minecraft/class_270;
 	FIELD field_968 host Ljava/lang/String;
 	FIELD field_975 loadmapUser Ljava/lang/String;
 	FIELD field_976 loadmapId I
 	FIELD field_980 options Lnet/minecraft/class_275;
+	FIELD field_981 soundManager Lnet/minecraft/class_250;
 	FIELD field_983 running Z
 	METHOD <init> (Ljava/awt/Canvas;Lnet/minecraft/class_158;IIZ)V
 		ARG 1 window

@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_255 net/minecraft/client/render/ParticleManager
+	METHOD method_648 addParticle (Lnet/minecraft/class_262;)V

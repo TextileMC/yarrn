@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_159
-	FIELD field_593 mc Lnet/minecraft/class_243;
-	FIELD field_595 time J
-	METHOD method_424 writeTag (Lnet/minecraft/class_5;Ljava/io/OutputStream;)V
-	METHOD method_425 readTag (Ljava/io/InputStream;)Lnet/minecraft/class_5;

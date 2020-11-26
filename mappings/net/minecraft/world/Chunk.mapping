@@ -2,14 +2,36 @@ CLASS net/minecraft/class_99 net/minecraft/world/Chunk
 	FIELD field_260 x I
 	FIELD field_261 z I
 	FIELD field_262 terrainPopulated Z
+	FIELD field_263 dirty Z
 	FIELD field_266 blocks [B
 	FIELD field_268 world Lnet/minecraft/class_101;
+	FIELD field_269 data Lnet/minecraft/class_97;
+	FIELD field_270 skyLightmap Lnet/minecraft/class_97;
+	FIELD field_271 blockLightmap Lnet/minecraft/class_97;
 	FIELD field_272 heightMap [B
 	FIELD field_274 tileEntities Ljava/util/Map;
 	FIELD field_275 entities [Ljava/util/List;
+	METHOD <init> (Lnet/minecraft/class_101;II)V
+		ARG 1 world
 	METHOD <init> (Lnet/minecraft/class_101;[BII)V
 		ARG 1 world
 		ARG 2 blocks
 		ARG 3 x
 		ARG 4 z
+	METHOD method_184 equals (II)Z
+		ARG 1 x
+		ARG 2 z
 	METHOD method_185 getBlock (III)I
+	METHOD method_189 (Lnet/minecraft/class_5;)V
+		ARG 1 tag
+	METHOD method_190 getLightLevel (Lnet/minecraft/class_94;III)I
+		ARG 1 source
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_191 setLightLevel (Lnet/minecraft/class_94;IIII)V
+		ARG 1 source
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 value

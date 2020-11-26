@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_97 net/minecraft/world/PositionByteBuffer
+	FIELD field_252 bytes [B
+	METHOD <init> (I)V
+		ARG 1 size
+	METHOD <init> ([B)V
+		ARG 1 bytes
+	METHOD method_177 isNotEmpty ()Z
+	METHOD method_178 get (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_179 set (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 value

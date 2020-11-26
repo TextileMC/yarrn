@@ -10,10 +10,13 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 	FIELD field_468 motionX D
 	FIELD field_469 motionY D
 	FIELD field_470 motionZ D
+	FIELD field_478 dead Z
 	METHOD method_326 setPosition (DDD)V
-	METHOD method_330 saveData (Lnet/minecraft/class_5;)V
+	METHOD method_330 serialize (Lnet/minecraft/class_5;)V
+		ARG 1 tag
 	METHOD method_334 packDoubles ([D)Lnet/minecraft/class_8;
-	METHOD method_341 loadData (Lnet/minecraft/class_5;)V
+	METHOD method_341 deserialize (Lnet/minecraft/class_5;)V
+		ARG 1 tag
 	METHOD method_342 getSquaredDistanceTo (Lnet/minecraft/class_140;)D
 	METHOD method_349 save (Lnet/minecraft/class_5;)V
 	METHOD method_350 load (Lnet/minecraft/class_5;)V

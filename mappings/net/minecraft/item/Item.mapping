@@ -77,7 +77,10 @@ CLASS net/minecraft/class_123 net/minecraft/item/Item
 	FIELD field_415 DIAMOND_PICKAXE Lnet/minecraft/class_123;
 	FIELD field_416 DIAMOND_AXE Lnet/minecraft/class_123;
 	METHOD method_310 onUse (Lnet/minecraft/class_127;Lnet/minecraft/class_101;Lnet/minecraft/class_152;)Lnet/minecraft/class_127;
-	METHOD method_311 onUseAtLocation (Lnet/minecraft/class_127;Lnet/minecraft/class_152;Lnet/minecraft/class_101;IIII)Z
+	METHOD method_311 useOnBlock (Lnet/minecraft/class_127;Lnet/minecraft/class_152;Lnet/minecraft/class_101;IIII)Z
+		ARG 1 stack
+		ARG 2 player
+		ARG 3 world
 		ARG 4 x
 		ARG 5 y
 		ARG 6 z

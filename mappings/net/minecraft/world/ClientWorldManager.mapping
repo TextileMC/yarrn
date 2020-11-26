@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_176 net/minecraft/world/ClientWorldManager
+	FIELD field_640 world Lnet/minecraft/class_101;
+	FIELD field_649 client Lnet/minecraft/class_243;
+	METHOD <init> (Lnet/minecraft/class_243;Lnet/minecraft/class_198;)V
+		ARG 1 client
