@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_275 net/minecraft/client/Options
+CLASS net/minecraft/class_275 net/minecraft/client/options/Options
 	FIELD field_1073 mc Lnet/minecraft/class_243;
 	FIELD field_1074 optionsFile Ljava/io/File;
 	FIELD field_1084 forward Lnet/minecraft/class_263;
