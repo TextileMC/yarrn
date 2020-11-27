@@ -1,1 +1,7 @@
 CLASS net/minecraft/class_264 net/minecraft/entity/player/Player
+	FIELD field_1051 minecraftClient Lnet/minecraft/class_243;
+	METHOD <init> (Lnet/minecraft/class_243;Lnet/minecraft/class_101;Lnet/minecraft/class_270;)V
+		ARG 1 clientInstance
+		ARG 2 world
+		ARG 3 sessionData
+			COMMENT

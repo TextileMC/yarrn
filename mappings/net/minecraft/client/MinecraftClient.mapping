@@ -23,4 +23,5 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 		ARG 4 height
 		ARG 5 fullscreen
 	METHOD method_600 getMinecraftDirectory ()Ljava/io/File;
+	METHOD method_607 showScreen (Lnet/minecraft/class_236;)V
 	METHOD method_608 stop ()V
