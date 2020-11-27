@@ -5,12 +5,17 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 	FIELD field_453 airTime I
 	FIELD field_454 skinLocation Ljava/lang/String;
 	FIELD field_461 world Lnet/minecraft/class_101;
+	FIELD field_462 prevX D
+	FIELD field_463 prevY D
+	FIELD field_464 prevZ D
 	FIELD field_465 x D
 	FIELD field_466 y D
 	FIELD field_467 z D
 	FIELD field_468 motionX D
 	FIELD field_469 motionY D
 	FIELD field_470 motionZ D
+	FIELD field_471 yaw F
+	FIELD field_472 pitch F
 	FIELD field_475 boundingBox Lnet/minecraft/class_156;
 	FIELD field_478 dead Z
 	METHOD <init> (Lnet/minecraft/class_101;)V
@@ -41,6 +46,7 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 		ARG 1 tag
 	METHOD method_342 squaredDistanceTo (Lnet/minecraft/class_140;)D
 		ARG 1 another
+	METHOD method_344 tick ()V
 	METHOD method_346 (Lnet/minecraft/class_5;)Z
 		ARG 1 tag
 	METHOD method_347 onCollide (Lnet/minecraft/class_140;)V
@@ -53,3 +59,5 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 		ARG 1 tag
 	METHOD method_350 deserializeDefaultData (Lnet/minecraft/class_5;)V
 		ARG 1 tag
+	METHOD method_358 getTextureLocation ()Ljava/lang/String;
+	METHOD method_359 isAlive ()Z

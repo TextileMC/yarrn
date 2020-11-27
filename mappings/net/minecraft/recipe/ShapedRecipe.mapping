@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_107 net/minecraft/recipe/ShapedRecipe
+	FIELD field_319 width I
+	FIELD field_320 height I
+	FIELD field_321 itemBuffer [I
+	FIELD field_322 output Lnet/minecraft/class_127;
+	METHOD <init> (II[ILnet/minecraft/class_127;)V
+		ARG 1 width
+		ARG 2 height
+		ARG 3 itemBuffer
+		ARG 4 output
+	METHOD method_296 getOutput ()Lnet/minecraft/class_127;
