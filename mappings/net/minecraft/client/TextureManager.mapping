@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_198 net/minecraft/client/TextureManager
+	FIELD field_807 registeredTextures Ljava/util/HashMap;
+	FIELD field_809 textures Ljava/nio/IntBuffer;
+	METHOD method_542 bindTexture (I)V
+		ARG 0 textureId
+	METHOD method_545 getTextureId (Ljava/lang/String;)I
+		ARG 1 name

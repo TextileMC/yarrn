@@ -76,7 +76,15 @@ CLASS net/minecraft/class_123 net/minecraft/item/Item
 	FIELD field_414 DIAMOND_SHOVEL Lnet/minecraft/class_123;
 	FIELD field_415 DIAMOND_PICKAXE Lnet/minecraft/class_123;
 	FIELD field_416 DIAMOND_AXE Lnet/minecraft/class_123;
-	METHOD method_310 onUse (Lnet/minecraft/class_127;Lnet/minecraft/class_101;Lnet/minecraft/class_152;)Lnet/minecraft/class_127;
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD method_307 setTextureIndex (I)Lnet/minecraft/class_123;
+		ARG 1 textureIndex
+	METHOD method_310 use (Lnet/minecraft/class_127;Lnet/minecraft/class_101;Lnet/minecraft/class_152;)Lnet/minecraft/class_127;
+		COMMENT @return The stack that should replace the stack in the hand of the user
+		ARG 1 stack
+		ARG 2 world
+		ARG 3 user
 	METHOD method_311 useOnBlock (Lnet/minecraft/class_127;Lnet/minecraft/class_152;Lnet/minecraft/class_101;IIII)Z
 		ARG 1 stack
 		ARG 2 player
@@ -84,3 +92,5 @@ CLASS net/minecraft/class_123 net/minecraft/item/Item
 		ARG 4 x
 		ARG 5 y
 		ARG 6 z
+		ARG 7 usedBlockId
+	METHOD method_312 getTextureIndex ()I

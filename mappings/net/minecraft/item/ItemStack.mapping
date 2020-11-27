@@ -1,7 +1,7 @@
 CLASS net/minecraft/class_127 net/minecraft/item/ItemStack
 	FIELD field_422 count I
 	FIELD field_424 id I
-	FIELD field_425 damage I
+	FIELD field_425 meta I
 	METHOD <init> (I)V
 		ARG 1 id
 	METHOD <init> (II)V
@@ -10,7 +10,7 @@ CLASS net/minecraft/class_127 net/minecraft/item/ItemStack
 	METHOD <init> (III)V
 		ARG 1 id
 		ARG 2 count
-		ARG 3 damage
+		ARG 3 meta
 	METHOD <init> (Lnet/minecraft/class_123;)V
 		ARG 1 item
 	METHOD <init> (Lnet/minecraft/class_123;I)V
@@ -21,4 +21,10 @@ CLASS net/minecraft/class_127 net/minecraft/item/ItemStack
 	METHOD <init> (Lnet/minecraft/class_39;I)V
 		ARG 1 block
 		ARG 2 count
+	METHOD <init> (Lnet/minecraft/class_5;)V
+		ARG 1 tag
+	METHOD method_317 asItem ()Lnet/minecraft/class_123;
+	METHOD method_318 damage (I)Lnet/minecraft/class_127;
+		ARG 1 by
 	METHOD method_319 write (Lnet/minecraft/class_5;)Lnet/minecraft/class_5;
+		ARG 1 tag

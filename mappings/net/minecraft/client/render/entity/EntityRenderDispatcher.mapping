@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_170 net/minecraft/client/render/entity/EntityRenderDispatcher
+	FIELD field_609 instance Lnet/minecraft/class_170;
+	FIELD field_613 textureManager Lnet/minecraft/class_198;
+	FIELD field_614 world Lnet/minecraft/class_101;
+	FIELD field_617 renderers Ljava/util/Map;
+	METHOD method_439 byClass (Ljava/lang/Class;)Lnet/minecraft/class_166;
+		ARG 1 clazz
+	METHOD method_440 setWorld (Lnet/minecraft/class_101;)V
+		ARG 1 world
+	METHOD method_442 byEntity (Lnet/minecraft/class_140;)Lnet/minecraft/class_166;
+		ARG 1 e

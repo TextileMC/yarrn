@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_152 net/minecraft/entity/living/player/PlayerEntity
-	FIELD field_536 score I
-	FIELD field_541 inventory Lnet/minecraft/class_153;

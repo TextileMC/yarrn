@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_142 net/minecraft/entity/living/Sheep
+	FIELD field_484 sheared Z

@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_147 net/minecraft/entity/FallingBlockEntity
+	FIELD field_495 tile I
+	METHOD <init> (Lnet/minecraft/class_101;FFFI)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 tile

@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 	FIELD field_440 fallDistance F
+	FIELD field_447 random Ljava/util/Random;
 	FIELD field_450 fireTime I
 	FIELD field_453 airTime I
 	FIELD field_454 skinLocation Ljava/lang/String;
@@ -11,12 +12,34 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 	FIELD field_469 motionY D
 	FIELD field_470 motionZ D
 	FIELD field_478 dead Z
+	FIELD field_480 yaw F
+	FIELD field_481 pitch F
+	METHOD <init> (Lnet/minecraft/class_101;)V
+		ARG 1 world
 	METHOD method_326 setPosition (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_328 setRotation (FF)V
+		ARG 1 yaw
+		ARG 2 pitch
 	METHOD method_330 serialize (Lnet/minecraft/class_5;)V
 		ARG 1 tag
 	METHOD method_334 packDoubles ([D)Lnet/minecraft/class_8;
+		ARG 0 doubles
+	METHOD method_336 refreshPositionAndAngles (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yaw
+		ARG 8 pitch
 	METHOD method_341 deserialize (Lnet/minecraft/class_5;)V
 		ARG 1 tag
 	METHOD method_342 getSquaredDistanceTo (Lnet/minecraft/class_140;)D
-	METHOD method_349 save (Lnet/minecraft/class_5;)V
-	METHOD method_350 load (Lnet/minecraft/class_5;)V
+	METHOD method_347 onCollide (Lnet/minecraft/class_140;)V
+		ARG 1 entity
+	METHOD method_349 serializeDefaultData (Lnet/minecraft/class_5;)V
+		ARG 1 tag
+	METHOD method_350 deserializeDefaultData (Lnet/minecraft/class_5;)V
+		ARG 1 tag
+	METHOD method_359 isNotDead ()Z

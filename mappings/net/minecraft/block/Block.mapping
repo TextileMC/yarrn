@@ -80,17 +80,37 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	METHOD <init> (ILnet/minecraft/class_92;)V
 		ARG 1 id
 		ARG 2 material
+	METHOD method_100 (Lnet/minecraft/class_101;III)Lnet/minecraft/class_156;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_103 (Lnet/minecraft/class_101;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_105 (Lnet/minecraft/class_101;IIILjava/util/Random;)V
+	METHOD method_104 (Lnet/minecraft/class_101;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_105 randomDisplayTick (Lnet/minecraft/class_101;IIILjava/util/Random;)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 rand
+	METHOD method_116 (Lnet/minecraft/class_101;III)Lnet/minecraft/class_156;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_117 (Lnet/minecraft/class_101;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_119 (Lnet/minecraft/class_101;III)V
 		ARG 1 world
 		ARG 2 x
@@ -121,7 +141,7 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-		ARG 5 random
+		ARG 5 rand
 	METHOD method_95 use (Lnet/minecraft/class_101;IIILnet/minecraft/class_152;)Z
 		ARG 1 world
 		ARG 2 x

@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_188 net/minecraft/client/render/Tesselator
+	FIELD field_709 instance Lnet/minecraft/class_188;
+	FIELD field_724 drawMode I
+	FIELD field_729 tesselating Z
+	METHOD method_479 end ()V
+	METHOD method_484 begin (I)V
+		ARG 1 drawMode
+	METHOD method_487 beginQuads ()V

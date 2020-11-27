@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_156 net/minecraft/world/BlockBox
+CLASS net/minecraft/class_156 net/minecraft/world/Box
 	FIELD field_576 x1 D
 	FIELD field_577 y1 D
 	FIELD field_578 z1 D

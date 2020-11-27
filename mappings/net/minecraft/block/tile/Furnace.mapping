@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_36 net/minecraft/block/tile/Furnace
+	FIELD field_79 stacks [Lnet/minecraft/class_127;
