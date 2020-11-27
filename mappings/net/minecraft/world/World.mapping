@@ -32,6 +32,10 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_217 (IIIIZ)Z
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_218 setTileEntity (IIILnet/minecraft/class_35;)V
 		ARG 1 x
 		ARG 2 y
@@ -40,6 +44,8 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 	METHOD method_221 loadLevelProperties (Ljava/io/File;Ljava/lang/String;)Lnet/minecraft/class_5;
 		ARG 0 root
 		ARG 1 name
+	METHOD method_222 getEntities (Ljava/lang/Class;)I
+		ARG 1 entityClass
 	METHOD method_223 addParticle (Ljava/lang/String;DDDDDD)V
 		ARG 1 name
 		ARG 2 x
@@ -91,7 +97,7 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 	METHOD method_280 initialize ()V
-	METHOD method_281 getTileEntities (III)Lnet/minecraft/class_35;
+	METHOD method_281 getTileEntity (III)Lnet/minecraft/class_35;
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -100,7 +106,11 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 	METHOD method_283 getTickableEntities ()Ljava/util/List;
-	METHOD method_288 (III)V
+	METHOD method_284 removeTileEntity (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_288 markDirty (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

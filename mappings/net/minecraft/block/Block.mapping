@@ -85,7 +85,7 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_103 (Lnet/minecraft/class_101;III)V
+	METHOD method_103 onRemove (Lnet/minecraft/class_101;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
@@ -111,7 +111,7 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_119 (Lnet/minecraft/class_101;III)V
+	METHOD method_119 onPlace (Lnet/minecraft/class_101;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
@@ -134,6 +134,11 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 2 rand
 	METHOD method_89 getDroppedStackCount (Ljava/util/Random;)I
 		ARG 1 rand
+	METHOD method_91 (Lnet/minecraft/class_101;IIII)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_92 dropStacks (Lnet/minecraft/class_101;IIIIF)V
 		ARG 1 world
 	METHOD method_93 (Lnet/minecraft/class_101;IIILjava/util/Random;)V

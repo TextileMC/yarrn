@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_191 net/minecraft/client/render/tile/TileEntityRenderDispatcher
+	FIELD field_736 instance Lnet/minecraft/class_191;
+	FIELD field_740 textureManager Lnet/minecraft/class_198;
+	FIELD field_741 renderers Ljava/util/Map;
+	FIELD field_743 world Lnet/minecraft/class_101;
