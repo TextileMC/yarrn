@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_85 net/minecraft/world/feature/Feature
+	METHOD method_165 generate (Lnet/minecraft/class_101;Ljava/util/Random;III)Z
+		ARG 1 world
+		ARG 2 rand
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z

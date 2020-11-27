@@ -5,4 +5,7 @@ CLASS net/minecraft/class_154 net/minecraft/entity/living/LivingEntity
 	FIELD field_560 deathTime I
 	FIELD field_561 attackTime I
 	METHOD method_390 heal (I)V
+		ARG 1 amount
 	METHOD method_391 getDropItem ()I
+	METHOD method_394 livingTick ()V
+	METHOD method_397 getDeathSound ()Ljava/lang/String;

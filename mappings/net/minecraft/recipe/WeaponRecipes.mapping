@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_112 net/minecraft/recipe/WeaponRecipes
-	FIELD field_328 patterns [[Ljava/lang/String;
-	FIELD field_329 items [[Ljava/lang/Object;
-	METHOD method_305 register (Lnet/minecraft/class_110;)V

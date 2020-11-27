@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_204 net/minecraft/client/render/ModelPart
+	FIELD field_830 contexts [Lnet/minecraft/class_212;
+	FIELD field_832 texureWidth I
+	FIELD field_833 textureHeight I
+	METHOD <init> (II)V
+		ARG 1 texureWidth
+		ARG 2 textureHeight
+	METHOD method_553 addCuboid (FFFIIIF)V
+		ARG 1 posX
+		ARG 2 posY
+		ARG 3 posZ
+		ARG 4 sizeX
+		ARG 5 sizeY
+		ARG 6 sizeZ
+		ARG 7 offset

@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_262 net/minecraft/client/entity/particle/Particle
+	FIELD field_1045 textureIndex I
+	METHOD <init> (Lnet/minecraft/class_101;DDDDDD)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 velocityX
+		ARG 10 velocityY
+		ARG 12 velocityZ

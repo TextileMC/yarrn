@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_121 net/minecraft/item/tool/Tool
+	FIELD field_334 effectiveBlocks [Lnet/minecraft/class_39;
+	FIELD field_335 efficiency F
+	METHOD <init> (III[Lnet/minecraft/class_39;)V
+		ARG 1 id
+		ARG 3 miningLevel
+		ARG 4 effectiveBlocks

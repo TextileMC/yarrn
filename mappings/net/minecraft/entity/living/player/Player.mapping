@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_152 net/minecraft/entity/living/player/Player
+	FIELD field_536 score I
+	FIELD field_539 username Ljava/lang/String;
+	FIELD field_541 inventory Lnet/minecraft/class_153;
+	METHOD method_373 openFurnace (Lnet/minecraft/class_36;)V
+		ARG 1 furnace
+	METHOD method_374 openSign (Lnet/minecraft/class_38;)V
+		ARG 1 sign
+	METHOD method_376 throwStack (Lnet/minecraft/class_127;)V
+		ARG 1 stack
+	METHOD method_377 throwStack (Lnet/minecraft/class_127;Z)V
+		ARG 1 stack
+	METHOD method_378 openChest (Lnet/minecraft/class_103;)V
+		ARG 1 inv
+	METHOD method_380 openCraftingScreen ()V

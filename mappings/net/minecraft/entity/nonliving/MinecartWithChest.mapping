@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_148 net/minecraft/entity/nonliving/MinecartWithChest
-	FIELD field_497 inventory [Lnet/minecraft/class_127;

@@ -3,6 +3,8 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	FIELD field_944 fullscreen Z
 	FIELD field_946 ticks Lnet/minecraft/class_251;
 	FIELD field_947 canvas Ljava/awt/Canvas;
+	FIELD field_948 glutil Lnet/minecraft/class_159;
+	FIELD field_949 resourceDownloadThread Lnet/minecraft/class_268;
 	FIELD field_952 width I
 	FIELD field_953 height I
 	FIELD field_957 mcDir Ljava/io/File;
@@ -11,11 +13,16 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	FIELD field_962 height2 I
 	FIELD field_963 world Lnet/minecraft/class_101;
 	FIELD field_965 player Lnet/minecraft/class_264;
+	FIELD field_966 particleManager Lnet/minecraft/class_255;
 	FIELD field_967 sessionData Lnet/minecraft/class_270;
 	FIELD field_968 host Ljava/lang/String;
+	FIELD field_970 trackTicks Z
+	FIELD field_971 textureManager Lnet/minecraft/class_198;
+	FIELD field_973 currentScreen Lnet/minecraft/class_236;
 	FIELD field_975 loadmapUser Ljava/lang/String;
 	FIELD field_976 loadmapId I
 	FIELD field_980 options Lnet/minecraft/class_275;
+	FIELD field_981 soundManager Lnet/minecraft/class_250;
 	FIELD field_983 running Z
 	METHOD <init> (Ljava/awt/Canvas;Lnet/minecraft/class_158;IIZ)V
 		ARG 1 window
@@ -24,6 +31,17 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 		ARG 4 height
 		ARG 5 fullscreen
 	METHOD method_600 getMinecraftDirectory ()Ljava/io/File;
+	METHOD method_603 joinWorld (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD method_605 quitWorld (Lnet/minecraft/class_101;)V
+		ARG 1 dummy
+	METHOD method_606 joinWorld (Lnet/minecraft/class_101;Ljava/lang/String;)V
+		ARG 1 world
+		ARG 2 message
 	METHOD method_607 showScreen (Lnet/minecraft/class_236;)V
-	METHOD method_608 stop ()V
+		ARG 1 screen
+	METHOD method_608 shutdown ()V
+	METHOD method_610 stopRunning ()V
+	METHOD method_612 pause ()V
 	METHOD method_613 toggleFullscreen ()V
+	METHOD method_619 tick ()V

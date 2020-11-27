@@ -11,6 +11,7 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_109 STONE_SLAB Lnet/minecraft/class_39;
 	FIELD field_110 BRICKS Lnet/minecraft/class_39;
 	FIELD field_111 TNT Lnet/minecraft/class_39;
+	FIELD field_114 material Lnet/minecraft/class_92;
 	FIELD field_127 BOOKSHELF Lnet/minecraft/class_39;
 	FIELD field_128 MOSSY_COBBLESTONE Lnet/minecraft/class_39;
 	FIELD field_129 OBSIDIAN Lnet/minecraft/class_39;
@@ -31,6 +32,12 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_144 RAIL Lnet/minecraft/class_39;
 	FIELD field_145 textureIndex I
 	FIELD field_146 id I
+	FIELD field_147 minX D
+	FIELD field_148 minY D
+	FIELD field_149 minZ D
+	FIELD field_150 maxX D
+	FIELD field_151 maxY D
+	FIELD field_152 maxZ D
 	FIELD field_153 BLOCKS [Lnet/minecraft/class_39;
 	FIELD field_158 STONE Lnet/minecraft/class_39;
 	FIELD field_159 GRASS Lnet/minecraft/class_47;
@@ -66,7 +73,56 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_97 MAGENTA_WOOL Lnet/minecraft/class_39;
 	FIELD field_98 ROSE_WOOL Lnet/minecraft/class_39;
 	FIELD field_99 GRAY_WOOL Lnet/minecraft/class_39;
+	METHOD <init> (IILnet/minecraft/class_92;)V
+		ARG 1 id
+		ARG 2 textureIndex
+		ARG 3 material
+	METHOD <init> (ILnet/minecraft/class_92;)V
+		ARG 1 id
+		ARG 2 material
+	METHOD method_100 (Lnet/minecraft/class_101;III)Lnet/minecraft/class_156;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_103 onRemove (Lnet/minecraft/class_101;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_104 (Lnet/minecraft/class_101;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_105 randomDisplayTick (Lnet/minecraft/class_101;IIILjava/util/Random;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 rand
+	METHOD method_116 (Lnet/minecraft/class_101;III)Lnet/minecraft/class_156;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_117 (Lnet/minecraft/class_101;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_119 onPlace (Lnet/minecraft/class_101;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_84 setHitbox (FFFFFF)V
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ
 	METHOD method_85 getTextureIndex (I)I
 		ARG 1 side
 			COMMENT a number from 0 to 5, depending on which side the texture is for. 0 is bottom, 1 is top.
@@ -74,3 +130,26 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 1 side
 		ARG 2 meta
 	METHOD method_87 getDrop (ILjava/util/Random;)I
+		ARG 1 id
+		ARG 2 rand
+	METHOD method_89 getDroppedStackCount (Ljava/util/Random;)I
+		ARG 1 rand
+	METHOD method_91 (Lnet/minecraft/class_101;IIII)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_92 dropStacks (Lnet/minecraft/class_101;IIIIF)V
+		ARG 1 world
+	METHOD method_93 (Lnet/minecraft/class_101;IIILjava/util/Random;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 rand
+	METHOD method_95 use (Lnet/minecraft/class_101;IIILnet/minecraft/class_152;)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 player

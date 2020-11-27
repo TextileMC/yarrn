@@ -51,6 +51,8 @@ CLASS net/minecraft/class_123 net/minecraft/item/Item
 	FIELD field_387 LAVA_BUCKET Lnet/minecraft/class_123;
 	FIELD field_388 MINECART Lnet/minecraft/class_123;
 	FIELD field_389 id I
+	FIELD field_390 maxCount I
+	FIELD field_391 maxDamage I
 	FIELD field_392 ITEMS [Lnet/minecraft/class_123;
 	FIELD field_393 IRON_SHOVEL Lnet/minecraft/class_123;
 	FIELD field_394 IRON_PICKAXE Lnet/minecraft/class_123;
@@ -76,8 +78,27 @@ CLASS net/minecraft/class_123 net/minecraft/item/Item
 	FIELD field_414 DIAMOND_SHOVEL Lnet/minecraft/class_123;
 	FIELD field_415 DIAMOND_PICKAXE Lnet/minecraft/class_123;
 	FIELD field_416 DIAMOND_AXE Lnet/minecraft/class_123;
-	METHOD method_310 onUse (Lnet/minecraft/class_127;Lnet/minecraft/class_101;Lnet/minecraft/class_152;)Lnet/minecraft/class_127;
-	METHOD method_311 onUseAtLocation (Lnet/minecraft/class_127;Lnet/minecraft/class_152;Lnet/minecraft/class_101;IIII)Z
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD method_307 setTextureIndex (I)Lnet/minecraft/class_123;
+		ARG 1 textureIndex
+	METHOD method_308 canMine (Lnet/minecraft/class_39;)Z
+		ARG 1 block
+	METHOD method_310 use (Lnet/minecraft/class_127;Lnet/minecraft/class_101;Lnet/minecraft/class_152;)Lnet/minecraft/class_127;
+		COMMENT @return The stack that should replace the stack in the hand of the user
+		ARG 1 stack
+		ARG 2 world
+		ARG 3 user
+	METHOD method_311 useOnBlock (Lnet/minecraft/class_127;Lnet/minecraft/class_152;Lnet/minecraft/class_101;IIII)Z
+		ARG 1 stack
+		ARG 2 player
+		ARG 3 world
 		ARG 4 x
 		ARG 5 y
 		ARG 6 z
+		ARG 7 usedBlockId
+	METHOD method_312 getTextureIndex ()I
+	METHOD method_313 getEfficiency (Lnet/minecraft/class_39;)F
+		ARG 1 block
+	METHOD method_315 getMaxCount ()I
+	METHOD method_316 getMaxDamage ()I

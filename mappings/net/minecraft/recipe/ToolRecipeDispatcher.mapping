@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_109 net/minecraft/recipe/ToolRecipeDispatcher
+	FIELD field_324 patterns [[Ljava/lang/String;
+	FIELD field_325 items [[Ljava/lang/Object;
+	METHOD method_301 register (Lnet/minecraft/class_110;)V
+		ARG 1 dispatcher

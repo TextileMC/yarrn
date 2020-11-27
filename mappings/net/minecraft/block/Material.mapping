@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_92 net/minecraft/block/Material
+	FIELD field_228 UNKNOWN Lnet/minecraft/class_92;
+	FIELD field_229 DIRT Lnet/minecraft/class_92;
+	FIELD field_230 WOOD Lnet/minecraft/class_92;
+	FIELD field_231 STONE Lnet/minecraft/class_92;
+	FIELD field_232 METAL Lnet/minecraft/class_92;
+	FIELD field_233 WATER Lnet/minecraft/class_92;
+	FIELD field_234 LAVA Lnet/minecraft/class_92;
+	FIELD field_235 LEAVES Lnet/minecraft/class_92;
+	FIELD field_236 FLOWER Lnet/minecraft/class_92;
+	FIELD field_237 CHEESE Lnet/minecraft/class_92;
+		COMMENT Sponge
+	FIELD field_238 WOOL Lnet/minecraft/class_92;
+	FIELD field_239 FIRE Lnet/minecraft/class_92;
+	FIELD field_240 AGGREGATE Lnet/minecraft/class_92;
+	FIELD field_241 NONSOLID Lnet/minecraft/class_92;
+	FIELD field_242 GLASS Lnet/minecraft/class_92;
+	FIELD field_243 TNT Lnet/minecraft/class_92;
+	METHOD method_166 isSolid ()Z
+	METHOD method_169 isFluid ()Z

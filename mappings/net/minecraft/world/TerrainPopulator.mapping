@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_80 net/minecraft/world/TerrainPopulator
+	FIELD field_202 seededRandom Ljava/util/Random;
+	FIELD field_211 world Lnet/minecraft/class_101;
+	METHOD <init> (Lnet/minecraft/class_101;J)V
+		ARG 1 world
+		ARG 2 seed

@@ -1,0 +1,11 @@
+CLASS net/minecraft/class_151 net/minecraft/entity/EntityDispatcher
+	FIELD field_533 NAME_CLASS_MAP Ljava/util/Map;
+	FIELD field_534 CLASS_NAME_MAP Ljava/util/Map;
+	METHOD method_370 fromTag (Lnet/minecraft/class_5;Lnet/minecraft/class_101;)Lnet/minecraft/class_140;
+		ARG 0 tag
+		ARG 1 world
+	METHOD method_371 register (Ljava/lang/Class;Ljava/lang/String;)V
+		ARG 0 clazz
+		ARG 1 name
+	METHOD method_372 getName (Lnet/minecraft/class_140;)Ljava/lang/String;
+		ARG 0 entity
