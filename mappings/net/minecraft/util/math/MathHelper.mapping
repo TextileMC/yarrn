@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_1 net/minecraft/util/MathHelper
+CLASS net/minecraft/class_1 net/minecraft/util/math/MathHelper
 	FIELD field_1 SIN_TABLE [F
 	METHOD method_1 sqrt (D)F
 		ARG 0 d

@@ -29,7 +29,7 @@ CLASS net/minecraft/class_99 net/minecraft/world/Chunk
 		ARG 2 y
 		ARG 3 z
 		ARG 4 tileEntity
-	METHOD method_189 (Lnet/minecraft/class_5;)V
+	METHOD method_189 toTag (Lnet/minecraft/class_5;)V
 		ARG 1 tag
 	METHOD method_190 getLightLevel (Lnet/minecraft/class_94;III)I
 		ARG 1 source
@@ -53,11 +53,11 @@ CLASS net/minecraft/class_99 net/minecraft/world/Chunk
 	METHOD method_198 getTopPosition (II)I
 		ARG 1 x
 		ARG 2 z
-	METHOD method_199 (III)I
+	METHOD method_199 getBlockMeta (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_200 (IIII)V
+	METHOD method_200 setBlockMeta (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

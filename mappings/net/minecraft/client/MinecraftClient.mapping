@@ -12,18 +12,21 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	FIELD field_961 width2 I
 	FIELD field_962 height2 I
 	FIELD field_963 world Lnet/minecraft/class_101;
+	FIELD field_964 worldManager Lnet/minecraft/class_176;
 	FIELD field_965 player Lnet/minecraft/class_264;
 	FIELD field_966 particleManager Lnet/minecraft/class_255;
 	FIELD field_967 sessionData Lnet/minecraft/class_270;
 	FIELD field_968 host Ljava/lang/String;
 	FIELD field_970 trackTicks Z
 	FIELD field_971 textureManager Lnet/minecraft/class_198;
+	FIELD field_972 textRenderer Lnet/minecraft/class_238;
 	FIELD field_973 currentScreen Lnet/minecraft/class_236;
 	FIELD field_975 loadmapUser Ljava/lang/String;
 	FIELD field_976 loadmapId I
 	FIELD field_980 options Lnet/minecraft/class_275;
 	FIELD field_981 soundManager Lnet/minecraft/class_250;
 	FIELD field_983 running Z
+	FIELD field_984 debugText Ljava/lang/String;
 	METHOD <init> (Ljava/awt/Canvas;Lnet/minecraft/class_158;IIZ)V
 		ARG 1 window
 		ARG 2 args
@@ -44,4 +47,7 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	METHOD method_610 stopRunning ()V
 	METHOD method_612 pause ()V
 	METHOD method_613 toggleFullscreen ()V
+	METHOD method_614 getChunkDebugString ()Ljava/lang/String;
+	METHOD method_615 getEntityDebugString ()Ljava/lang/String;
+	METHOD method_616 getParticleDebugString ()Ljava/lang/String;
 	METHOD method_619 tick ()V

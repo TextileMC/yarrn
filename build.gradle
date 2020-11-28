@@ -27,7 +27,7 @@ def minecraft_version = "inf-20100618"
 
 def ENV = System.getenv()
 
-def build_version = "20d332"
+def build_version = "20d333"
 
 def yarnVersion = "${minecraft_version}+build${build_version}"
 

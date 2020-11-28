@@ -12,7 +12,7 @@ CLASS net/minecraft/class_155 net/minecraft/util/math/Vec3d
 		ARG 5 z
 	METHOD method_401 subtract (Lnet/minecraft/class_155;)Lnet/minecraft/class_155;
 		ARG 1 vec
-	METHOD method_404 squaredDistanceTo (Lnet/minecraft/class_155;)D
+	METHOD method_404 distanceTo (Lnet/minecraft/class_155;)D
 		ARG 1 vec
-	METHOD method_406 absoluteDistanceTo (Lnet/minecraft/class_155;)D
+	METHOD method_406 squaredDistanceTo (Lnet/minecraft/class_155;)D
 		ARG 1 vec

@@ -69,6 +69,15 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_245 setBlockMeta (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 meta
+	METHOD method_246 (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_249 removeEntities (Ljava/util/List;)V
 		ARG 1 entities
 	METHOD method_250 removeListener (Lnet/minecraft/class_28;)V
@@ -80,7 +89,13 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_263 (III)I
+	METHOD method_258 (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_260 getDebugStringT ()Ljava/lang/String;
+		COMMENT Documentation on what this is meant to give is unclear.
+	METHOD method_263 getBlockMeta (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
