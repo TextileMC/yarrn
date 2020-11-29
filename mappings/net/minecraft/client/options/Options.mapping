@@ -21,6 +21,7 @@ CLASS net/minecraft/class_275 net/minecraft/client/options/Options
 	FIELD field_1092 saveLocation Lnet/minecraft/class_263;
 	FIELD field_1093 loadLocation Lnet/minecraft/class_263;
 	FIELD field_1094 allKeybindings [Lnet/minecraft/class_263;
+	FIELD field_1095 optionsButtonCount I
 	FIELD field_1096 difficultyLevel I
 	FIELD field_1098 RENDER_DISTANCE_NAMES [Ljava/lang/String;
 	FIELD field_1099 DIFFICULTY_NAMES [Ljava/lang/String;

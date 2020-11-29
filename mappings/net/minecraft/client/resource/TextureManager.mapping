@@ -7,3 +7,4 @@ CLASS net/minecraft/class_198 net/minecraft/client/resource/TextureManager
 	METHOD method_545 getTextureId (Ljava/lang/String;)I
 		ARG 1 name
 	METHOD method_548 registerDynamicTexture (Lnet/minecraft/class_182;)V
+	METHOD method_549 toggleAnaglyph ()V
