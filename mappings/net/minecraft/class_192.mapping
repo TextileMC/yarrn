@@ -1,6 +1,0 @@
-CLASS net/minecraft/class_192
-	FIELD field_745 instance Lnet/minecraft/class_243;
-	FIELD field_752 random Ljava/util/Random;
-	FIELD field_755 floatBuffer Ljava/nio/FloatBuffer;
-	METHOD <init> (Lnet/minecraft/class_243;)V
-		ARG 1 instance
