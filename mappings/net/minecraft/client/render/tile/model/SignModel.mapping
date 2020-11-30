@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_205 net/minecraft/client/render/tile/model/SignModel
+	FIELD field_839 top Lnet/minecraft/class_204;
+	FIELD field_840 stand Lnet/minecraft/class_204;
