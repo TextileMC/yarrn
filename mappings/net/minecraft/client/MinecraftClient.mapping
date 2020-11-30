@@ -21,6 +21,7 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	FIELD field_971 textureManager Lnet/minecraft/class_198;
 	FIELD field_972 textRenderer Lnet/minecraft/class_238;
 	FIELD field_973 currentScreen Lnet/minecraft/class_236;
+	FIELD field_974 gameRenderer Lnet/minecraft/class_192;
 	FIELD field_975 loadmapUser Ljava/lang/String;
 	FIELD field_976 loadmapId I
 	FIELD field_980 options Lnet/minecraft/class_275;
@@ -34,6 +35,9 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 		ARG 4 height
 		ARG 5 fullscreen
 	METHOD method_600 getMinecraftDirectory ()Ljava/io/File;
+	METHOD method_602 reinitalizeScreen (II)V
+		ARG 1 height
+		ARG 2 width
 	METHOD method_603 joinWorld (Ljava/lang/String;)V
 		ARG 1 name
 	METHOD method_605 quitWorld (Lnet/minecraft/class_101;)V
