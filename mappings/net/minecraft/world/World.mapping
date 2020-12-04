@@ -13,6 +13,7 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 	FIELD field_299 diskSize J
 	FIELD field_301 tickableEntities Ljava/util/List;
 	FIELD field_310 listeners Ljava/util/List;
+	FIELD field_311 chunkAccess Lnet/minecraft/class_95;
 	METHOD <init> (Ljava/io/File;Ljava/lang/String;)V
 		ARG 1 mcDir
 		ARG 2 worldName
@@ -28,10 +29,17 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 8 volume
 		ARG 9 pitch
 	METHOD method_212 getChunk (II)Lnet/minecraft/class_99;
+		ARG 1 x
+		ARG 2 z
 	METHOD method_213 getBlockAtPosition (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_214 setBlock (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 id
 	METHOD method_217 (IIIIZ)Z
 		ARG 2 x
 		ARG 3 y
@@ -89,10 +97,11 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_258 (IIII)Z
+	METHOD method_258 setBlockAndUpdate (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 blockId
 	METHOD method_260 getDebugStringT ()Ljava/lang/String;
 		COMMENT Documentation on what this is meant to give is unclear.
 	METHOD method_263 getBlockMeta (III)I
@@ -108,10 +117,11 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_279 (IIII)V
+	METHOD method_279 onLightUpdate (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 blockId
 	METHOD method_280 initialize ()V
 	METHOD method_281 getTileEntity (III)Lnet/minecraft/class_35;
 		ARG 1 x
