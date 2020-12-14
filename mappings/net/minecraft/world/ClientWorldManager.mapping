@@ -11,6 +11,7 @@ CLASS net/minecraft/class_176 net/minecraft/world/ClientWorldManager
 	METHOD <init> (Lnet/minecraft/class_243;Lnet/minecraft/class_198;)V
 		ARG 1 client
 		ARG 2 textureManager
+	METHOD method_451 toggleFancyGraphics ()V
 	METHOD method_457 reload (Lnet/minecraft/class_101;)V
 		ARG 1 world
 	METHOD method_464 getChunkDebugString ()Ljava/lang/String;
