@@ -7,7 +7,7 @@ CLASS net/minecraft/class_188 net/minecraft/client/render/Tesselator
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD method_481 (DDDDD)V
+	METHOD method_481 vertex (DDDDD)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z

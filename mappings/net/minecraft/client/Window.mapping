@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_234 net/minecraft/client/Window
+	METHOD method_570 getScaledWidth ()I
+	METHOD method_571 getScaledHeight ()I
