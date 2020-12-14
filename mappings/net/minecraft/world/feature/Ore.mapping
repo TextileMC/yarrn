@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_86 net/minecraft/world/feature/Ore
+	FIELD field_225 blockId I
+	FIELD field_226 veinSize I
+	METHOD <init> (II)V
+		ARG 1 blockId
+		ARG 2 veinSize
