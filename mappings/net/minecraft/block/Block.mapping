@@ -150,7 +150,7 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 5 side
 	METHOD method_92 dropStacks (Lnet/minecraft/class_101;IIIIF)V
 		ARG 1 world
-	METHOD method_93 (Lnet/minecraft/class_101;IIILjava/util/Random;)V
+	METHOD method_93 randomTick (Lnet/minecraft/class_101;IIILjava/util/Random;)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

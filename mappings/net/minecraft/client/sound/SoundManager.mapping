@@ -1,5 +1,6 @@
 CLASS net/minecraft/class_250 net/minecraft/client/sound/SoundManager
 	FIELD field_1008 soundSystem Lpaulscode/sound/SoundSystem;
+	FIELD field_1009 soundRandomizer Lnet/minecraft/class_249;
 	FIELD field_1012 options Lnet/minecraft/class_275;
 	METHOD method_632 refreshSounds ()V
 	METHOD method_633 playSound (Ljava/lang/String;FF)V
