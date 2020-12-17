@@ -23,11 +23,15 @@ plugins {
 	id 'java' // for jd gen
 }
 
+import java.time.ZoneId
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+
 def minecraft_version = "inf-20100618"
 
 def ENV = System.getenv()
 
-def build_version = "20d352"
+def build_version = LocalDate.now(ZoneId.of("UTC")).format(DateTimeFormatter.ISO_ORDINAL_DATE).replace('-', 'd')
 
 def yarnVersion = "${minecraft_version}+build${build_version}"
 
