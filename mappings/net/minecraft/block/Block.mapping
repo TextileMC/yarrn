@@ -12,6 +12,12 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_110 BRICKS Lnet/minecraft/class_39;
 	FIELD field_111 TNT Lnet/minecraft/class_39;
 	FIELD field_114 material Lnet/minecraft/class_92;
+	FIELD field_115 WOOD_STEP_SOUND Lnet/minecraft/class_67;
+	FIELD field_116 GRAVEL_STEP_SOUND Lnet/minecraft/class_67;
+	FIELD field_117 GRASS_STEP_SOUND Lnet/minecraft/class_67;
+	FIELD field_121 CLOTH_STEP_SOUND Lnet/minecraft/class_67;
+	FIELD field_122 SAND_STEP_SOUND Lnet/minecraft/class_61;
+	FIELD field_124 STONE_STEP_SOUND Lnet/minecraft/class_67;
 	FIELD field_127 BOOKSHELF Lnet/minecraft/class_39;
 	FIELD field_128 MOSSY_COBBLESTONE Lnet/minecraft/class_39;
 	FIELD field_129 OBSIDIAN Lnet/minecraft/class_39;
@@ -73,12 +79,6 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_97 MAGENTA_WOOL Lnet/minecraft/class_39;
 	FIELD field_98 ROSE_WOOL Lnet/minecraft/class_39;
 	FIELD field_99 GRAY_WOOL Lnet/minecraft/class_39;
-	FIELD field_124 STONE_STEP_SOUND Lnet/minecraft/class_67;
-	FIELD field_115 WOOD_STEP_SOUND Lnet/minecraft/class_67;
-	FIELD field_116 GRAVEL_STEP_SOUND Lnet/minecraft/class_67;
-	FIELD field_117 GRASS_STEP_SOUND Lnet/minecraft/class_67;
-	FIELD field_121 CLOTH_STEP_SOUND Lnet/minecraft/class_67;
-	FIELD field_122 SAND_STEP_SOUND Lnet/minecraft/class_61;
 	METHOD <init> (IILnet/minecraft/class_92;)V
 		ARG 1 id
 		ARG 2 textureIndex

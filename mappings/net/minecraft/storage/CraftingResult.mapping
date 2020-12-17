@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_225 net/minecraft/storage/CraftingResult
+	FIELD field_888 inventory [Lnet/minecraft/class_127;

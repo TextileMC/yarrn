@@ -1,16 +1,18 @@
 CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	COMMENT The Main entrypoint for the client. Ran right after MinecraftApplet has started.
+	FIELD field_943 thirdPerson Z
 	FIELD field_944 fullscreen Z
 	FIELD field_946 ticks Lnet/minecraft/class_251;
 	FIELD field_947 canvas Ljava/awt/Canvas;
 	FIELD field_948 glutil Lnet/minecraft/class_159;
 	FIELD field_949 resourceDownloadThread Lnet/minecraft/class_268;
-	FIELD field_952 width I
-	FIELD field_953 height I
+	FIELD field_952 appletWidth I
+	FIELD field_953 appletHeight I
+	FIELD field_954 minecraftDirectory Ljava/io/File;
 	FIELD field_957 mcDir Ljava/io/File;
 	FIELD field_959 initTime J
-	FIELD field_961 width2 I
-	FIELD field_962 height2 I
+	FIELD field_961 canvasWidth I
+	FIELD field_962 canvasHeight I
 	FIELD field_963 world Lnet/minecraft/class_101;
 	FIELD field_964 worldManager Lnet/minecraft/class_176;
 	FIELD field_965 player Lnet/minecraft/class_264;

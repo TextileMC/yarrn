@@ -36,10 +36,15 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 	METHOD method_214 setBlock (IIII)Z
+		COMMENT @return true if the block was successfully set
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 id
+	METHOD method_215 (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_217 (IIIIZ)Z
 		ARG 2 x
 		ARG 3 y
@@ -49,6 +54,8 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 		ARG 4 tileEntity
+	METHOD method_220 initChunkSave (Ljava/io/File;)Lnet/minecraft/class_95;
+		ARG 1 worldDir
 	METHOD method_221 loadLevelProperties (Ljava/io/File;Ljava/lang/String;)Lnet/minecraft/class_5;
 		ARG 0 root
 		ARG 1 name
@@ -73,6 +80,9 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 name
 		ARG 3 volume
 		ARG 4 pitch
+	METHOD method_243 getTopY (II)I
+		ARG 1 x
+		ARG 2 z
 	METHOD method_244 isPosValid (III)Z
 		ARG 1 x
 		ARG 2 y
@@ -104,6 +114,9 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 4 blockId
 	METHOD method_260 getDebugStringT ()Ljava/lang/String;
 		COMMENT Documentation on what this is meant to give is unclear.
+	METHOD method_262 isChunkLoaded (II)Z
+		ARG 1 x
+		ARG 2 z
 	METHOD method_263 getBlockMeta (III)I
 		ARG 1 x
 		ARG 2 y
@@ -113,6 +126,11 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_273 (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 id
 	METHOD method_276 (IIII)V
 		ARG 1 x
 		ARG 2 y

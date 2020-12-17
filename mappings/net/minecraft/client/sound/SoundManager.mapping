@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_250 net/minecraft/client/sound/SoundManager
 	FIELD field_1008 soundSystem Lpaulscode/sound/SoundSystem;
+	FIELD field_1012 options Lnet/minecraft/class_275;
+	METHOD method_632 refreshSounds ()V
 	METHOD method_633 playSound (Ljava/lang/String;FF)V
 		ARG 1 name
 		ARG 2 pitch
@@ -14,3 +16,4 @@ CLASS net/minecraft/class_250 net/minecraft/client/sound/SoundManager
 	METHOD method_637 (Lnet/minecraft/class_275;)V
 		ARG 1 opt
 	METHOD method_638 stop ()V
+	METHOD method_640 stopMusic ()V

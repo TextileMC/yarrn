@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_224
+	FIELD field_886 inventory Lnet/minecraft/class_103;
+	FIELD field_887 screen Lnet/minecraft/class_227;
+	METHOD <init> (Lnet/minecraft/class_227;Lnet/minecraft/class_103;III)V
+		ARG 1 screen
+		ARG 2 inventory

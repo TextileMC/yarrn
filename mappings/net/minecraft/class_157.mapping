@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_157
+	FIELD field_582 type I
+		COMMENT The type of this object. 0 if Vec3d, 1 if Entity.
