@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_248 net/minecraft/client/sound/SoundLocation
+	FIELD field_1003 category Ljava/lang/String;
+	FIELD field_1004 location Ljava/net/URL;
+	METHOD <init> (Ljava/lang/String;Ljava/net/URL;)V
+		ARG 1 category
+		ARG 2 location
