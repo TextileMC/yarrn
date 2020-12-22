@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_45 net/minecraft/block/Flower
-	METHOD method_127 canPlace (I)Z
-		ARG 1 blockId

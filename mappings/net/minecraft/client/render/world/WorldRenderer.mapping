@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_194 net/minecraft/client/render/world/WorldRenderer
-	FIELD field_764 client Lnet/minecraft/class_243;
-	FIELD field_765 itemStack Lnet/minecraft/class_127;
-	METHOD <init> (Lnet/minecraft/class_243;)V
-		ARG 1 client

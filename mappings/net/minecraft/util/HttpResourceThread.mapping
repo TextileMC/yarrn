@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_197 net/minecraft/util/HttpResourceThread
-	FIELD field_804 url Ljava/lang/String;
-	METHOD <init> (Lnet/minecraft/class_196;Ljava/lang/String;Lnet/minecraft/class_180;)V
-		ARG 2 url
-	METHOD run ()V

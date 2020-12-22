@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	COMMENT The Main entrypoint for the client. Ran right after MinecraftApplet has started.
 	FIELD field_944 fullscreen Z
@@ -55,3 +56,9 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	METHOD method_615 getEntityDebugString ()Ljava/lang/String;
 	METHOD method_616 getParticleDebugString ()Ljava/lang/String;
 	METHOD method_619 tick ()V
+=======
+CLASS net/minecraft/client/d net/minecraft/client/MinecraftClient
+	METHOD <init> (Ljava/awt/Canvas;Lnet/minecraft/client/MinecraftApplet;IIZ)V
+		ARG 1 canvas
+		ARG 2 minecraftApplet
+>>>>>>> Stashed changes

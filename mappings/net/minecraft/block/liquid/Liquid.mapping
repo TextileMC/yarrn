@@ -1,5 +1,0 @@
-CLASS net/minecraft/class_64 net/minecraft/block/liquid/Liquid
-	METHOD method_138 (Lnet/minecraft/class_101;III)V
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z

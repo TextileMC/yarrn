@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_192 net/minecraft/client/render/GameRenderer
-	FIELD field_744 worldRenderer Lnet/minecraft/class_194;
-	FIELD field_745 client Lnet/minecraft/class_243;
-	FIELD field_752 random Ljava/util/Random;
-	FIELD field_755 floatBuffer Ljava/nio/FloatBuffer;
-	METHOD <init> (Lnet/minecraft/class_243;)V
-		ARG 1 client

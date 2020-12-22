@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_78 net/minecraft/block/FallingBlock
-	COMMENT Represents a block that can fall

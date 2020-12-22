@@ -1,6 +1,0 @@
-CLASS net/minecraft/class_264 net/minecraft/entity/player/ClientPlayer
-	FIELD field_1051 client Lnet/minecraft/class_243;
-	METHOD <init> (Lnet/minecraft/class_243;Lnet/minecraft/class_101;Lnet/minecraft/class_270;)V
-		ARG 1 client
-		ARG 2 world
-		ARG 3 data

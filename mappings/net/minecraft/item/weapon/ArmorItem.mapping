@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_126 net/minecraft/item/weapon/ArmorItem
-	FIELD field_417 tierLevel I
-	FIELD field_420 ARMOR_VALUES [I
-	FIELD field_421 DURABILITY_BASES [I
-	METHOD <init> (IIII)V
-		ARG 1 id
-		ARG 4 tierLevel

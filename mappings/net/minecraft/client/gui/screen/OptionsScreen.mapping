@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_233 net/minecraft/client/gui/screen/OptionsScreen
-	FIELD field_903 parent Lnet/minecraft/class_236;
-	FIELD field_904 title Ljava/lang/String;
-	FIELD field_905 options Lnet/minecraft/class_275;
-	METHOD <init> (Lnet/minecraft/class_236;Lnet/minecraft/class_275;)V
-		ARG 1 parent
-		ARG 2 options

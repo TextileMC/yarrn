@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_113 net/minecraft/recipe/RecipeListSorter
-	METHOD <init> (Lnet/minecraft/class_110;)V
-		ARG 1 dispatcher

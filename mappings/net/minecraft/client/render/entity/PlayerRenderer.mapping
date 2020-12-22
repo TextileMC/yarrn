@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_167 net/minecraft/client/render/entity/PlayerRenderer
-	FIELD field_606 ARMOR_MATERIALS [Ljava/lang/String;

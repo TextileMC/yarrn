@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_203 net/minecraft/client/render/entity/model/MinecartModel
-	FIELD field_823 models [Lnet/minecraft/class_204;

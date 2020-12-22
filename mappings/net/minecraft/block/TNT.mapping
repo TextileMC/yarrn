@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_60 net/minecraft/block/TNT
-	METHOD method_85 (I)I
-		ARG 1 side
-			COMMENT

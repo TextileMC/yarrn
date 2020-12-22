@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_94 net/minecraft/world/IlluminationSource
-	FIELD field_246 defaultLight I
-	METHOD <init> (Ljava/lang/String;II)V
-		ARG 3 defaultLight

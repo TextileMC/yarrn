@@ -23,11 +23,11 @@ plugins {
 	id 'java' // for jd gen
 }
 
-def minecraft_version = "inf-20100618"
+def minecraft_version = "inf-20100227"
 
 def ENV = System.getenv()
 
-def build_version = "20d333"
+def build_version = "227d1"
 
 def yarnVersion = "${minecraft_version}+build${build_version}"
 
@@ -72,6 +72,7 @@ def tempDir = file(".gradle/temp")
 def mergedFile = file("${minecraft_version}-merged.jar")
 def intermediaryJar = file("${minecraft_version}-intermediary.jar")
 def namedJar = file("${minecraft_version}-named.jar")
+// Put inf-20100227.json into ~/.gradle/minecraft
 def versionFile = new File(cacheFilesMinecraft, "${minecraft_version}.json")
 def clientJar = new File(cacheFilesMinecraft, "${minecraft_version}-client.jar")
 def libraries = new File(cacheFilesMinecraft, "libraries")
@@ -192,7 +193,7 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 
 task downloadIntermediary(type: Download) {
 	group = buildMappingGroup
-	def url = "https://maven.concern.i.ng/net/textilemc/intermediary/${minecraft_version}/${minecraft_version}.tiny"
+	def url = "https://gist.githubusercontent.com/PheonixVX/a4dd5871c299d8c0e201965e29946f76/raw/5368363f32876f2c9bb2aab91242bc7dfd1fcec2/inf-20100227.tiny"
 	src com.google.common.net.UrlEscapers.urlFragmentEscaper().escape(url)
 	dest new File(cacheFilesMinecraft, "${minecraft_version}-intermediary.tiny")
 }

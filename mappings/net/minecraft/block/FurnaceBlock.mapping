@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_73 net/minecraft/block/FurnaceBlock
-	FIELD field_194 list Z
-	METHOD method_153 (Lnet/minecraft/class_101;III)V
-		ARG 0 world
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z

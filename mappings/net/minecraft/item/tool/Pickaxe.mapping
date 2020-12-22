@@ -1,6 +1,0 @@
-CLASS net/minecraft/class_104 net/minecraft/item/tool/Pickaxe
-	FIELD field_315 EFFECTIVE_BLOCKS [Lnet/minecraft/class_39;
-	FIELD field_316 miningLevel I
-	METHOD <init> (II)V
-		ARG 1 id
-		ARG 2 miningLevel

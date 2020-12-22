@@ -1,6 +1,0 @@
-CLASS net/minecraft/class_263 net/minecraft/client/options/Keybinding
-	FIELD field_1048 keybindName Ljava/lang/String;
-	FIELD field_1049 keyCode I
-	METHOD <init> (Ljava/lang/String;I)V
-		ARG 1 keybindName
-		ARG 2 keyCode

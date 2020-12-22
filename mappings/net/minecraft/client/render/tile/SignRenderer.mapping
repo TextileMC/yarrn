@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_189 net/minecraft/client/render/tile/SignRenderer
-	FIELD field_734 model Lnet/minecraft/class_205;

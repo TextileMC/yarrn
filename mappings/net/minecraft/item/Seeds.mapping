@@ -1,4 +1,0 @@
-CLASS net/minecraft/class_119 net/minecraft/item/Seeds
-	FIELD field_333 blockId I
-	METHOD <init> (II)V
-		ARG 2 blockId

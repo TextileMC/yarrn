@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_69 net/minecraft/block/LiquidBlock
-	METHOD method_146 (Lnet/minecraft/class_101;IIILnet/minecraft/class_92;)D
-		ARG 0 world
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-		ARG 4 material

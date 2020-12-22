@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_231 net/minecraft/client/gui/screen/TwoLineTextScreen
-	FIELD field_901 line1 Ljava/lang/String;
-	FIELD field_902 line2 Ljava/lang/String;

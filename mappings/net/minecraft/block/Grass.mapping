@@ -1,3 +1,0 @@
-CLASS net/minecraft/class_47 net/minecraft/block/Grass
-	METHOD <init> (I)V
-		ARG 1 id

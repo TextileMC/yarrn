@@ -1,8 +1,0 @@
-CLASS net/minecraft/class_110 net/minecraft/recipe/RecipeDispatcher
-	FIELD field_326 INSTANCE Lnet/minecraft/class_110;
-	FIELD field_327 recipes Ljava/util/List;
-	METHOD method_302 getInstance ()Lnet/minecraft/class_110;
-	METHOD method_303 addShapedRecipe (Lnet/minecraft/class_127;[Ljava/lang/Object;)V
-		ARG 1 output
-		ARG 2 args
-	METHOD method_304 getOutput ([I)Lnet/minecraft/class_127;

@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_145 net/minecraft/entity/nonliving/PrimedTNT
-	FIELD field_488 fuseLength I
-	METHOD <init> (Lnet/minecraft/class_101;FFF)V
-		ARG 1 world
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z

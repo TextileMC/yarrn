@@ -1,6 +1,0 @@
-CLASS net/minecraft/class_36 net/minecraft/block/tile/Furnace
-	FIELD field_79 stacks [Lnet/minecraft/class_127;
-	METHOD method_76 getBurnTime (Lnet/minecraft/class_127;)I
-		ARG 0 stack
-	METHOD method_79 getSmeltedId (I)I
-		ARG 0 originalId

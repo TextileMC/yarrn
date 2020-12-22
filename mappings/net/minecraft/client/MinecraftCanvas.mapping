@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_200 net/minecraft/client/MinecraftCanvas
-	FIELD field_816 applet Lnet/minecraft/class_158;

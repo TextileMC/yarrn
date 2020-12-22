@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_95 net/minecraft/world/ChunkAccess
-	METHOD method_171 isChunkLoaded (II)Z
-		ARG 1 x
-		ARG 2 z
-	METHOD method_175 getChunk (II)Lnet/minecraft/class_99;
-		ARG 1 x
-		ARG 2 z
