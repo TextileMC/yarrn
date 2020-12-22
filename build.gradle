@@ -27,7 +27,7 @@ import java.time.ZoneId
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
-def minecraft_version = "inf-20100618"
+def minecraft_version = "inf-20100630-2"
 
 def ENV = System.getenv()
 
@@ -76,7 +76,7 @@ def tempDir = file(".gradle/temp")
 def mergedFile = file("${minecraft_version}-merged.jar")
 def intermediaryJar = file("${minecraft_version}-intermediary.jar")
 def namedJar = file("${minecraft_version}-named.jar")
-def versionFile = new File(cacheFilesMinecraft, "${minecraft_version}.json")
+def versionFile = file("inf-20100630-2.json")
 def clientJar = new File(cacheFilesMinecraft, "${minecraft_version}-client.jar")
 def libraries = new File(cacheFilesMinecraft, "libraries")
 def libs = new File("build/libs/")
@@ -151,7 +151,7 @@ task downloadWantedVersionManifest(dependsOn: downloadVersionsManifest) {
 	outputs.file versionFile
 
 	doLast {
-		manifestVersion = getManifestVersion(manifestFile, minecraft_version)
+		versionFile = file("inf-20100630-2.json")
 		//nb need to re-read here in case it didn't exist before
 		if (manifestVersion.isPresent() || versionFile.exists()) {
 
@@ -196,7 +196,7 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 
 task downloadIntermediary(type: Download) {
 	group = buildMappingGroup
-	def url = "https://maven.concern.i.ng/net/textilemc/intermediary/${minecraft_version}/${minecraft_version}.tiny"
+	def url = "https://gist.githubusercontent.com/PheonixVX/6e2b5ab5c75beb3223cc6b4aadd61da7/raw/a17ece22f71eb8c88d4107b931e6c719b8ec1577/inf-20100630-2.tiny"
 	src com.google.common.net.UrlEscapers.urlFragmentEscaper().escape(url)
 	dest new File(cacheFilesMinecraft, "${minecraft_version}-intermediary.tiny")
 }
