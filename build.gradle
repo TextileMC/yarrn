@@ -72,7 +72,7 @@ def tempDir = file(".gradle/temp")
 def mergedFile = file("${minecraft_version}-merged.jar")
 def intermediaryJar = file("${minecraft_version}-intermediary.jar")
 def namedJar = file("${minecraft_version}-named.jar")
-// Put inf-20100227.json into ~/.gradle/minecraft
+// Put inf-20100227.json into /.gradle/minecraft
 def versionFile = new File(cacheFilesMinecraft, "${minecraft_version}.json")
 def clientJar = new File(cacheFilesMinecraft, "${minecraft_version}-client.jar")
 def libraries = new File(cacheFilesMinecraft, "libraries")
@@ -148,8 +148,8 @@ task downloadWantedVersionManifest(dependsOn: downloadVersionsManifest) {
 	outputs.file versionFile
 
 	doLast {
-		manifestVersion = getManifestVersion(manifestFile, minecraft_version)
-		//nb need to re-read here in case it didn't exist before
+		versionFile = file("inf-20100227.json")
+		//no need to re-read here in case it didn't exist before
 		if (manifestVersion.isPresent() || versionFile.exists()) {
 
 			if (manifestVersion.isPresent()) {
@@ -193,7 +193,7 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 
 task downloadIntermediary(type: Download) {
 	group = buildMappingGroup
-	def url = "https://gist.githubusercontent.com/PheonixVX/a4dd5871c299d8c0e201965e29946f76/raw/5368363f32876f2c9bb2aab91242bc7dfd1fcec2/inf-20100227.tiny"
+	def url = "https://gist.githubusercontent.com/PheonixVX/a4dd5871c299d8c0e201965e29946f76/raw/a94b1987e17c54f9eb93f78e15397a8dd96f8964/inf-20100227.tiny"
 	src com.google.common.net.UrlEscapers.urlFragmentEscaper().escape(url)
 	dest new File(cacheFilesMinecraft, "${minecraft_version}-intermediary.tiny")
 }

@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_107 net/minecraft/recipe/ShapedRecipe
+	FIELD field_319 width I
+	FIELD field_320 height I
+	FIELD field_321 itemBuffer [I
+	METHOD method_297 matches ([I)Z
+		ARG 1 items

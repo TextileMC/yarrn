@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_78 net/minecraft/block/FallingBlock
+	COMMENT Represents a block that can fall
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 meta

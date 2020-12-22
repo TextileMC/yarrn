@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_133 net/minecraft/entity/nonliving/Painting
+	FIELD field_432 direction I

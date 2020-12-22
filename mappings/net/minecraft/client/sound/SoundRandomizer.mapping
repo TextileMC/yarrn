@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_249 net/minecraft/client/sound/SoundRandomizer
+	FIELD field_1005 random Ljava/util/Random;
+	FIELD field_1006 soundLocations Ljava/util/Map;
+	FIELD field_1007 soundCount I
+	METHOD method_630 getRandomSound (Ljava/lang/String;)Lnet/minecraft/class_248;
+		ARG 1 category
+	METHOD method_631 registerSound (Ljava/lang/String;Ljava/io/File;)Lnet/minecraft/class_248;
+		ARG 1 category
+		ARG 2 file

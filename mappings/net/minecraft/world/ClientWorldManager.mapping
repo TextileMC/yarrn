@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_176 net/minecraft/world/ClientWorldManager
+	FIELD field_629 loadedChunks I
+	FIELD field_630 renderedNonVisibleChunks I

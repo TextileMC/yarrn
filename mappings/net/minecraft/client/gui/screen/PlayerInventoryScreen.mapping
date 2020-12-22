@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_223 net/minecraft/client/gui/screen/PlayerInventoryScreen
+	FIELD field_879 crafting Lnet/minecraft/class_218;
+	FIELD field_880 playerInventory Lnet/minecraft/class_103;

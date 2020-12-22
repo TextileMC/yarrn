@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_153 net/minecraft/storage/PlayerInventory
+	METHOD <init> (Lnet/minecraft/class_152;)V
+		ARG 1 player
+	METHOD method_383 contains (I)Z
+	METHOD method_384 indexOf (I)I
+		ARG 1 id
+			COMMENT The item id

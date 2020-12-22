@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_140 net/minecraft/entity/Entity
+	FIELD field_462 prevX D
+	FIELD field_463 prevY D
+	FIELD field_467 z D
+	FIELD field_468 motionX D
+	FIELD field_471 yaw F
+	FIELD field_472 pitch F
+	METHOD method_336 refreshPositionAndAngles (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yaw
+		ARG 8 pitch
+	METHOD method_358 getTextureLocation ()Ljava/lang/String;
+	METHOD method_359 isAlive ()Z

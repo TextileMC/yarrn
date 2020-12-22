@@ -1,0 +1,24 @@
+CLASS net/minecraft/class_275 net/minecraft/client/options/Options
+	FIELD field_1075 music Z
+	FIELD field_1076 sound Z
+	FIELD field_1077 invertMouse Z
+	FIELD field_1078 debugEnabled Z
+	FIELD field_1079 renderDistance I
+	FIELD field_1080 viewBobbing Z
+	FIELD field_1081 anaglyph Z
+	FIELD field_1082 limitFramerate Z
+	METHOD <init> (Lnet/minecraft/class_243;Ljava/io/File;)V
+		ARG 1 instance
+		ARG 2 mcDir
+	METHOD method_661 save ()V
+	METHOD method_662 getKeybindText (I)Ljava/lang/String;
+		ARG 1 id
+	METHOD method_663 setKeybind (II)V
+		ARG 1 id
+		ARG 2 keyCode
+	METHOD method_664 load ()V
+	METHOD method_665 getOptionText (I)Ljava/lang/String;
+		ARG 1 option
+	METHOD method_666 setOption (II)V
+		ARG 1 id
+		ARG 2 state

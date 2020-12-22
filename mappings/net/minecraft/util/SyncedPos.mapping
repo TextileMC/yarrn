@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_29 net/minecraft/util/SyncedPos
+	FIELD field_50 x I
+	FIELD field_51 y I
+	FIELD field_52 z I
+	FIELD field_53 packed I
+	METHOD <init> (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_48 distanceTo (Lnet/minecraft/class_29;)F

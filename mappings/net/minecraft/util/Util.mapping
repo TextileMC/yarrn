@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_159 net/minecraft/util/Util
+	FIELD field_592 description Ljava/lang/String;
+	FIELD field_595 time J
+	METHOD <init> (Lnet/minecraft/class_243;)V
+		ARG 1 client

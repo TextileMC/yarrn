@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_103 net/minecraft/storage/Inventory
+	METHOD method_289 size ()I
+	METHOD method_293 getName ()Ljava/lang/String;

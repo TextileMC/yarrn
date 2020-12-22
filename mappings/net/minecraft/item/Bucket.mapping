@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_114 net/minecraft/item/Bucket
+	METHOD <init> (II)V
+		ARG 1 id

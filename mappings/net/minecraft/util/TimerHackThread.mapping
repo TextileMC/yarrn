@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_272 net/minecraft/util/TimerHackThread
+	METHOD <init> (Lnet/minecraft/class_243;Ljava/lang/String;)V
+		ARG 1 client
+		ARG 2 name

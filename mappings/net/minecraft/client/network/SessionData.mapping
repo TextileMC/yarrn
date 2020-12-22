@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_270 net/minecraft/client/network/SessionData
+	FIELD field_1062 blocks Ljava/util/List;
+	FIELD field_1063 username Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 username

@@ -1,5 +1,6 @@
-CLASS net/minecraft/client/MinecraftApplet net/minecraft/client/MinecraftApplet
+CLASS net/minecraft/class_158 net/minecraft/client/MinecraftApplet
 	FIELD field_589 canvas Ljava/awt/Canvas;
-	FIELD field_590 client Lnet/minecraft/client/d;
-	FIELD field_591 thread Ljava/lang/Thread;
-	METHOD init ()V
+	FIELD field_590 client Lnet/minecraft/class_243;
+	FIELD field_591 minecraftClientThread Ljava/lang/Thread;
+	METHOD method_421 startMinecraft ()V
+	METHOD method_422 stopMinecraft ()V

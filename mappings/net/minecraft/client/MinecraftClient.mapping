@@ -1,6 +1,23 @@
-CLASS net/minecraft/client/d net/minecraft/client/MinecraftClient
-	FIELD field_617 applet Lnet/minecraft/client/MinecraftApplet;
-	FIELD field_624 canvas Ljava/awt/Canvas;
-	METHOD <init> (Ljava/awt/Canvas;Lnet/minecraft/client/MinecraftApplet;IIZ)V
-		ARG 1 canvas
-		ARG 2 minecraftApplet
+CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
+	COMMENT The Main entrypoint for the client. Ran right after MinecraftApplet has started.
+	FIELD field_952 appletWidth I
+	FIELD field_953 appletHeight I
+	FIELD field_961 canvasWidth I
+	FIELD field_962 canvasHeight I
+	FIELD field_964 worldManager Lnet/minecraft/class_176;
+	FIELD field_966 particleManager Lnet/minecraft/class_255;
+	FIELD field_967 sessionData Lnet/minecraft/class_270;
+	FIELD field_968 host Ljava/lang/String;
+	METHOD <init> (Ljava/awt/Canvas;Lnet/minecraft/class_158;IIZ)V
+		ARG 1 window
+		ARG 2 args
+		ARG 3 width
+		ARG 4 height
+		ARG 5 fullscreen
+	METHOD method_602 reinitalizeScreen (II)V
+		ARG 1 height
+		ARG 2 width
+	METHOD method_607 showScreen (Lnet/minecraft/class_236;)V
+		ARG 1 screen
+	METHOD method_608 shutdown ()V
+	METHOD method_610 stopRunning ()V
