@@ -1,15 +1,1 @@
 CLASS net/minecraft/class_98 net/minecraft/world/FileChunkAccess
-	FIELD field_255 chunkCache [Lnet/minecraft/class_99;
-	FIELD field_256 worldDir Ljava/io/File;
-	FIELD field_257 world Lnet/minecraft/class_101;
-	METHOD <init> (Lnet/minecraft/class_101;Ljava/io/File;Lnet/minecraft/class_95;)V
-		ARG 1 world
-		ARG 2 worldDir
-	METHOD method_180 writeChunkToFile (Lnet/minecraft/class_99;)V
-		ARG 1 chunk
-	METHOD method_181 getChunkFile (II)Ljava/io/File;
-		ARG 1 chunkX
-		ARG 2 chunkZ
-	METHOD method_182 readChunkFromFile (II)Lnet/minecraft/class_99;
-		ARG 1 chunkX
-		ARG 2 chunkZ

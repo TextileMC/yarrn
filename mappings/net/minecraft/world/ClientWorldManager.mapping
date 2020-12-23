@@ -2,8 +2,6 @@ CLASS net/minecraft/class_176 net/minecraft/world/ClientWorldManager
 	FIELD field_625 loadedEntities I
 	FIELD field_626 renderedEntities I
 	FIELD field_629 loadedChunks I
-	FIELD field_630 renderedNonVisibleChunks I
-	FIELD field_631 occlusionCullingUnrenderedChunks I
 	FIELD field_632 chunkRenders I
 	FIELD field_640 world Lnet/minecraft/class_101;
 	FIELD field_641 textureManager Lnet/minecraft/class_198;

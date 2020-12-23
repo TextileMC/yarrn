@@ -4,7 +4,6 @@ CLASS net/minecraft/class_79 net/minecraft/block/PositionedBlock
 	FIELD field_197 z I
 	FIELD field_198 id I
 	FIELD field_200 creationIndex J
-	FIELD field_201 created J
 	METHOD <init> (IIII)V
 		ARG 1 x
 		ARG 2 y

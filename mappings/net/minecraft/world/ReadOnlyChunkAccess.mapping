@@ -1,10 +1,1 @@
 CLASS net/minecraft/class_96 net/minecraft/world/ReadOnlyChunkAccess
-	FIELD field_248 chunkCache [Lnet/minecraft/class_99;
-	FIELD field_249 worldDir Ljava/io/File;
-	FIELD field_250 world Lnet/minecraft/class_101;
-	METHOD <init> (Lnet/minecraft/class_101;Ljava/io/File;)V
-		ARG 1 world
-		ARG 2 worldDir
-	METHOD method_176 readChunkFromFile (II)Lnet/minecraft/class_99;
-		ARG 1 chunkX
-		ARG 2 chunkZ

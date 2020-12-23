@@ -4,7 +4,6 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 	FIELD field_450 fireTime I
 	FIELD field_453 airTime I
 	FIELD field_454 skinLocation Ljava/lang/String;
-	FIELD field_461 world Lnet/minecraft/class_101;
 	FIELD field_462 prevX D
 	FIELD field_463 prevY D
 	FIELD field_464 prevZ D
@@ -16,14 +15,8 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 	FIELD field_470 motionZ D
 	FIELD field_471 yaw F
 	FIELD field_472 pitch F
-	FIELD field_475 boundingBox Lnet/minecraft/class_156;
-	FIELD field_478 dead Z
 	METHOD <init> (Lnet/minecraft/class_101;)V
 		ARG 1 world
-	METHOD method_326 setPosition (DDD)V
-		ARG 1 x
-		ARG 3 y
-		ARG 5 z
 	METHOD method_329 spawnDroppedItem (IIF)Lnet/minecraft/class_146;
 		ARG 1 itemId
 		ARG 2 count
@@ -55,8 +48,6 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 		ARG 1 vX
 		ARG 3 vY
 		ARG 5 vZ
-	METHOD method_349 serializeDefaultData (Lnet/minecraft/class_5;)V
-		ARG 1 tag
 	METHOD method_350 deserializeDefaultData (Lnet/minecraft/class_5;)V
 		ARG 1 tag
 	METHOD method_358 getTextureLocation ()Ljava/lang/String;

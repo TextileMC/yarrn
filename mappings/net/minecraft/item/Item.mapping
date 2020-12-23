@@ -1,7 +1,6 @@
 CLASS net/minecraft/class_123 net/minecraft/item/Item
 	FIELD field_338 STICK Lnet/minecraft/class_123;
 	FIELD field_339 BOWL Lnet/minecraft/class_123;
-	FIELD field_340 MUSHROOM_STEW Lnet/minecraft/class_123;
 	FIELD field_341 GOLD_SWORD Lnet/minecraft/class_123;
 	FIELD field_342 GOLD_SHOVEL Lnet/minecraft/class_123;
 	FIELD field_343 GOLD_PICKAXE Lnet/minecraft/class_123;
@@ -97,8 +96,5 @@ CLASS net/minecraft/class_123 net/minecraft/item/Item
 		ARG 5 y
 		ARG 6 z
 		ARG 7 usedBlockId
-	METHOD method_312 getTextureIndex ()I
-	METHOD method_313 getEfficiency (Lnet/minecraft/class_39;)F
-		ARG 1 block
 	METHOD method_315 getMaxCount ()I
 	METHOD method_316 getMaxDamage ()I

@@ -1,6 +1,5 @@
 CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_100 LIGHT_GRAY_WOOL Lnet/minecraft/class_39;
-	FIELD field_101 WHITE_WOOL Lnet/minecraft/class_39;
 	FIELD field_102 DANDELION Lnet/minecraft/class_45;
 	FIELD field_103 ROSE Lnet/minecraft/class_45;
 	FIELD field_104 BROWN_MUSHROOM Lnet/minecraft/class_45;
@@ -16,7 +15,6 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_116 GRAVEL_STEP_SOUND Lnet/minecraft/class_67;
 	FIELD field_117 GRASS_STEP_SOUND Lnet/minecraft/class_67;
 	FIELD field_121 CLOTH_STEP_SOUND Lnet/minecraft/class_67;
-	FIELD field_122 SAND_STEP_SOUND Lnet/minecraft/class_61;
 	FIELD field_124 STONE_STEP_SOUND Lnet/minecraft/class_67;
 	FIELD field_127 BOOKSHELF Lnet/minecraft/class_39;
 	FIELD field_128 MOSSY_COBBLESTONE Lnet/minecraft/class_39;
@@ -27,11 +25,8 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_133 GEAR Lnet/minecraft/class_39;
 	FIELD field_134 DIAMOND_ORE Lnet/minecraft/class_39;
 	FIELD field_135 DIAMOND_BLOCK Lnet/minecraft/class_39;
-	FIELD field_136 CRAFTING_TABLE Lnet/minecraft/class_39;
 	FIELD field_137 WHEAT Lnet/minecraft/class_39;
 	FIELD field_138 FARMLAND Lnet/minecraft/class_39;
-	FIELD field_139 FURNACE Lnet/minecraft/class_39;
-	FIELD field_140 LIT_FURNACE Lnet/minecraft/class_39;
 	FIELD field_141 SIGN Lnet/minecraft/class_39;
 	FIELD field_142 DOOR Lnet/minecraft/class_39;
 	FIELD field_143 LADDER Lnet/minecraft/class_39;
@@ -51,7 +46,6 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_161 COBBLESTONE Lnet/minecraft/class_39;
 	FIELD field_162 PLANKS Lnet/minecraft/class_39;
 	FIELD field_163 SAPLING Lnet/minecraft/class_39;
-	FIELD field_164 BEDROCK Lnet/minecraft/class_39;
 	FIELD field_165 WATER Lnet/minecraft/class_39;
 	FIELD field_166 FLOWING_WATER Lnet/minecraft/class_39;
 	FIELD field_167 LAVA Lnet/minecraft/class_39;
@@ -65,20 +59,6 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_175 LEAVES Lnet/minecraft/class_68;
 	FIELD field_176 SPONGE Lnet/minecraft/class_39;
 	FIELD field_177 GLASS Lnet/minecraft/class_39;
-	FIELD field_86 RED_WOOL Lnet/minecraft/class_39;
-	FIELD field_87 ORANGE_WOOL Lnet/minecraft/class_39;
-	FIELD field_88 YELLOW_WOOL Lnet/minecraft/class_39;
-	FIELD field_89 CHARTREUSE_WOOL Lnet/minecraft/class_39;
-	FIELD field_90 GREEN_WOOL Lnet/minecraft/class_39;
-	FIELD field_91 SPRING_GREEN_WOOL Lnet/minecraft/class_39;
-	FIELD field_92 CYAN_WOOL Lnet/minecraft/class_39;
-	FIELD field_93 CAPRI_WOOL Lnet/minecraft/class_39;
-	FIELD field_94 ULTRAMARINE_WOOL Lnet/minecraft/class_39;
-	FIELD field_95 VIOLET_WOOL Lnet/minecraft/class_39;
-	FIELD field_96 PURPLE_WOOL Lnet/minecraft/class_39;
-	FIELD field_97 MAGENTA_WOOL Lnet/minecraft/class_39;
-	FIELD field_98 ROSE_WOOL Lnet/minecraft/class_39;
-	FIELD field_99 GRAY_WOOL Lnet/minecraft/class_39;
 	METHOD <init> (IILnet/minecraft/class_92;)V
 		ARG 1 id
 		ARG 2 textureIndex
@@ -142,12 +122,6 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 2 rand
 	METHOD method_89 getDroppedStackCount (Ljava/util/Random;)I
 		ARG 1 rand
-	METHOD method_91 getMetaTextureIndex (Lnet/minecraft/class_101;IIII)I
-		ARG 1 world
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-		ARG 5 side
 	METHOD method_92 dropStacks (Lnet/minecraft/class_101;IIIIF)V
 		ARG 1 world
 	METHOD method_93 randomTick (Lnet/minecraft/class_101;IIILjava/util/Random;)V
