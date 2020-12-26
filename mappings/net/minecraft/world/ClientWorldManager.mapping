@@ -14,5 +14,7 @@ CLASS net/minecraft/class_176 net/minecraft/world/ClientWorldManager
 	METHOD method_451 toggleFancyGraphics ()V
 	METHOD method_457 reload (Lnet/minecraft/class_101;)V
 		ARG 1 world
+	METHOD method_462 (Lnet/minecraft/class_155;Lnet/minecraft/class_179;F)V
+		ARG 3 delta
 	METHOD method_464 getChunkDebugString ()Ljava/lang/String;
 	METHOD method_468 getEntityDebugString ()Ljava/lang/String;

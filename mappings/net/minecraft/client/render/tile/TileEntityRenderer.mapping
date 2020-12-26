@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_190 net/minecraft/client/render/tile/TileEntityRenderer
+	FIELD field_735 dispatcher Lnet/minecraft/class_191;
+	METHOD method_493 getTextRenderer ()Lnet/minecraft/class_238;
+	METHOD method_494 bindTexture (Ljava/lang/String;)V
+		ARG 1 id
+	METHOD method_495 render (Lnet/minecraft/class_35;DDDF)V
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 delta
+	METHOD method_496 setDispatcher (Lnet/minecraft/class_191;)V
+		ARG 1 dispatcher
