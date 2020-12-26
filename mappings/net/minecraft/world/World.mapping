@@ -102,6 +102,7 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 listener
 	METHOD method_251 kill (Lnet/minecraft/class_140;)V
 		ARG 0 entity
+	METHOD method_253 saveWorld (Z)V
 	METHOD method_254 tickEntities ()V
 	METHOD method_257 getMaterialAtPosition (III)Lnet/minecraft/class_92;
 		ARG 1 x

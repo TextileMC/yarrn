@@ -1,6 +1,12 @@
-CLASS net/minecraft/class_224
+CLASS net/minecraft/class_224 net/minecraft/client/render/InventoryItemRenderer
+	FIELD field_883 inventoryLocation I
+	FIELD field_884 x I
+	FIELD field_885 y I
 	FIELD field_886 inventory Lnet/minecraft/class_103;
 	FIELD field_887 screen Lnet/minecraft/class_227;
 	METHOD <init> (Lnet/minecraft/class_227;Lnet/minecraft/class_103;III)V
 		ARG 1 screen
 		ARG 2 inventory
+		ARG 3 invLocation
+		ARG 4 x
+		ARG 5 y

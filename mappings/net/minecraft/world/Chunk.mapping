@@ -11,6 +11,7 @@ CLASS net/minecraft/class_99 net/minecraft/world/Chunk
 	FIELD field_272 heightMap [B
 	FIELD field_274 tileEntities Ljava/util/Map;
 	FIELD field_275 entities [Ljava/util/List;
+	FIELD field_276 containsEntities Z
 	METHOD <init> (Lnet/minecraft/class_101;II)V
 		ARG 1 world
 		ARG 2 chunkX
@@ -64,6 +65,7 @@ CLASS net/minecraft/class_99 net/minecraft/world/Chunk
 	METHOD method_194 removeEntity (Lnet/minecraft/class_140;I)V
 		ARG 1 entity
 		ARG 2 syncId
+	METHOD method_196 shouldSave (Z)Z
 	METHOD method_198 getTopY (II)I
 		ARG 1 x
 		ARG 2 z

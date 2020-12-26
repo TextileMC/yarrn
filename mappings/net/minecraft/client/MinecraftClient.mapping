@@ -4,7 +4,7 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	FIELD field_944 fullscreen Z
 	FIELD field_946 ticks Lnet/minecraft/class_251;
 	FIELD field_947 canvas Ljava/awt/Canvas;
-	FIELD field_948 glutil Lnet/minecraft/class_159;
+	FIELD field_948 util Lnet/minecraft/class_159;
 	FIELD field_949 resourceDownloadThread Lnet/minecraft/class_268;
 	FIELD field_952 appletWidth I
 	FIELD field_953 appletHeight I
@@ -37,6 +37,9 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 		ARG 4 height
 		ARG 5 fullscreen
 	METHOD method_600 getMinecraftDirectory ()Ljava/io/File;
+	METHOD method_601 handleClick (I)V
+		ARG 1 mouseButton
+			COMMENT 0 if primary (usually left) mouse button, 1 if secondary
 	METHOD method_602 reinitalizeScreen (II)V
 		ARG 1 height
 		ARG 2 width

@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_182 net/minecraft/client/render/texture/DynamicTexture
 	FIELD field_686 anaglyph Z
+	METHOD method_478 tick ()V

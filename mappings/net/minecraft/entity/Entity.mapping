@@ -30,6 +30,9 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 		ARG 3 yOffset
 	METHOD method_330 serialize (Lnet/minecraft/class_5;)V
 		ARG 1 tag
+	METHOD method_332 onDamage (Lnet/minecraft/class_140;I)Z
+		ARG 1 attacker
+		ARG 2 amount
 	METHOD method_333 onPlayerCollision (Lnet/minecraft/class_152;)V
 		ARG 1 player
 	METHOD method_334 packDoubles ([D)Lnet/minecraft/class_8;
@@ -47,7 +50,7 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 	METHOD method_342 squaredDistanceTo (Lnet/minecraft/class_140;)D
 		ARG 1 another
 	METHOD method_344 tick ()V
-	METHOD method_346 (Lnet/minecraft/class_5;)Z
+	METHOD method_346 serializeIfNotDead (Lnet/minecraft/class_5;)Z
 		ARG 1 tag
 	METHOD method_347 onCollide (Lnet/minecraft/class_140;)V
 		ARG 1 entity

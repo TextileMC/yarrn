@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_256 net/minecraft/client/entity/particle/PickedUpItem
+	FIELD field_1028 pickedUpItemEntity Lnet/minecraft/class_140;
+	FIELD field_1029 player Lnet/minecraft/class_154;
+	METHOD <init> (Lnet/minecraft/class_101;Lnet/minecraft/class_140;Lnet/minecraft/class_154;F)V
+		ARG 1 world
+		ARG 2 pickedUpItem
+		ARG 3 player

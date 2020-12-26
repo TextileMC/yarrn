@@ -9,5 +9,5 @@ CLASS net/minecraft/class_107 net/minecraft/recipe/ShapedRecipe
 		ARG 3 itemBuffer
 		ARG 4 output
 	METHOD method_296 getOutput ()Lnet/minecraft/class_127;
-	METHOD method_297 matches ([I)Z;
+	METHOD method_297 matches ([I)Z
 		ARG 1 items
