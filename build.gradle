@@ -31,7 +31,9 @@ def minecraft_version = "inf-20100618"
 
 def ENV = System.getenv()
 
-def build_version = LocalDate.now(ZoneId.of("UTC")).format(DateTimeFormatter.ISO_ORDINAL_DATE).replace('-', 'd').substring(2)
+def now = LocalDate.now(ZoneId.of("UTC")).format(DateTimeFormatter.ISO_ORDINAL_DATE).replace('-', 'd').substring(2)
+println("Current version: " + now)
+def build_version = now
 
 def yarnVersion = "${minecraft_version}+build${build_version}"
 
