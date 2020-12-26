@@ -7,5 +7,6 @@ CLASS net/minecraft/class_170 net/minecraft/client/render/entity/EntityRenderDis
 		ARG 1 clazz
 	METHOD method_440 setWorld (Lnet/minecraft/class_101;)V
 		ARG 1 world
+	METHOD method_441 setup (Lnet/minecraft/class_101;Lnet/minecraft/class_198;Lnet/minecraft/class_238;Lnet/minecraft/class_152;Lnet/minecraft/class_275;F)V
 	METHOD method_442 byEntity (Lnet/minecraft/class_140;)Lnet/minecraft/class_166;
 		ARG 1 e
