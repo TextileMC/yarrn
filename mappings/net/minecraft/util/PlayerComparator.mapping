@@ -1,0 +1,2 @@
+CLASS net/minecraft/class_160 net/minecraft/util/PlayerComparator
+	FIELD field_596 player Lnet/minecraft/class_152;

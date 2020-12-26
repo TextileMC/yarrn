@@ -9,6 +9,8 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	FIELD field_952 appletWidth I
 	FIELD field_953 appletHeight I
 	FIELD field_954 minecraftDirectory Ljava/io/File;
+	FIELD field_955 stillWaterTexture Lnet/minecraft/class_187;
+	FIELD field_956 stillLavaTexture Lnet/minecraft/class_184;
 	FIELD field_957 mcDir Ljava/io/File;
 	FIELD field_959 initTime J
 	FIELD field_961 canvasWidth I
@@ -26,6 +28,7 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	FIELD field_974 gameRenderer Lnet/minecraft/class_192;
 	FIELD field_975 loadmapUser Ljava/lang/String;
 	FIELD field_976 loadmapId I
+	FIELD field_977 hudRenderer Lnet/minecraft/class_240;
 	FIELD field_980 options Lnet/minecraft/class_275;
 	FIELD field_981 soundManager Lnet/minecraft/class_250;
 	FIELD field_983 running Z

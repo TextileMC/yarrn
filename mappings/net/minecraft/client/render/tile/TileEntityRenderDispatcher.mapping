@@ -2,4 +2,18 @@ CLASS net/minecraft/class_191 net/minecraft/client/render/tile/TileEntityRenderD
 	FIELD field_736 instance Lnet/minecraft/class_191;
 	FIELD field_740 textureManager Lnet/minecraft/class_198;
 	FIELD field_741 renderers Ljava/util/Map;
+	FIELD field_742 textRenderer Lnet/minecraft/class_238;
 	FIELD field_743 world Lnet/minecraft/class_101;
+	METHOD method_497 getTextRenderer ()Lnet/minecraft/class_238;
+	METHOD method_498 getTileEntityRenderer (Ljava/lang/Class;)Lnet/minecraft/class_190;
+		ARG 1 tileEntityClass
+	METHOD method_499 hasRenderer (Lnet/minecraft/class_35;)Z
+	METHOD method_500 render (Lnet/minecraft/class_35;DDDF)V
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 delta
+	METHOD method_501 render (Lnet/minecraft/class_35;F)V
+		ARG 2 delta
+	METHOD method_502 setup (Lnet/minecraft/class_101;Lnet/minecraft/class_198;Lnet/minecraft/class_238;Lnet/minecraft/class_152;F)V
+	METHOD method_503 getTileEntityRenderer (Lnet/minecraft/class_35;)Lnet/minecraft/class_190;
