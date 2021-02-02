@@ -1,0 +1,15 @@
+CLASS net/minecraft/class_33 net/minecraft/entity/NaturalEntitySpawn
+	COMMENT A class which spawns entities if the entity amount is below a threshold by method call
+	FIELD field_68 entityLimit I
+	FIELD field_69 random Ljava/util/Random;
+	FIELD field_70 parentEntity Ljava/lang/Class;
+	FIELD field_71 entities [Ljava/lang/Class;
+	METHOD <init> (ILjava/lang/Class;[Ljava/lang/Class;)V
+		ARG 1 entityLimit
+		ARG 2 parentEntity
+		ARG 3 entities
+	METHOD method_66 trySpawnEntity (Lnet/minecraft/class_101;)V
+		ARG 1 world
+	METHOD method_67 spawnEntity (Lnet/minecraft/class_101;ILnet/minecraft/class_140;Lnet/minecraft/class_2;)I
+		ARG 1 world
+		ARG 3 player

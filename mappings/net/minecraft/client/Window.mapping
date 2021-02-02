@@ -1,3 +1,8 @@
 CLASS net/minecraft/class_234 net/minecraft/client/Window
+	FIELD field_906 scaledWidth I
+	FIELD field_907 scaledHeight I
+	METHOD <init> (II)V
+		ARG 1 width
+		ARG 2 height
 	METHOD method_570 getScaledWidth ()I
 	METHOD method_571 getScaledHeight ()I

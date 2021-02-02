@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_100
+	FIELD field_277 illumationSource Lnet/minecraft/class_94;
+	FIELD field_278 x1 I
+	FIELD field_279 y1 I
+	FIELD field_280 z1 I
+	FIELD field_281 x2 I
+	FIELD field_282 y2 I
+	FIELD field_283 z2 I
+	METHOD <init> (Lnet/minecraft/class_94;IIIIII)V
+		ARG 1 illuminationSource
+		ARG 2 x1
+		ARG 3 y1
+		ARG 4 z1
+		ARG 5 x2
+		ARG 6 y2
+		ARG 7 z2

@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_102 net/minecraft/util/TripleInt
+	FIELD field_312 i1 I
+	FIELD field_313 i2 I
+	FIELD field_314 i3 I
+	METHOD <init> (III)V
+		ARG 1 i1
+		ARG 2 i2
+		ARG 3 i3
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 o

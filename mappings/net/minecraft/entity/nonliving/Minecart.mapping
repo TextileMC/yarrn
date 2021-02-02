@@ -1,5 +1,5 @@
 CLASS net/minecraft/class_148 net/minecraft/entity/nonliving/Minecart
-	FIELD field_497 inventory [Lnet/minecraft/class_127;
+	FIELD field_497 items [Lnet/minecraft/class_127;
 	METHOD <init> (Lnet/minecraft/class_101;DDD)V
 		ARG 1 world
 		ARG 2 x

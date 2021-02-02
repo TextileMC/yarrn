@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_278 net/minecraft/client/isom/MinecraftIsomClient
+	FIELD field_1107 showHelpText Z
+	FIELD field_1108 world Lnet/minecraft/class_101;
+	FIELD field_1109 minecraftDir Ljava/io/File;
+	FIELD field_1113 z I
+	FIELD field_1114 x I
+	METHOD method_668 setTimeOfDay (I)V
+		ARG 1 time
+	METHOD method_670 setWorld (Ljava/lang/String;)V
+		ARG 1 worldName

@@ -66,6 +66,7 @@ CLASS net/minecraft/class_99 net/minecraft/world/Chunk
 		ARG 1 entity
 		ARG 2 syncId
 	METHOD method_196 shouldSave (Z)Z
+		ARG 1 saveEntities
 	METHOD method_198 getTopY (II)I
 		ARG 1 x
 		ARG 2 z
@@ -81,10 +82,15 @@ CLASS net/minecraft/class_99 net/minecraft/world/Chunk
 	METHOD method_202 (II)V
 		ARG 1 x
 		ARG 2 z
-	METHOD method_203 isPosValid (III)Z
+	METHOD method_203 isPositionValid (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_204 getLightLevel (IIII)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 lightOffset
 	METHOD method_205 getTileEntity (III)Lnet/minecraft/class_35;
 		ARG 1 x
 		ARG 2 y

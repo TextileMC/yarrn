@@ -3,6 +3,7 @@ CLASS net/minecraft/class_95 net/minecraft/world/ChunkAccess
 		ARG 1 x
 		ARG 2 z
 	METHOD method_173 saveChunks (Z)V
+		ARG 1 checkEntities
 	METHOD method_174 canWrite ()Z
 	METHOD method_175 getChunk (II)Lnet/minecraft/class_99;
 		ARG 1 x

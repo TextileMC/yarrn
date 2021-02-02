@@ -3,6 +3,7 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 	FIELD field_285 playerTag Lnet/minecraft/class_5;
 	FIELD field_286 tickableTileEntities Ljava/util/List;
 	FIELD field_287 time J
+	FIELD field_288 lightOffset I
 	FIELD field_290 player Lnet/minecraft/class_140;
 	FIELD field_293 random Ljava/util/Random;
 	FIELD field_294 spawnX I
@@ -54,6 +55,11 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 		ARG 4 tileEntity
+	METHOD method_219 (IIIZ)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 isTopLevel
 	METHOD method_220 initChunkSave (Ljava/io/File;)Lnet/minecraft/class_95;
 		ARG 1 worldDir
 	METHOD method_221 loadLevelProperties (Ljava/io/File;Ljava/lang/String;)Lnet/minecraft/class_5;
@@ -73,6 +79,25 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 entities
 	METHOD method_225 addListener (Lnet/minecraft/class_28;)V
 		ARG 1 listener
+	METHOD method_226 (Lnet/minecraft/class_94;III)I
+		ARG 1 illuminationSource
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_227 (Lnet/minecraft/class_94;IIII)V
+		ARG 1 illuminationSource
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 defaultLightLevel
+	METHOD method_228 (Lnet/minecraft/class_94;IIIIII)V
+		ARG 1 illuminationSource
+		ARG 2 x1
+		ARG 3 y1
+		ARG 4 z1
+		ARG 5 x2
+		ARG 6 y2
+		ARG 7 z2
 	METHOD method_229 spawnEntity (Lnet/minecraft/class_140;)V
 		ARG 1 entity
 	METHOD method_231 playSound (Lnet/minecraft/class_140;Ljava/lang/String;FF)V
@@ -80,10 +105,12 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 name
 		ARG 3 volume
 		ARG 4 pitch
+	METHOD method_240 recursivelyDelete ([Ljava/io/File;)V
+		ARG 0 filesInFolder
 	METHOD method_243 getTopY (II)I
 		ARG 1 x
 		ARG 2 z
-	METHOD method_244 isPosValid (III)Z
+	METHOD method_244 isPositionLoaded (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -96,6 +123,9 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_248 deleteWorld (Ljava/io/File;Ljava/lang/String;)V
+		ARG 0 mcDir
+		ARG 1 worldName
 	METHOD method_249 removeEntities (Ljava/util/List;)V
 		ARG 1 entities
 	METHOD method_250 removeListener (Lnet/minecraft/class_28;)V
@@ -103,7 +133,11 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 	METHOD method_251 kill (Lnet/minecraft/class_140;)V
 		ARG 0 entity
 	METHOD method_253 saveWorld (Z)V
+		ARG 1 checkEntities
 	METHOD method_254 tickEntities ()V
+	METHOD method_256 getTopBlock (II)I
+		ARG 1 x
+		ARG 2 z
 	METHOD method_257 getMaterialAtPosition (III)Lnet/minecraft/class_92;
 		ARG 1 x
 		ARG 2 y
@@ -114,7 +148,7 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 3 z
 		ARG 4 blockId
 	METHOD method_260 getDebugStringT ()Ljava/lang/String;
-		COMMENT Documentation on what this is meant to give is unclear.
+		COMMENT Documentation on what this is meant to give is unclear. The name is set because it shows up as {@code T: text}
 	METHOD method_262 isChunkLoaded (II)Z
 		ARG 1 x
 		ARG 2 z
@@ -132,6 +166,10 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 		ARG 4 id
+	METHOD method_275 isPositionValid (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_276 (IIII)V
 		ARG 1 x
 		ARG 2 y
@@ -155,6 +193,7 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_286 isFullBlock (III)Z
 	METHOD method_288 markDirty (III)V
 		ARG 1 x
 		ARG 2 y

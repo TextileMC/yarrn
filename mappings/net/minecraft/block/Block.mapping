@@ -45,6 +45,7 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_151 maxY D
 	FIELD field_152 maxZ D
 	FIELD field_153 BLOCKS [Lnet/minecraft/class_39;
+	FIELD field_157 BLOCK_ILLUMINATION_VALUES [I
 	FIELD field_158 STONE Lnet/minecraft/class_39;
 	FIELD field_159 GRASS Lnet/minecraft/class_47;
 	FIELD field_160 DIRT Lnet/minecraft/class_39;

@@ -1,2 +1,2 @@
 CLASS net/minecraft/class_37 net/minecraft/block/tile/Chest
-	FIELD field_83 stacks [Lnet/minecraft/class_127;
+	FIELD field_83 items [Lnet/minecraft/class_127;
