@@ -34,8 +34,8 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	FIELD field_983 running Z
 	FIELD field_984 debugText Ljava/lang/String;
 	METHOD <init> (Ljava/awt/Canvas;Lnet/minecraft/class_158;IIZ)V
-		ARG 1 window
-		ARG 2 args
+		ARG 1 canvas
+		ARG 2 applet
 		ARG 3 width
 		ARG 4 height
 		ARG 5 fullscreen
@@ -62,4 +62,6 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	METHOD method_614 getChunkDebugString ()Ljava/lang/String;
 	METHOD method_615 getEntityDebugString ()Ljava/lang/String;
 	METHOD method_616 getParticleDebugString ()Ljava/lang/String;
+	METHOD method_618 unlockCursor ()V
 	METHOD method_619 tick ()V
+	METHOD run ()V

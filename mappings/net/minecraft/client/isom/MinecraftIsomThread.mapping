@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_280 net/minecraft/client/isom/MinecraftIsomThread
+	FIELD field_1125 isomClient Lnet/minecraft/class_278;
+	METHOD <init> (Lnet/minecraft/class_278;)V
+		ARG 1 isometricClient
+	METHOD run ()V

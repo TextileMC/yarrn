@@ -11,6 +11,7 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_109 STONE_SLAB Lnet/minecraft/class_39;
 	FIELD field_110 BRICKS Lnet/minecraft/class_39;
 	FIELD field_111 TNT Lnet/minecraft/class_39;
+	FIELD field_112 stepSound Lnet/minecraft/class_67;
 	FIELD field_114 material Lnet/minecraft/class_92;
 	FIELD field_115 WOOD_STEP_SOUND Lnet/minecraft/class_67;
 	FIELD field_116 GRAVEL_STEP_SOUND Lnet/minecraft/class_67;

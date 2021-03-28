@@ -11,12 +11,18 @@ CLASS net/minecraft/class_236 net/minecraft/client/gui/screen/Screen
 		ARG 1 mouseX
 		ARG 2 mouseY
 		ARG 3 delta
+	METHOD method_575 renderSlot (III)V
+		ARG 1 slotX
+		ARG 2 slotY
+		ARG 3 slots
 	METHOD method_576 onButtonClicked (Lnet/minecraft/class_242;)V
 		ARG 1 button
 	METHOD method_577 init (Lnet/minecraft/class_243;II)V
 		ARG 1 client
 		ARG 2 screenWidth
 		ARG 3 screenHeight
-	METHOD method_578 onYesNoConfirmation (ZI)V
+	METHOD method_578 onConfirmation (ZI)V
+		ARG 1 confirmation
 	METHOD method_579 init ()V
 	METHOD method_583 tick ()V
+	METHOD method_584 renderDirtBackground ()V
