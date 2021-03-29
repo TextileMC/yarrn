@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_81 net/minecraft/world/gen/noise/PerlinNoiseSampler
+	METHOD <init> (Ljava/util/Random;)V
+		ARG 1 random

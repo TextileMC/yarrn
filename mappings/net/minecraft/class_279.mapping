@@ -1,2 +1,5 @@
 CLASS net/minecraft/class_279
+	FIELD field_1117 image Ljava/awt/image/BufferedImage;
 	FIELD field_1118 world Lnet/minecraft/class_101;
+	METHOD <init> (Lnet/minecraft/class_101;II)V
+		ARG 1 world

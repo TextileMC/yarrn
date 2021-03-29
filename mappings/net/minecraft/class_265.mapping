@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_265
+	METHOD method_655 setKeyAction (IZ)V
+		ARG 1 keyCode
+		ARG 2 value
+	METHOD method_656 reset ()V

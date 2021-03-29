@@ -14,3 +14,4 @@ CLASS net/minecraft/class_188 net/minecraft/client/render/Tesselator
 	METHOD method_484 begin (I)V
 		ARG 1 drawMode
 	METHOD method_487 beginQuads ()V
+	METHOD method_490 clearColor (I)V

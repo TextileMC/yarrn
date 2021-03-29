@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_193
+	FIELD field_761 world Lnet/minecraft/class_101;
+	METHOD <init> (Lnet/minecraft/class_101;)V
+		ARG 1 world

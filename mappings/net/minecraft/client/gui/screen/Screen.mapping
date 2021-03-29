@@ -1,8 +1,8 @@
 CLASS net/minecraft/class_236 net/minecraft/client/gui/screen/Screen
 	FIELD field_912 client Lnet/minecraft/class_243;
-	FIELD field_913 screenWidth I
-	FIELD field_914 screenHeight I
-	FIELD field_915 screenItems Ljava/util/List;
+	FIELD field_913 width I
+	FIELD field_914 height I
+	FIELD field_915 children Ljava/util/List;
 	FIELD field_917 textureManager Lnet/minecraft/class_238;
 	METHOD method_573 onKeyPress (CI)V
 		ARG 1 symbol
@@ -11,12 +11,18 @@ CLASS net/minecraft/class_236 net/minecraft/client/gui/screen/Screen
 		ARG 1 mouseX
 		ARG 2 mouseY
 		ARG 3 delta
+	METHOD method_575 renderSlot (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 slots
 	METHOD method_576 onButtonClicked (Lnet/minecraft/class_242;)V
 		ARG 1 button
 	METHOD method_577 init (Lnet/minecraft/class_243;II)V
 		ARG 1 client
 		ARG 2 screenWidth
-		ARG 3 screenHeight
-	METHOD method_578 onYesNoConfirmation (ZI)V
+		ARG 3 height
+	METHOD method_578 onConfirmation (ZI)V
+		ARG 1 confirmation
 	METHOD method_579 init ()V
 	METHOD method_583 tick ()V
+	METHOD method_584 renderBackgroundTexture ()V
