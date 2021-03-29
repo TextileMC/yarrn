@@ -6,7 +6,6 @@ CLASS net/minecraft/class_268 net/minecraft/client/resource/ResourceDownloadThre
 		ARG 1 directory
 		ARG 2 client
 	METHOD method_657 dispose ()V
-	METHOD method_658 readFromURL (Ljava/net/URL;Ljava/io/File;)V
+	METHOD method_658 readFromUrl (Ljava/net/URL;Ljava/io/File;)V
 		ARG 1 url
 		ARG 2 file
-	METHOD run ()V
