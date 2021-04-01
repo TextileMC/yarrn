@@ -1,0 +1,10 @@
+CLASS net/minecraft/class_202 net/minecraft/client/render/entity/model/QuadrupedModel
+	FIELD field_817 head Lnet/minecraft/class_204;
+	FIELD field_818 torso Lnet/minecraft/class_204;
+	FIELD field_819 backRightLeg Lnet/minecraft/class_204;
+	FIELD field_820 backLeftLeg Lnet/minecraft/class_204;
+	FIELD field_821 frontRightLeg Lnet/minecraft/class_204;
+	FIELD field_822 frontLeftLeg Lnet/minecraft/class_204;
+	METHOD <init> (IF)V
+		ARG 1 legHeight
+		ARG 2 scale

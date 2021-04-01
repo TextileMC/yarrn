@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_168 net/minecraft/client/render/entity/PaintingRenderer
+	FIELD field_607 random Ljava/util/Random;

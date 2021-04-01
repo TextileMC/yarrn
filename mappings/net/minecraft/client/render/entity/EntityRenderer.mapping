@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_166 net/minecraft/client/render/entity/EntityRenderer
 	FIELD field_600 dispatcher Lnet/minecraft/class_170;
+	FIELD field_601 shadowRadius F
+	FIELD field_602 shadowOpacity F
 	METHOD method_431 bindTexture (Ljava/lang/String;)V
 		ARG 1 path
 	METHOD method_433 (Lnet/minecraft/class_140;DDDF)V

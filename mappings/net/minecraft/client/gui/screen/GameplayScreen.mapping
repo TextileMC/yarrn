@@ -1,2 +1,5 @@
 CLASS net/minecraft/class_227 net/minecraft/client/gui/screen/GameplayScreen
+	FIELD field_892 backgroundWidth I
+	FIELD field_893 backgroundHeight I
 	FIELD field_894 shownItems Ljava/util/List;
+	METHOD method_568 drawBackground ()V

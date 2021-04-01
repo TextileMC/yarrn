@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_258 net/minecraft/client/entity/particle/LavaDrip
+CLASS net/minecraft/class_260 net/minecraft/RainSpalshParticle
 	METHOD <init> (Lnet/minecraft/class_101;DDD)V
 		ARG 2 x
 		ARG 4 y

@@ -3,3 +3,4 @@ CLASS net/minecraft/class_240 net/minecraft/client/gui/screen/HudRenderer
 	FIELD field_928 random Ljava/util/Random;
 	FIELD field_929 mc Lnet/minecraft/class_243;
 	METHOD method_597 render (F)V
+		ARG 1 tickDelta

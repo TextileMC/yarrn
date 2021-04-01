@@ -4,6 +4,7 @@ CLASS net/minecraft/class_236 net/minecraft/client/gui/screen/Screen
 	FIELD field_914 screenHeight I
 	FIELD field_915 screenItems Ljava/util/List;
 	FIELD field_917 textureManager Lnet/minecraft/class_238;
+	METHOD method_572 close ()V
 	METHOD method_573 onKeyPress (CI)V
 		ARG 1 symbol
 		ARG 2 keyCode

@@ -57,6 +57,7 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 		ARG 1 screen
 	METHOD method_608 shutdown ()V
 	METHOD method_610 stopRunning ()V
+	METHOD method_611 lockCursor ()V
 	METHOD method_612 pause ()V
 	METHOD method_613 toggleFullscreen ()V
 	METHOD method_614 getChunkDebugString ()Ljava/lang/String;

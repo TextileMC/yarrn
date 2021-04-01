@@ -1,3 +1,6 @@
 CLASS net/minecraft/class_182 net/minecraft/client/render/texture/DynamicTexture
+	FIELD field_684 textureData [B
 	FIELD field_686 anaglyph Z
+	METHOD <init> (I)V
+		ARG 1 textureIndex
 	METHOD method_478 tick ()V

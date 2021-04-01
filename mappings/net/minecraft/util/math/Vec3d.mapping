@@ -6,12 +6,14 @@ CLASS net/minecraft/class_155 net/minecraft/util/math/Vec3d
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+	METHOD method_399 normalize ()Lnet/minecraft/class_155;
 	METHOD method_400 add (DDD)Lnet/minecraft/class_155;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 	METHOD method_401 subtract (Lnet/minecraft/class_155;)Lnet/minecraft/class_155;
 		ARG 1 vec
+	METHOD method_403 length ()D
 	METHOD method_404 distanceTo (Lnet/minecraft/class_155;)D
 		ARG 1 vec
 	METHOD method_406 squaredDistanceTo (Lnet/minecraft/class_155;)D

@@ -9,3 +9,4 @@ CLASS net/minecraft/class_103 net/minecraft/storage/Inventory
 		ARG 1 slot
 		ARG 2 stack
 	METHOD method_293 getName ()Ljava/lang/String;
+	METHOD method_294 maxStackSize ()I

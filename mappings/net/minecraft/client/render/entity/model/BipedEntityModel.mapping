@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_210 net/minecraft/client/render/entity/model/BipedEntityModel
+	FIELD field_852 head Lnet/minecraft/class_204;
+	FIELD field_853 helmet Lnet/minecraft/class_204;
+	FIELD field_854 torso Lnet/minecraft/class_204;
+	FIELD field_855 rightArm Lnet/minecraft/class_204;
+	FIELD field_856 leftArm Lnet/minecraft/class_204;
+	FIELD field_857 rightLeg Lnet/minecraft/class_204;
+	FIELD field_858 leftLeg Lnet/minecraft/class_204;
+	METHOD <init> (F)V
+		ARG 1 scale
+	METHOD <init> (FF)V
+		ARG 1 scale

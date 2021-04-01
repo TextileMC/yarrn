@@ -1,10 +1,22 @@
 CLASS net/minecraft/class_204 net/minecraft/client/render/ModelPart
+	FIELD field_824 pivotY F
+	FIELD field_825 pitch F
+	FIELD field_826 yaw F
+	FIELD field_827 roll F
+	FIELD field_828 mirror Z
 	FIELD field_830 contexts [Lnet/minecraft/class_212;
+	FIELD field_831 quads [Lnet/minecraft/class_211;
 	FIELD field_832 texureWidth I
 	FIELD field_833 textureHeight I
+	FIELD field_834 pivotX F
+	FIELD field_835 pivotZ F
 	METHOD <init> (II)V
 		ARG 1 texureWidth
 		ARG 2 textureHeight
+	METHOD method_552 setPivot (FFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_553 addCuboid (FFFIIIF)V
 		ARG 1 posX
 		ARG 2 posY
