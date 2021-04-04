@@ -10,13 +10,26 @@ CLASS net/minecraft/class_255 net/minecraft/client/render/ParticleManager
 		ARG 2 y
 		ARG 3 z
 	METHOD method_645 addBlockBreakingParticles (IIII)V
-		COMMENT direction:
-		COMMENT \tDOWN: \t0
-		COMMENT \tUP:\t\t1
-		COMMENT \tNORTH:\t2
-		COMMENT \tSOUTH:\t3
-		COMMENT \tWEST: \t4
-		COMMENT \tEAST:\t5
+		COMMENT <table>
+		COMMENT   <tr>
+		COMMENT     <td> DOWN: </td> <td>0</td>
+		COMMENT   </tr>
+		COMMENT   <tr>
+		COMMENT     <td> UP: </td> <td>1</td>
+		COMMENT   </tr>
+		COMMENT   <tr>
+		COMMENT     <td> NORTH: </td> <td>2</td>
+		COMMENT   </tr>
+		COMMENT   <tr>
+		COMMENT     <td> SOUTH: </td> <td>3</td>
+		COMMENT   </tr>
+		COMMENT   <tr>
+		COMMENT     <td> WEST: </td> <td>4</td>
+		COMMENT   </tr>
+		COMMENT   <tr>
+		COMMENT     <td> EAST: </td> <td>5</td>
+		COMMENT   </tr>
+		COMMENT </table>
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
