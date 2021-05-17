@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_218 net/minecraft/storage/CraftingInventory
+CLASS net/minecraft/class_218 net/minecraft/inventory/CraftingInventory
 	FIELD field_871 items [Lnet/minecraft/class_127;
 	FIELD field_872 size I
 	FIELD field_873 parent Lnet/minecraft/class_227;

@@ -1,0 +1,3 @@
+CLASS net/minecraft/class_245
+	FIELD field_995 HostileEntitySpawns Lnet/minecraft/class_33;
+	FIELD field_996 PassiveEntitySpawns Lnet/minecraft/class_33;

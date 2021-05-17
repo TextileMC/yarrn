@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_247 net/minecraft/util/OperatingSystem
+	METHOD values ()[Lnet/minecraft/class_247;

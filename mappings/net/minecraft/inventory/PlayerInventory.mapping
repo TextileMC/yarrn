@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_153 net/minecraft/storage/PlayerInventory
+CLASS net/minecraft/class_153 net/minecraft/inventory/PlayerInventory
 	FIELD field_542 items [Lnet/minecraft/class_127;
 	FIELD field_543 armor [Lnet/minecraft/class_127;
 	FIELD field_544 selectedSlot I

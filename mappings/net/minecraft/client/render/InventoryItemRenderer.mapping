@@ -10,3 +10,5 @@ CLASS net/minecraft/class_224 net/minecraft/client/render/InventoryItemRenderer
 		ARG 3 invLocation
 		ARG 4 x
 		ARG 5 y
+	METHOD method_563 (Lnet/minecraft/class_127;)Z
+		ARG 1 stack

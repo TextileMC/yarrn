@@ -10,3 +10,5 @@ CLASS net/minecraft/class_262 net/minecraft/client/entity/particle/Particle
 		ARG 8 velocityX
 		ARG 10 velocityY
 		ARG 12 velocityZ
+	METHOD method_650 (Lnet/minecraft/class_188;FFFFFF)V
+		ARG 1 tesselator

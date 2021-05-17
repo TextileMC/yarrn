@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_271
+	FIELD field_1066 component Ljava/awt/Component;
+	FIELD field_1067 robot Ljava/awt/Robot;
+	FIELD field_1070 cursor Lorg/lwjgl/input/Cursor;
+	METHOD <init> (Ljava/awt/Component;)V
+		ARG 1 component

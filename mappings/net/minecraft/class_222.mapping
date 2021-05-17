@@ -1,4 +1,5 @@
 CLASS net/minecraft/class_222
 	METHOD <init> (Lnet/minecraft/class_223;Lnet/minecraft/class_227;Lnet/minecraft/class_103;IIII)V
+		ARG 1 inventoryScreen
 		ARG 2 screen
 		ARG 3 inventory

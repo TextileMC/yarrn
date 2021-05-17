@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_92 net/minecraft/block/Material
+CLASS net/minecraft/class_92 net/minecraft/block/material/Material
 	FIELD field_228 UNKNOWN Lnet/minecraft/class_92;
 	FIELD field_229 DIRT Lnet/minecraft/class_92;
 	FIELD field_230 WOOD Lnet/minecraft/class_92;

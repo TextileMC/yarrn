@@ -4,4 +4,9 @@ CLASS net/minecraft/class_133 net/minecraft/entity/nonliving/Painting
 	FIELD field_431 tileZ I
 	FIELD field_432 direction I
 	FIELD field_433 painting Lnet/minecraft/class_149;
+	METHOD <init> (Lnet/minecraft/class_101;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_322 setDirection (I)V

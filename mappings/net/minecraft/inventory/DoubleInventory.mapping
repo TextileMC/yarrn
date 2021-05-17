@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_27 net/minecraft/storage/DoubleInventory
+CLASS net/minecraft/class_27 net/minecraft/inventory/DoubleInventory
 	FIELD field_47 name Ljava/lang/String;
 	FIELD field_48 inv1 Lnet/minecraft/class_103;
 	FIELD field_49 inv2 Lnet/minecraft/class_103;

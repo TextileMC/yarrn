@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_210 net/minecraft/entity/living/player/PlayerModel
+	FIELD field_852 head Lnet/minecraft/class_204;
+	FIELD field_853 headwear Lnet/minecraft/class_204;
+	FIELD field_854 body Lnet/minecraft/class_204;
+	FIELD field_855 right_arm Lnet/minecraft/class_204;
+	FIELD field_856 left_arm Lnet/minecraft/class_204;
+	FIELD field_857 right_leg Lnet/minecraft/class_204;
+	FIELD field_858 left_leg Lnet/minecraft/class_204;

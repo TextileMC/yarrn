@@ -5,6 +5,7 @@ CLASS net/minecraft/class_204 net/minecraft/client/render/ModelPart
 	METHOD <init> (II)V
 		ARG 1 texureWidth
 		ARG 2 textureHeight
+	METHOD method_552 setPivot (FFF)V
 	METHOD method_553 addCuboid (FFFIIIF)V
 		ARG 1 posX
 		ARG 2 posY

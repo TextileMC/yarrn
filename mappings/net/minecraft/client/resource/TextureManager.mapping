@@ -3,6 +3,8 @@ CLASS net/minecraft/class_198 net/minecraft/client/resource/TextureManager
 	FIELD field_809 textures Ljava/nio/IntBuffer;
 	FIELD field_811 dynamicTextures Ljava/util/List;
 	FIELD field_813 options Lnet/minecraft/class_275;
+	METHOD <init> (Lnet/minecraft/class_275;)V
+		ARG 1 options
 	METHOD method_541 tick ()V
 	METHOD method_542 bindTexture (I)V
 		ARG 0 textureId

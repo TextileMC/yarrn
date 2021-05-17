@@ -1,2 +1,0 @@
-CLASS net/minecraft/class_225 net/minecraft/storage/CraftingResult
-	FIELD field_888 items [Lnet/minecraft/class_127;

@@ -10,3 +10,4 @@ CLASS net/minecraft/class_149 net/minecraft/entity/nonliving/PaintingType
 		ARG 5 height
 		ARG 6 textureWidth
 		ARG 7 textureHeight
+	METHOD values ()[Lnet/minecraft/class_149;
