@@ -1,6 +1,14 @@
 CLASS net/minecraft/class_36 net/minecraft/block/tile/Furnace
 	FIELD field_79 items [Lnet/minecraft/class_127;
+	FIELD field_80 burnTime I
+	FIELD field_81 fuelTime I
+	FIELD field_82 cookTime I
 	METHOD method_76 getBurnTime (Lnet/minecraft/class_127;)I
 		ARG 0 stack
+	METHOD method_77 getScaledCookTime (I)I
+		ARG 1 value
+	METHOD method_78 getScaledBurnTime (I)I
+		ARG 1 value
 	METHOD method_79 getSmeltedId (I)I
 		ARG 0 originalId
+	METHOD method_80 isBurning ()Z

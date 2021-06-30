@@ -14,4 +14,6 @@ CLASS net/minecraft/class_35 net/minecraft/block/tile/TileEntity
 		ARG 1 tag
 	METHOD method_72 fromTag (Lnet/minecraft/class_5;)Lnet/minecraft/class_35;
 		ARG 0 tag
+	METHOD method_73 markDirty ()V
 	METHOD method_74 tick ()V
+	METHOD method_75 getTileID ()I
