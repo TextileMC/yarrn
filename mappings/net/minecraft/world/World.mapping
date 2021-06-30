@@ -79,12 +79,12 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 entities
 	METHOD method_225 addListener (Lnet/minecraft/class_28;)V
 		ARG 1 listener
-	METHOD method_226 (Lnet/minecraft/class_94;III)I
+	METHOD method_226 getLightAtPos (Lnet/minecraft/class_94;III)I
 		ARG 1 illuminationSource
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_227 (Lnet/minecraft/class_94;IIII)V
+	METHOD method_227 setLightLevel (Lnet/minecraft/class_94;IIII)V
 		ARG 1 illuminationSource
 		ARG 2 x
 		ARG 3 y
@@ -157,6 +157,10 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 	METHOD method_266 getPlayer ()Lnet/minecraft/class_140;
+	METHOD method_268 getChunkAtPosition (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_269 (IIII)V
 		ARG 1 x
 		ARG 2 y

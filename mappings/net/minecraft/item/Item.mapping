@@ -85,6 +85,7 @@ CLASS net/minecraft/class_123 net/minecraft/item/Item
 	METHOD method_308 canMine (Lnet/minecraft/class_39;)Z
 		ARG 1 block
 	METHOD method_309 useAsWeapon (Lnet/minecraft/class_127;)V
+		ARG 1 stack
 	METHOD method_310 use (Lnet/minecraft/class_127;Lnet/minecraft/class_101;Lnet/minecraft/class_152;)Lnet/minecraft/class_127;
 		COMMENT @return The stack that should replace the stack in the hand of the user
 		ARG 1 stack
@@ -102,5 +103,6 @@ CLASS net/minecraft/class_123 net/minecraft/item/Item
 	METHOD method_313 getEfficiency (Lnet/minecraft/class_39;)F
 		ARG 1 block
 	METHOD method_314 useAsTool (Lnet/minecraft/class_127;)V
+		ARG 1 stack
 	METHOD method_315 getMaxCount ()I
 	METHOD method_316 getMaxDamage ()I
