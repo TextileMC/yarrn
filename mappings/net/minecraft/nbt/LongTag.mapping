@@ -1,2 +1,4 @@
 CLASS net/minecraft/class_3 net/minecraft/nbt/LongTag
 	FIELD field_2 data J
+	METHOD <init> (J)V
+		ARG 1 data

@@ -1,2 +1,4 @@
 CLASS net/minecraft/class_10 net/minecraft/nbt/ShortTag
 	FIELD field_10 data S
+	METHOD <init> (S)V
+		ARG 1 data
