@@ -11,13 +11,21 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_109 STONE_SLAB Lnet/minecraft/class_39;
 	FIELD field_110 BRICKS Lnet/minecraft/class_39;
 	FIELD field_111 TNT Lnet/minecraft/class_39;
+	FIELD field_112 stepSound Lnet/minecraft/class_67;
+	FIELD field_113 blockParticleGravity F
 	FIELD field_114 material Lnet/minecraft/class_92;
 	FIELD field_115 WOOD_STEP_SOUND Lnet/minecraft/class_67;
 	FIELD field_116 GRAVEL_STEP_SOUND Lnet/minecraft/class_67;
 	FIELD field_117 GRASS_STEP_SOUND Lnet/minecraft/class_67;
+	FIELD field_118 STONE_STEP_SOUND Lnet/minecraft/class_67;
+	FIELD field_119 METAL_STEP_SOUND Lnet/minecraft/class_67;
+	FIELD field_120 GLASS_STEP_SOUND Lnet/minecraft/class_67;
 	FIELD field_121 CLOTH_STEP_SOUND Lnet/minecraft/class_67;
-	FIELD field_122 SAND_STEP_SOUND Lnet/minecraft/class_61;
-	FIELD field_124 STONE_STEP_SOUND Lnet/minecraft/class_67;
+	FIELD field_122 SAND_STEP_SOUND Lnet/minecraft/class_67;
+	FIELD field_123 CAN_BLOCK_GRASS [Z
+	FIELD field_124 POWDER_STEP_SOUND Lnet/minecraft/class_67;
+	FIELD field_125 blockHardness F
+	FIELD field_126 blockResistance F
 	FIELD field_127 BOOKSHELF Lnet/minecraft/class_39;
 	FIELD field_128 MOSSY_COBBLESTONE Lnet/minecraft/class_39;
 	FIELD field_129 OBSIDIAN Lnet/minecraft/class_39;
@@ -45,6 +53,9 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	FIELD field_151 maxY D
 	FIELD field_152 maxZ D
 	FIELD field_153 BLOCKS [Lnet/minecraft/class_39;
+	FIELD field_154 TICKING_BLOCKS [Z
+	FIELD field_155 OPAQUE_BLOCKS [Z
+	FIELD field_156 LIGHT_OPACITY [I
 	FIELD field_157 BLOCK_ILLUMINATION_VALUES [I
 	FIELD field_158 STONE Lnet/minecraft/class_39;
 	FIELD field_159 GRASS Lnet/minecraft/class_47;
@@ -87,44 +98,75 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	METHOD <init> (ILnet/minecraft/class_92;)V
 		ARG 1 id
 		ARG 2 material
-	METHOD method_100 (Lnet/minecraft/class_101;III)Lnet/minecraft/class_156;
+	METHOD method_100 getBoxFromPool (Lnet/minecraft/class_101;III)Lnet/minecraft/class_156;
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_101 isFullBlock ()Z
+	METHOD method_101 isOpaque ()Z
+	METHOD method_102 setLightValue (F)Lnet/minecraft/class_39;
+		ARG 1 lightLevel
 	METHOD method_103 onRemove (Lnet/minecraft/class_101;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_104 (Lnet/minecraft/class_101;IIII)V
+	METHOD method_104 onDestroyed (Lnet/minecraft/class_101;IIII)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 side
 	METHOD method_105 randomDisplayTick (Lnet/minecraft/class_101;IIILjava/util/Random;)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 rand
-	METHOD method_109 isFullBlock2 ()Z
-	METHOD method_116 (Lnet/minecraft/class_101;III)Lnet/minecraft/class_156;
+	METHOD method_108 setTickOnLoad (Z)V
+		ARG 1 isTicking
+	METHOD method_109 renderNormalBlock ()Z
+	METHOD method_110 setResistance (F)Lnet/minecraft/class_39;
+		ARG 1 resistance
+	METHOD method_111 setLightOpacity (I)Lnet/minecraft/class_39;
+		ARG 1 lightLevel
+	METHOD method_113 shouldSideBeRendered (Lnet/minecraft/class_101;IIII)Z
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_117 (Lnet/minecraft/class_101;IIII)V
+		ARG 5 side
+	METHOD method_115 isCollidable ()Z
+	METHOD method_116 getCollisionBoxFromPool (Lnet/minecraft/class_101;III)Lnet/minecraft/class_156;
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_117 onNeighborUpdate (Lnet/minecraft/class_101;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 side
+	METHOD method_118 getTickRate ()I
 	METHOD method_119 onPlace (Lnet/minecraft/class_101;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD method_123 dropStacks (Lnet/minecraft/class_101;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_125 getBlockBrightness (Lnet/minecraft/class_101;III)F
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_82 getRenderType ()I
+	METHOD method_83 setHardness (F)Lnet/minecraft/class_39;
+		ARG 1 hardness
 	METHOD method_84 setHitbox (FFFFFF)V
 		ARG 1 minX
 		ARG 2 minY
@@ -163,3 +205,5 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 		ARG 5 player
+	METHOD method_98 (Lnet/minecraft/class_152;)F
+		ARG 1 player

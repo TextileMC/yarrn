@@ -30,6 +30,7 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 		ARG 3 yOffset
 	METHOD method_330 serialize (Lnet/minecraft/class_5;)V
 		ARG 1 tag
+	METHOD method_331 isInsideOf (Lnet/minecraft/class_92;)Z
 	METHOD method_332 onDamage (Lnet/minecraft/class_140;I)Z
 		ARG 1 attacker
 		ARG 2 amount

@@ -178,6 +178,7 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_278 getLightBrightness (III)F
 	METHOD method_279 onLightUpdate (IIII)V
 		ARG 1 x
 		ARG 2 y
