@@ -1,0 +1,5 @@
+CLASS net/minecraft/class_30
+	FIELD field_60 positions [Lnet/minecraft/class_29;
+	FIELD field_61 idx I
+	METHOD method_50 getOffsetPosition (Lnet/minecraft/class_140;)Lnet/minecraft/class_155;
+		ARG 1 entity

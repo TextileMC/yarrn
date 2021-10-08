@@ -1,0 +1,25 @@
+CLASS net/minecraft/class_266 net/minecraft/entity/player/PlayerMovements
+	FIELD field_1055 movementValues [Z
+		COMMENT <table>
+		COMMENT   <th>
+		COMMENT     <td> Movement direction </td> <td>Idx</td>
+		COMMENT   </th>
+		COMMENT   <tr>
+		COMMENT     <td> Forward: </td> <td>0</td>
+		COMMENT   </tr>
+		COMMENT   <tr>
+		COMMENT     <td> Backward: </td> <td>1</td>
+		COMMENT   </tr>
+		COMMENT   <tr>
+		COMMENT     <td> Left: </td> <td>2</td>
+		COMMENT   </tr>
+		COMMENT   <tr>
+		COMMENT     <td> Right: </td> <td>3</td>
+		COMMENT   </tr>
+		COMMENT   <tr>
+		COMMENT     <td> Jumping: </td> <td>4</td>
+		COMMENT   </tr>
+		COMMENT </table>
+	FIELD field_1056 options Lnet/minecraft/class_275;
+	METHOD <init> (Lnet/minecraft/class_275;)V
+		ARG 1 options

@@ -1,4 +1,4 @@
-CLASS net/minecraft/class_100
+CLASS net/minecraft/class_100 net/minecraft/world/IlluminatedArea
 	FIELD field_277 illumationSource Lnet/minecraft/class_94;
 	FIELD field_278 x1 I
 	FIELD field_279 y1 I

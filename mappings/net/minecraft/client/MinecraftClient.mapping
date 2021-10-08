@@ -6,6 +6,7 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	FIELD field_947 canvas Ljava/awt/Canvas;
 	FIELD field_948 util Lnet/minecraft/class_159;
 	FIELD field_949 resourceDownloadThread Lnet/minecraft/class_268;
+	FIELD field_951 actionDelay I
 	FIELD field_952 appletWidth I
 	FIELD field_953 appletHeight I
 	FIELD field_954 minecraftDirectory Ljava/io/File;
@@ -29,6 +30,7 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	FIELD field_975 loadmapUser Ljava/lang/String;
 	FIELD field_976 loadmapId I
 	FIELD field_977 hudRenderer Lnet/minecraft/class_240;
+	FIELD field_979 target Lnet/minecraft/class_157;
 	FIELD field_980 options Lnet/minecraft/class_275;
 	FIELD field_981 soundManager Lnet/minecraft/class_250;
 	FIELD field_983 running Z
@@ -48,6 +50,9 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 		ARG 2 width
 	METHOD method_603 joinWorld (Ljava/lang/String;)V
 		ARG 1 name
+	METHOD method_604 registerSoundFile (Ljava/lang/String;Ljava/io/File;)V
+		ARG 1 s
+		ARG 2 file
 	METHOD method_605 quitWorld (Lnet/minecraft/class_101;)V
 		ARG 1 dummy
 	METHOD method_606 joinWorld (Lnet/minecraft/class_101;Ljava/lang/String;)V
@@ -56,10 +61,13 @@ CLASS net/minecraft/class_243 net/minecraft/client/MinecraftClient
 	METHOD method_607 showScreen (Lnet/minecraft/class_236;)V
 		ARG 1 screen
 	METHOD method_608 shutdown ()V
+	METHOD method_609 loadSpawn (Ljava/lang/String;)V
 	METHOD method_610 stopRunning ()V
 	METHOD method_612 pause ()V
 	METHOD method_613 toggleFullscreen ()V
 	METHOD method_614 getChunkDebugString ()Ljava/lang/String;
 	METHOD method_615 getEntityDebugString ()Ljava/lang/String;
 	METHOD method_616 getParticleDebugString ()Ljava/lang/String;
+	METHOD method_617 killPlayer ()V
 	METHOD method_619 tick ()V
+	METHOD run run ()V

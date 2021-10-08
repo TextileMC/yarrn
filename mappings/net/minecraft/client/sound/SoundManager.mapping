@@ -1,7 +1,10 @@
 CLASS net/minecraft/class_250 net/minecraft/client/sound/SoundManager
 	FIELD field_1008 soundSystem Lpaulscode/sound/SoundSystem;
 	FIELD field_1009 soundRandomizer Lnet/minecraft/class_249;
+	FIELD field_1010 musicRandomizer Lnet/minecraft/class_249;
+	FIELD field_1011 soundPlayNextId I
 	FIELD field_1012 options Lnet/minecraft/class_275;
+	FIELD field_1013 musicStopped Z
 	METHOD method_632 refreshSounds ()V
 	METHOD method_633 playSound (Ljava/lang/String;FF)V
 		ARG 1 name
@@ -14,7 +17,16 @@ CLASS net/minecraft/class_250 net/minecraft/client/sound/SoundManager
 		ARG 4 z
 		ARG 5 volume
 		ARG 6 pitch
-	METHOD method_637 (Lnet/minecraft/class_275;)V
+	METHOD method_635 registerSound (Ljava/lang/String;Ljava/io/File;)V
+		ARG 1 s
+		ARG 2 file
+	METHOD method_636 setListeningLocation (Lnet/minecraft/class_154;F)V
+		ARG 1 entity
+		ARG 2 magnitude
+	METHOD method_637 updateOptions (Lnet/minecraft/class_275;)V
 		ARG 1 opt
 	METHOD method_638 stop ()V
+	METHOD method_639 registerMusic (Ljava/lang/String;Ljava/io/File;)V
+		ARG 1 s
+		ARG 2 file
 	METHOD method_640 stopMusic ()V

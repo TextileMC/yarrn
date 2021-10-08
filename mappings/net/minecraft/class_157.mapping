@@ -1,7 +1,0 @@
-CLASS net/minecraft/class_157
-	FIELD field_582 type I
-		COMMENT The type of this object. 0 if Vec3d, 1 if Entity.
-	FIELD field_583 x I
-	FIELD field_584 y I
-	FIELD field_585 z I
-	FIELD field_588 entity Lnet/minecraft/class_140;

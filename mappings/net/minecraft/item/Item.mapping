@@ -80,6 +80,7 @@ CLASS net/minecraft/class_123 net/minecraft/item/Item
 	FIELD field_416 DIAMOND_AXE Lnet/minecraft/class_123;
 	METHOD <init> (I)V
 		ARG 1 id
+	METHOD method_306 getDamagePower ()I
 	METHOD method_307 setTextureIndex (I)Lnet/minecraft/class_123;
 		ARG 1 textureIndex
 	METHOD method_308 canMine (Lnet/minecraft/class_39;)Z

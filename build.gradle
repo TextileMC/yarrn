@@ -8,6 +8,7 @@ buildscript {
 	}
 	dependencies {
 		classpath "cuchaz:enigma-cli:${project.enigma_version}"
+		classpath "cuchaz:enigma:${project.enigma_version}"
 		classpath "net.fabricmc:stitch:${project.stitch_version}"
 		classpath "commons-io:commons-io:2.6"
 		classpath 'de.undercouch:gradle-download-task:4.0.4'
@@ -37,6 +38,9 @@ def build_version = now
 
 def yarnVersion = "${minecraft_version}+build${build_version}"
 
+Properties local = new Properties()
+local.load(project.rootProject.file('local.properties').newDataInputStream())
+
 repositories {
 	mavenCentral()
 	maven {
@@ -61,7 +65,7 @@ configurations {
 }
 
 dependencies {
-	enigmaRuntime "cuchaz:enigma-swing:${project.enigma_version}"
+	enigmaRuntime "cuchaz:enigma-swing:${project.enigma_version}:all"
 	enigmaRuntime "net.fabricmc:stitch:${project.stitch_version}"
 	javadocClasspath "net.fabricmc:fabric-loader:0.8.2+build.194"
 	javadocClasspath "com.google.code.findbugs:jsr305:3.0.2"
@@ -752,7 +756,11 @@ publishing {
 	}
 	repositories {
 		maven {
-			url "C:/Users/steve/maven"
+			url "https://maven.concern.i.ng/"
+			credentials {
+				username local.getProperty("maven.user")
+				password local.getProperty("maven.pass")
+			}
 		}
 	}
 }

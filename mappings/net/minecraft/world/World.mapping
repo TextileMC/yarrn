@@ -12,6 +12,7 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 	FIELD field_297 newWorld Z
 	FIELD field_298 seed J
 	FIELD field_299 diskSize J
+	FIELD field_300 illuminatedAreas Ljava/util/List;
 	FIELD field_301 tickableEntities Ljava/util/List;
 	FIELD field_310 listeners Ljava/util/List;
 	FIELD field_311 chunkAccess Lnet/minecraft/class_95;
@@ -165,19 +166,44 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_270 save ()V
 	METHOD method_273 (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 id
+	METHOD method_274 illuminatedAreaSize ()I
 	METHOD method_275 isPositionValid (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_276 (IIII)V
+	METHOD method_276 tryExtinguish (IIII)V
+		COMMENT Extinguish fire at a clicked position if fire exists there
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 face
+			COMMENT <table>
+			COMMENT   <tr>
+			COMMENT     <td> DOWN: </td> <td>0</td>
+			COMMENT   </tr>
+			COMMENT   <tr>
+			COMMENT     <td> UP: </td> <td>1</td>
+			COMMENT   </tr>
+			COMMENT   <tr>
+			COMMENT     <td> NORTH: </td> <td>2</td>
+			COMMENT   </tr>
+			COMMENT   <tr>
+			COMMENT     <td> SOUTH: </td> <td>3</td>
+			COMMENT   </tr>
+			COMMENT   <tr>
+			COMMENT     <td> WEST: </td> <td>4</td>
+			COMMENT   </tr>
+			COMMENT   <tr>
+			COMMENT     <td> EAST: </td> <td>5</td>
+			COMMENT   </tr>
+			COMMENT </table>
+	METHOD method_277 refreshIlluminatedAreas ()Z
 	METHOD method_278 getLightBrightness (III)F
 	METHOD method_279 onLightUpdate (IIII)V
 		ARG 1 x
@@ -199,6 +225,9 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 	METHOD method_286 isFullBlock (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_288 markDirty (III)V
 		ARG 1 x
 		ARG 2 y

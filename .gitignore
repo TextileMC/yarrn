@@ -14,3 +14,5 @@ namedSrc/
 *.iws
 *.ipr
 *.jar
+
+local.properties

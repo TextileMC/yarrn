@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_265 net/minecraft/entity/Movements
+	FIELD field_1052 leftwardVelocity F
+	FIELD field_1053 forwardVelocity F
+	FIELD field_1054 isJumping Z
+	METHOD method_654 refreshVelocities ()V
+	METHOD method_655 updateMovementValue (IZ)V
+		ARG 1 keyCode
+		ARG 2 updatedValue
+	METHOD method_656 resetMovement ()V

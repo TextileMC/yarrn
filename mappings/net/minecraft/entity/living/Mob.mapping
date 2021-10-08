@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_144 net/minecraft/entity/living/Mob
+	FIELD field_487 workingEntity Lnet/minecraft/class_140;
+	METHOD method_361 findEntity ()Lnet/minecraft/class_140;

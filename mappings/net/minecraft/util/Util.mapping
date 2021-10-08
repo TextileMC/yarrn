@@ -1,6 +1,7 @@
 CLASS net/minecraft/class_159 net/minecraft/util/Util
 	FIELD field_592 description Ljava/lang/String;
 	FIELD field_593 mc Lnet/minecraft/class_243;
+	FIELD field_594 title Ljava/lang/String;
 	FIELD field_595 time J
 	METHOD <init> (Lnet/minecraft/class_243;)V
 		ARG 1 client
@@ -9,5 +10,7 @@ CLASS net/minecraft/class_159 net/minecraft/util/Util
 		ARG 1 stream
 	METHOD method_425 readCompressed (Ljava/io/InputStream;)Lnet/minecraft/class_5;
 		ARG 0 stream
+	METHOD method_426 setContextTitle (Ljava/lang/String;)V
+		ARG 1 title
 	METHOD method_427 setContextDescription (Ljava/lang/String;)V
 		ARG 1 description

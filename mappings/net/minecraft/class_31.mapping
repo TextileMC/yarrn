@@ -1,0 +1,16 @@
+CLASS net/minecraft/class_31
+	FIELD field_64 positionCache Ljava/util/Map;
+	METHOD method_52 getPosition (III)Lnet/minecraft/class_29;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_55 (Lnet/minecraft/class_140;DDDF)Lnet/minecraft/class_30;
+		ARG 1 entity
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD method_56 (Lnet/minecraft/class_140;IIIF)Lnet/minecraft/class_30;
+		ARG 1 entity
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

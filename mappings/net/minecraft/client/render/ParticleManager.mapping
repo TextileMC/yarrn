@@ -4,6 +4,10 @@ CLASS net/minecraft/class_255 net/minecraft/client/render/ParticleManager
 	METHOD <init> (Lnet/minecraft/class_101;Lnet/minecraft/class_198;)V
 		ARG 1 world
 		ARG 2 textureManagaer
+	METHOD method_644 addBlockBreakParticles (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_646 reload (Lnet/minecraft/class_101;)V
 		ARG 1 world
 	METHOD method_648 addParticle (Lnet/minecraft/class_262;)V
