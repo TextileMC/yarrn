@@ -3,6 +3,7 @@ CLASS net/minecraft/class_236 net/minecraft/client/gui/screen/Screen
 	FIELD field_913 screenWidth I
 	FIELD field_914 screenHeight I
 	FIELD field_915 screenItems Ljava/util/List;
+	FIELD field_916 isPlayerInventory Z
 	FIELD field_917 textureManager Lnet/minecraft/class_238;
 	METHOD method_573 onKeyPress (CI)V
 		ARG 1 symbol

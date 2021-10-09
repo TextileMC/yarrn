@@ -1,5 +1,9 @@
 CLASS net/minecraft/class_240 net/minecraft/client/gui/screen/HudRenderer
 	FIELD field_926 itemRenderer Lnet/minecraft/class_165;
+	FIELD field_927 extensions Ljava/util/List;
+		COMMENT This is unused by Minecraft itself, but items in this list are rendered on screen.
 	FIELD field_928 random Ljava/util/Random;
 	FIELD field_929 mc Lnet/minecraft/class_243;
+	FIELD field_930 tickCount I
+	METHOD method_596 tickExtensions ()V
 	METHOD method_597 render (F)V

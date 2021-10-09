@@ -1,6 +1,0 @@
-CLASS net/minecraft/class_221
-	FIELD field_877 primaryInventory Lnet/minecraft/class_103;
-	METHOD <init> (Lnet/minecraft/class_227;Lnet/minecraft/class_103;Lnet/minecraft/class_103;III)V
-		ARG 1 screen
-		ARG 2 primaryInventory
-		ARG 3 secondaryInventory

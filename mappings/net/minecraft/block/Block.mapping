@@ -111,7 +111,7 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_104 onDestroyed (Lnet/minecraft/class_101;IIII)V
+	METHOD method_104 onDestroy (Lnet/minecraft/class_101;IIII)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
@@ -123,6 +123,12 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 		ARG 5 rand
+	METHOD method_106 (Lnet/minecraft/class_101;IIILnet/minecraft/class_152;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 player
 	METHOD method_108 setTickOnLoad (Z)V
 		ARG 1 isTicking
 	METHOD method_109 renderNormalBlock ()Z
@@ -130,6 +136,11 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 1 resistance
 	METHOD method_111 setLightOpacity (I)Lnet/minecraft/class_39;
 		ARG 1 lightLevel
+	METHOD method_112 onIgnite (Lnet/minecraft/class_101;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_113 shouldSideBeRendered (Lnet/minecraft/class_101;IIII)Z
 		ARG 1 world
 		ARG 2 x
@@ -150,6 +161,17 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 5 side
 	METHOD method_118 getTickRate ()I
 	METHOD method_119 onPlace (Lnet/minecraft/class_101;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_120 setFaceBasedMeta (Lnet/minecraft/class_101;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 face
+	METHOD method_122 refreshHitbox (Lnet/minecraft/class_101;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
@@ -183,8 +205,15 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	METHOD method_87 getDrop (ILjava/util/Random;)I
 		ARG 1 id
 		ARG 2 rand
+	METHOD method_88 (IZ)Z
+		ARG 1 meta
 	METHOD method_89 getDroppedStackCount (Ljava/util/Random;)I
 		ARG 1 rand
+	METHOD method_90 canPlace (Lnet/minecraft/class_101;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_91 getMetaTextureIndex (Lnet/minecraft/class_101;IIII)I
 		ARG 1 world
 		ARG 2 x
@@ -199,11 +228,28 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 		ARG 5 rand
+	METHOD method_94 onLand (Lnet/minecraft/class_101;IIILnet/minecraft/class_140;)V
+		COMMENT Called when an entity lands on this block
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
 	METHOD method_95 use (Lnet/minecraft/class_101;IIILnet/minecraft/class_152;)Z
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 player
+	METHOD method_96 (Lnet/minecraft/class_101;IIILnet/minecraft/class_155;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_97 getTarget (Lnet/minecraft/class_101;IIILnet/minecraft/class_155;Lnet/minecraft/class_155;)Lnet/minecraft/class_157;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD method_98 (Lnet/minecraft/class_152;)F
 		ARG 1 player

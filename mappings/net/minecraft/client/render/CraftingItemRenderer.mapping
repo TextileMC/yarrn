@@ -1,0 +1,9 @@
+CLASS net/minecraft/class_221 net/minecraft/client/render/CraftingItemRenderer
+	FIELD field_877 craftingInventory Lnet/minecraft/class_103;
+	METHOD <init> (Lnet/minecraft/class_227;Lnet/minecraft/class_103;Lnet/minecraft/class_103;III)V
+		ARG 1 screen
+		ARG 2 craftingInventory
+		ARG 3 craftingResult
+		ARG 4 invLocation
+		ARG 5 x
+		ARG 6 y

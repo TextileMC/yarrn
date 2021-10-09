@@ -1,5 +1,8 @@
 CLASS net/minecraft/class_239 net/minecraft/client/gui/DrawableHelper
 	FIELD field_925 zOffset F
+	METHOD method_592 (IIIIII)V
+		ARG 2 width
+		ARG 3 height
 	METHOD method_593 drawCenteredText (Lnet/minecraft/class_238;Ljava/lang/String;III)V
 		ARG 0 textRenderer
 		ARG 1 text

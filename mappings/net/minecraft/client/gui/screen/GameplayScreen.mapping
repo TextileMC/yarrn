@@ -1,2 +1,5 @@
 CLASS net/minecraft/class_227 net/minecraft/client/gui/screen/GameplayScreen
-	FIELD field_894 shownItems Ljava/util/List;
+	FIELD field_893 inventoryOffset I
+	FIELD field_894 visibleItems Ljava/util/List;
+	METHOD method_567 craft ()V
+	METHOD method_569 drawTitleText ()V

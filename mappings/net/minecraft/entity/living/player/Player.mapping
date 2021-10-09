@@ -12,7 +12,7 @@ CLASS net/minecraft/class_152 net/minecraft/entity/living/player/Player
 	METHOD method_377 throwStack (Lnet/minecraft/class_127;Z)V
 		ARG 1 stack
 	METHOD method_378 openChest (Lnet/minecraft/class_103;)V
-		ARG 1 inv
+		ARG 1 chestInventory
 	METHOD method_379 onItemPickup (Lnet/minecraft/class_140;)V
 		ARG 1 pickedUpItem
 	METHOD method_380 openCraftingScreen ()V

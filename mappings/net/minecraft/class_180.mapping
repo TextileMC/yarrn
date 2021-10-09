@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_180
+	FIELD field_676 raster [I
+	FIELD field_677 width I
+	FIELD field_678 height I

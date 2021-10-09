@@ -3,3 +3,7 @@ CLASS net/minecraft/class_222
 		ARG 1 inventoryScreen
 		ARG 2 screen
 		ARG 3 inventory
+		ARG 4 invLocation
+		ARG 5 x
+		ARG 6 y
+		ARG 7 tierLevel

@@ -5,3 +5,8 @@ CLASS net/minecraft/class_69 net/minecraft/block/LiquidBlock
 		ARG 2 y
 		ARG 3 z
 		ARG 4 material
+	METHOD method_150 (Lnet/minecraft/class_101;III)Lnet/minecraft/class_155;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

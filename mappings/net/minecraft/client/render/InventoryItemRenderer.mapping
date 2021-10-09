@@ -12,3 +12,4 @@ CLASS net/minecraft/class_224 net/minecraft/client/render/InventoryItemRenderer
 		ARG 5 y
 	METHOD method_563 (Lnet/minecraft/class_127;)Z
 		ARG 1 stack
+	METHOD method_566 markInventoryDirty ()V

@@ -1,7 +1,11 @@
 CLASS net/minecraft/class_188 net/minecraft/client/render/Tesselator
 	FIELD field_709 instance Lnet/minecraft/class_188;
+	FIELD field_712 buffer Ljava/nio/ByteBuffer;
+	FIELD field_717 color I
+	FIELD field_718 colored Z
 	FIELD field_724 drawMode I
 	FIELD field_729 tesselating Z
+	FIELD field_730 falsyUnused Z
 	METHOD method_479 end ()V
 	METHOD method_480 vertex (DDD)V
 		ARG 1 x
@@ -11,6 +15,27 @@ CLASS net/minecraft/class_188 net/minecraft/client/render/Tesselator
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+	METHOD method_482 setColor (FFF)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+	METHOD method_483 setColor (FFFF)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+		ARG 4 a
 	METHOD method_484 begin (I)V
 		ARG 1 drawMode
+	METHOD method_485 setColor (III)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+	METHOD method_486 setColor (IIII)V
+		ARG 1 r
+		ARG 2 g
+		ARG 3 b
+		ARG 4 a
 	METHOD method_487 beginQuads ()V
+	METHOD method_490 setColor (I)V
+		ARG 1 color
+	METHOD method_492 resetVariables ()V
