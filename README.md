@@ -5,6 +5,9 @@ Yarrn is [Yarn](https://github.com/FabricMC/Yarn) but infdev!
 ## Usage
 To obtain a deobfuscated Minecraft jar, [`./gradlew mapNamedJar`](#mapNamedJar) will generate a jar named like `<minecraft version>-named.jar`, which can be sent to a decompiler for deobfuscated code.
 
+To use mappings in Textile mods (or other compatible mods), [`maven.concern.i.ng/releases`](https://maven.concern.i.ng/releases) has mappings published by someone who is part of the team.
+Builds in [`maven.concern.i.ng/snapshots`](https://maven.concern.i.ng/snapshots) are generated upon every push to this repository.
+
 ## Contributing
 
 Please remember that copying and pasting mappings from alternate projects under more restrictive licenses (such as MCP, Spigot's or Mojang's obfuscation maps)
