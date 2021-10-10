@@ -34,7 +34,7 @@ def ENV = System.getenv()
 
 def now = LocalDate.now(ZoneId.of("UTC")).format(DateTimeFormatter.ISO_ORDINAL_DATE).replace('-', 'd').substring(2)
 println("Current version: " + now)
-def build_version = System.getenv("MAVEN_PUSH_BRANCH") == "snapshot" ? String.valueOf(System.currentTimeMillis()) : now
+def build_version = System.getenv("MAVEN_PUSH_BRANCH") == "snapshots" ? String.valueOf(System.currentTimeMillis()) : now
 
 def yarnVersion = "${minecraft_version}+build${build_version}"
 
