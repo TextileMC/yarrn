@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v1
       - uses: gradle/wrapper-validation-action@v1
       - run: chmod +x gradlew
-      - run: ./gradlew publish --stacktrace
+      - run: ./gradlew build javadocJar checkMappings publish --stacktrace
         env:
           MAVEN_PUSH_BRANCH: ${{ secrets.MAVEN_PUSH_BRANCH }}
           MAVEN_AUTH_USERNAME: ${{ secrets.MAVEN_AUTH_USERNAME }}
