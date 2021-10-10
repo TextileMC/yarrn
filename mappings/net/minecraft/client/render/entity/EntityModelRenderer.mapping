@@ -3,5 +3,5 @@ CLASS net/minecraft/class_172 net/minecraft/client/render/entity/EntityModelRend
 	FIELD field_623 babyModel Lnet/minecraft/class_214;
 	METHOD <init> (Lnet/minecraft/class_214;F)V
 		ARG 1 model
-	METHOD method_450 (Lnet/minecraft/class_214;)V
+	METHOD method_450 setBabyModel (Lnet/minecraft/class_214;)V
 		ARG 1 model

@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_202 net/minecraft/client/render/entity/model/QuadrupedModel
+	FIELD field_817 body Lnet/minecraft/class_204;
+	FIELD field_818 head Lnet/minecraft/class_204;
+	FIELD field_819 frontLeftLeg Lnet/minecraft/class_204;
+	FIELD field_820 frontRightLeg Lnet/minecraft/class_204;
+	FIELD field_821 backLeftLeg Lnet/minecraft/class_204;
+	FIELD field_822 backRightLeg Lnet/minecraft/class_204;

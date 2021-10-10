@@ -1,1 +1,3 @@
 CLASS net/minecraft/class_213 net/minecraft/client/render/entity/model/CreeperModel
+	FIELD field_863 body Lnet/minecraft/class_204;
+	FIELD field_864 head Lnet/minecraft/class_204;
