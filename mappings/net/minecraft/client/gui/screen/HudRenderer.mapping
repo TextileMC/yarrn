@@ -7,3 +7,4 @@ CLASS net/minecraft/class_240 net/minecraft/client/gui/screen/HudRenderer
 	FIELD field_930 tickCount I
 	METHOD method_596 tickExtensions ()V
 	METHOD method_597 render (F)V
+		ARG 1 tickDelta

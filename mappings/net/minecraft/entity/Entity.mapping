@@ -17,6 +17,7 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 	FIELD field_471 yaw F
 	FIELD field_472 pitch F
 	FIELD field_475 boundingBox Lnet/minecraft/class_156;
+	FIELD field_476 onGround Z
 	FIELD field_478 dead Z
 	FIELD field_480 horizontalOffset F
 	FIELD field_481 verticalOffset F
@@ -26,6 +27,7 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+	METHOD method_328 setBoundingBoxSpacing (FF)V
 	METHOD method_329 spawnDroppedItem (IIF)Lnet/minecraft/class_146;
 		ARG 1 itemId
 		ARG 2 count
@@ -55,6 +57,7 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 	METHOD method_343 onPlayerInteraction (Lnet/minecraft/class_152;)V
 		ARG 1 player
 	METHOD method_344 tick ()V
+	METHOD method_345 move (DDD)V
 	METHOD method_346 serializeIfNotDead (Lnet/minecraft/class_5;)Z
 		ARG 1 tag
 	METHOD method_347 onCollide (Lnet/minecraft/class_140;)V

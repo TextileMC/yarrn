@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_27 net/minecraft/storage/DoubleInventory
+	FIELD field_47 name Ljava/lang/String;
+	FIELD field_48 inv1 Lnet/minecraft/class_103;
+	FIELD field_49 inv2 Lnet/minecraft/class_103;
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/class_103;Lnet/minecraft/class_103;)V
+		ARG 1 name
+		ARG 2 inv1
+		ARG 3 inv2

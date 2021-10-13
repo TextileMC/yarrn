@@ -6,7 +6,7 @@ CLASS net/minecraft/class_268 net/minecraft/client/resource/ResourceDownloadThre
 		ARG 1 directory
 		ARG 2 client
 	METHOD method_657 setRunningTrue ()V
-	METHOD method_658 streamFileFromURL (Ljava/net/URL;Ljava/io/File;)V
-		ARG 1 url
-		ARG 2 file
+	METHOD method_658 downloadResource (Ljava/net/URL;Ljava/io/File;)V
+		ARG 1 downloadUrl
+		ARG 2 outputFile
 	METHOD run ()V

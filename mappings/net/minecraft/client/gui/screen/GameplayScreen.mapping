@@ -1,5 +1,7 @@
 CLASS net/minecraft/class_227 net/minecraft/client/gui/screen/GameplayScreen
-	FIELD field_893 inventoryOffset I
+	FIELD field_892 backgroundWidth I
+	FIELD field_893 backgroundHeight I
 	FIELD field_894 visibleItems Ljava/util/List;
 	METHOD method_567 craft ()V
+	METHOD method_568 drawBackground ()V
 	METHOD method_569 drawTitleText ()V

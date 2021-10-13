@@ -1,0 +1,12 @@
+CLASS net/minecraft/class_103 net/minecraft/storage/Inventory
+	METHOD method_289 size ()I
+	METHOD method_290 get (I)Lnet/minecraft/class_127;
+		ARG 1 slot
+	METHOD method_291 collect (II)Lnet/minecraft/class_127;
+		ARG 1 slot
+		ARG 2 amount
+	METHOD method_292 set (ILnet/minecraft/class_127;)V
+		ARG 1 slot
+		ARG 2 stack
+	METHOD method_293 getName ()Ljava/lang/String;
+	METHOD method_294 maxStackSize ()I

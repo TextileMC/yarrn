@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_221 net/minecraft/client/gui/slot/CraftingResultSlot
+	FIELD field_877 craftingInv Lnet/minecraft/class_103;
+	METHOD <init> (Lnet/minecraft/class_227;Lnet/minecraft/class_103;Lnet/minecraft/class_103;III)V
+		ARG 2 craftingInventory
+		ARG 3 playerInventory
+		ARG 4 index
+		ARG 5 x
+		ARG 6 y

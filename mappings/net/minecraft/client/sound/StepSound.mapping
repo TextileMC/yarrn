@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_67 net/minecraft/client/sound/StepSound
+	FIELD field_189 volume F
+	FIELD field_190 pitch F
 	FIELD field_191 name Ljava/lang/String;
 	METHOD <init> (Ljava/lang/String;FF)V
 		ARG 1 name

@@ -1,2 +1,5 @@
 CLASS net/minecraft/class_167 net/minecraft/client/render/entity/PlayerRenderer
+	FIELD field_603 playerModel Lnet/minecraft/class_210;
+	FIELD field_604 armorLayer2 Lnet/minecraft/class_210;
+	FIELD field_605 armorLayer1 Lnet/minecraft/class_210;
 	FIELD field_606 ARMOR_MATERIALS [Ljava/lang/String;

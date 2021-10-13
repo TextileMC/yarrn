@@ -1,6 +1,11 @@
 CLASS net/minecraft/class_262 net/minecraft/client/entity/particle/Particle
 	FIELD field_1036 age I
 	FIELD field_1037 lifespan I
+	FIELD field_1038 scale F
+	FIELD field_1039 gravityStrength F
+	FIELD field_1040 blue F
+	FIELD field_1041 green F
+	FIELD field_1042 red F
 	FIELD field_1045 textureIndex I
 	METHOD <init> (Lnet/minecraft/class_101;DDDDDD)V
 		ARG 1 world
@@ -12,3 +17,4 @@ CLASS net/minecraft/class_262 net/minecraft/client/entity/particle/Particle
 		ARG 12 velocityZ
 	METHOD method_650 (Lnet/minecraft/class_188;FFFFFF)V
 		ARG 1 tesselator
+	METHOD method_652 scale (F)Lnet/minecraft/class_262;

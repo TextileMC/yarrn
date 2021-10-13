@@ -1,14 +1,19 @@
 CLASS net/minecraft/class_239 net/minecraft/client/gui/DrawableHelper
 	FIELD field_925 zOffset F
-	METHOD method_592 (IIIIII)V
-		ARG 2 width
-		ARG 3 height
+	METHOD method_592 fillGradient (IIIIII)V
+		ARG 0 startX
+		ARG 1 startY
+		ARG 2 endX
+		ARG 3 endY
+		ARG 4 colorStart
+		ARG 5 colorEnd
 	METHOD method_593 drawCenteredText (Lnet/minecraft/class_238;Ljava/lang/String;III)V
 		ARG 0 textRenderer
 		ARG 1 text
 		ARG 2 x
 		ARG 3 y
 		ARG 4 color
+	METHOD method_594 drawTexture (IIIIII)V
 	METHOD method_595 drawText (Lnet/minecraft/class_238;Ljava/lang/String;III)V
 		ARG 0 textRenderer
 		ARG 1 text

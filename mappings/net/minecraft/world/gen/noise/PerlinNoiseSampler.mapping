@@ -1,0 +1,20 @@
+CLASS net/minecraft/class_81 net/minecraft/world/gen/noise/PerlinNoiseSampler
+	FIELD field_218 permutations [I
+	FIELD field_219 originX D
+	FIELD field_220 originY D
+	FIELD field_221 originZ D
+	METHOD method_156 sample (DD)D
+		ARG 1 x
+		ARG 3 y
+	METHOD method_157 sample (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_160 (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_161 lerp (DDD)D
+		ARG 0 delta
+		ARG 2 start
+		ARG 4 end

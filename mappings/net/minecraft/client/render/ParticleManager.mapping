@@ -1,13 +1,39 @@
 CLASS net/minecraft/class_255 net/minecraft/client/render/ParticleManager
 	FIELD field_1024 world Lnet/minecraft/class_101;
 	FIELD field_1026 textureManager Lnet/minecraft/class_198;
+	FIELD field_1027 random Ljava/util/Random;
 	METHOD <init> (Lnet/minecraft/class_101;Lnet/minecraft/class_198;)V
 		ARG 1 world
 		ARG 2 textureManagaer
-	METHOD method_644 addBlockBreakParticles (III)V
+	METHOD method_644 addBlockBreakingParticles (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD method_645 addBlockBreakingParticles (IIII)V
+		COMMENT <table>
+		COMMENT   <tr>
+		COMMENT     <td> DOWN: </td> <td>0</td>
+		COMMENT   </tr>
+		COMMENT   <tr>
+		COMMENT     <td> UP: </td> <td>1</td>
+		COMMENT   </tr>
+		COMMENT   <tr>
+		COMMENT     <td> NORTH: </td> <td>2</td>
+		COMMENT   </tr>
+		COMMENT   <tr>
+		COMMENT     <td> SOUTH: </td> <td>3</td>
+		COMMENT   </tr>
+		COMMENT   <tr>
+		COMMENT     <td> WEST: </td> <td>4</td>
+		COMMENT   </tr>
+		COMMENT   <tr>
+		COMMENT     <td> EAST: </td> <td>5</td>
+		COMMENT   </tr>
+		COMMENT </table>
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 direction
 	METHOD method_646 reload (Lnet/minecraft/class_101;)V
 		ARG 1 world
 	METHOD method_648 addParticle (Lnet/minecraft/class_262;)V

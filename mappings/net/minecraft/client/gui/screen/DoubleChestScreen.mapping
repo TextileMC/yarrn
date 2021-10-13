@@ -1,0 +1,6 @@
+CLASS net/minecraft/class_226 net/minecraft/client/gui/screen/DoubleChestScreen
+	FIELD field_889 chest1 Lnet/minecraft/class_103;
+	FIELD field_890 chest2 Lnet/minecraft/class_103;
+	METHOD <init> (Lnet/minecraft/class_103;Lnet/minecraft/class_103;)V
+		ARG 1 chest1
+		ARG 2 chest2

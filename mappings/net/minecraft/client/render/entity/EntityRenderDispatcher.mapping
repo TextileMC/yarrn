@@ -2,6 +2,7 @@ CLASS net/minecraft/class_170 net/minecraft/client/render/entity/EntityRenderDis
 	FIELD field_609 instance Lnet/minecraft/class_170;
 	FIELD field_613 textureManager Lnet/minecraft/class_198;
 	FIELD field_614 world Lnet/minecraft/class_101;
+	FIELD field_616 options Lnet/minecraft/class_275;
 	FIELD field_617 renderers Ljava/util/Map;
 	METHOD method_439 byClass (Ljava/lang/Class;)Lnet/minecraft/class_166;
 		ARG 1 clazz

@@ -1,0 +1,8 @@
+CLASS net/minecraft/class_218 net/minecraft/storage/CraftingInventory
+	FIELD field_871 items [Lnet/minecraft/class_127;
+	FIELD field_872 size I
+	FIELD field_873 parent Lnet/minecraft/class_227;
+	METHOD <init> (Lnet/minecraft/class_227;II)V
+		ARG 1 parent
+		ARG 2 width
+		ARG 3 height
