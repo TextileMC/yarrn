@@ -1,1 +1,5 @@
 CLASS net/minecraft/class_281 net/minecraft/world/ReadOnlyWorld
+	METHOD <init> (Lnet/minecraft/class_278;Ljava/io/File;Ljava/lang/String;)V
+		ARG 1 minecraftIsomClient
+		ARG 2 mcDir
+		ARG 3 name

@@ -3,3 +3,6 @@ CLASS net/minecraft/class_241 net/minecraft/client/gui/screen/ControlsScreen
 	FIELD field_932 titleText Ljava/lang/String;
 	FIELD field_933 options Lnet/minecraft/class_275;
 	FIELD field_934 focusedBinding I
+	METHOD <init> (Lnet/minecraft/class_236;Lnet/minecraft/class_275;)V
+		ARG 1 screen
+		ARG 2 options

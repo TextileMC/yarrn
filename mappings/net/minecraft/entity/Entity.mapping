@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_140 net/minecraft/entity/Entity
+	COMMENT The base for all entities in the game.
+	COMMENT Entities in this version do not have any sort of NBT tags.
 	FIELD field_440 fallDistance F
 	FIELD field_447 random Ljava/util/Random;
 	FIELD field_450 fireTime I
@@ -19,6 +21,7 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 	FIELD field_475 boundingBox Lnet/minecraft/class_156;
 	FIELD field_476 onGround Z
 	FIELD field_478 dead Z
+	FIELD field_479 verticalModifier F
 	FIELD field_480 horizontalOffset F
 	FIELD field_481 verticalOffset F
 	METHOD <init> (Lnet/minecraft/class_101;)V
@@ -28,6 +31,8 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 		ARG 3 y
 		ARG 5 z
 	METHOD method_328 setBoundingBoxSpacing (FF)V
+		ARG 1 horizontalOffset
+		ARG 2 verticalOffset
 	METHOD method_329 spawnDroppedItem (IIF)Lnet/minecraft/class_146;
 		ARG 1 itemId
 		ARG 2 count
@@ -35,7 +40,7 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 	METHOD method_330 serialize (Lnet/minecraft/class_5;)V
 		ARG 1 tag
 	METHOD method_331 isInsideOf (Lnet/minecraft/class_92;)Z
-	METHOD method_332 onDamage (Lnet/minecraft/class_140;I)Z
+	METHOD method_332 recieveDamage (Lnet/minecraft/class_140;I)Z
 		ARG 1 attacker
 		ARG 2 amount
 	METHOD method_333 onPlayerCollision (Lnet/minecraft/class_152;)V
@@ -48,6 +53,8 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 		ARG 5 z
 		ARG 7 yaw
 		ARG 8 pitch
+	METHOD method_337 handleFallDistance (F)V
+		ARG 1 fallDistance
 	METHOD method_340 spawnSingleDroppedItem (II)Lnet/minecraft/class_146;
 		ARG 1 itemId
 	METHOD method_341 deserialize (Lnet/minecraft/class_5;)V
@@ -70,6 +77,8 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 		ARG 1 tag
 	METHOD method_350 deserializeDefaultData (Lnet/minecraft/class_5;)V
 		ARG 1 tag
+	METHOD method_352 initPlayer ()V
+	METHOD method_353 setDead ()V
 	METHOD method_355 verticalOffset ()F
 	METHOD method_358 getTextureLocation ()Ljava/lang/String;
 	METHOD method_359 isAlive ()Z

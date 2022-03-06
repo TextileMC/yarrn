@@ -1,1 +1,12 @@
 CLASS net/minecraft/class_261 net/minecraft/client/entity/particle/Smoke
+	METHOD <init> (Lnet/minecraft/class_101;DDD)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD <init> (Lnet/minecraft/class_101;DDDF)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 scaleMultiplier

@@ -1,7 +1,10 @@
 CLASS net/minecraft/class_237 net/minecraft/client/gui/screen/SelectWorldScreen
 	FIELD field_918 parent Lnet/minecraft/class_236;
 	FIELD field_919 titleText Ljava/lang/String;
+	METHOD <init> (Lnet/minecraft/class_236;)V
+		ARG 1 screen
 	METHOD method_585 loadWorld (I)V
 		ARG 1 worldId
 	METHOD method_586 getWorldName (I)Ljava/lang/String;
 		ARG 0 worldId
+	METHOD method_587 addCancelButton ()V
