@@ -22,5 +22,6 @@ CLASS net/minecraft/class_154 net/minecraft/entity/living/LivingEntity
 	METHOD method_393 onDeath (Lnet/minecraft/class_140;)V
 		ARG 1 killer
 	METHOD method_394 livingTick ()V
+	METHOD method_395 getIdleSound ()Ljava/lang/String;
 	METHOD method_396 getHurtSound ()Ljava/lang/String;
 	METHOD method_397 getDeathSound ()Ljava/lang/String;

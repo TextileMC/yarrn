@@ -12,4 +12,4 @@ CLASS net/minecraft/class_36 net/minecraft/block/tile/Furnace
 	METHOD method_79 getSmeltedId (I)I
 		ARG 0 originalId
 	METHOD method_80 isBurning ()Z
-	METHOD method_81 continueSmelting ()Z
+	METHOD method_81 shouldContinueSmelting ()Z
