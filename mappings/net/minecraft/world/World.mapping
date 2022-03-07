@@ -15,7 +15,8 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 	FIELD field_299 diskSize J
 	FIELD field_300 illuminatedAreas Ljava/util/List;
 	FIELD field_301 tickableEntities Ljava/util/List;
-	FIELD field_302 worldTreeSet Ljava/util/TreeSet;
+	FIELD field_302 nonSolidBlockTreeSet Ljava/util/TreeSet;
+	FIELD field_303 nonSolidBlockSet Ljava/util/Set;
 	FIELD field_309 brightnessLevels [F
 	FIELD field_310 listeners Ljava/util/List;
 	FIELD field_311 chunkAccess Lnet/minecraft/class_95;
@@ -152,7 +153,7 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 3 z
 		ARG 4 id
 		ARG 5 meta
-	METHOD method_247 (IIIIII)Z
+	METHOD method_247 isChunksLoadedInRange (IIIIII)Z
 		ARG 1 x1
 		ARG 2 y1
 		ARG 3 z1

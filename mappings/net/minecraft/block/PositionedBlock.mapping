@@ -3,6 +3,7 @@ CLASS net/minecraft/class_79 net/minecraft/block/PositionedBlock
 	FIELD field_196 y I
 	FIELD field_197 z I
 	FIELD field_198 id I
+	FIELD field_199 age J
 	FIELD field_200 creationIndex J
 	FIELD field_201 created J
 	METHOD <init> (IIII)V
@@ -12,3 +13,5 @@ CLASS net/minecraft/class_79 net/minecraft/block/PositionedBlock
 		ARG 4 id
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_154 updateAge (J)Lnet/minecraft/class_79;
+		ARG 1 age
