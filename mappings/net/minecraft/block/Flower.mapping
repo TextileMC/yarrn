@@ -9,7 +9,7 @@ CLASS net/minecraft/class_45 net/minecraft/block/Flower
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_129 checkShouldbeBroken (Lnet/minecraft/class_101;III)V
+	METHOD method_129 shouldBreak (Lnet/minecraft/class_101;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

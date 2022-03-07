@@ -1,5 +1,4 @@
 CLASS net/minecraft/class_46 net/minecraft/block/TransparentBlock
-	FIELD field_178 transparent Z
 	METHOD <init> (IILnet/minecraft/class_92;Z)V
 		ARG 1 id
 		ARG 2 textureIndex

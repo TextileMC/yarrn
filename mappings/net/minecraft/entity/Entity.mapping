@@ -78,7 +78,7 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 	METHOD method_350 deserializeDefaultData (Lnet/minecraft/class_5;)V
 		ARG 1 tag
 	METHOD method_352 initPlayer ()V
-	METHOD method_353 setDead ()V
+	METHOD method_353 markForRemoval ()V
 	METHOD method_355 verticalOffset ()F
 	METHOD method_358 getTextureLocation ()Ljava/lang/String;
 	METHOD method_359 isAlive ()Z

@@ -38,8 +38,6 @@ def build_version = System.getenv("MAVEN_PUSH_BRANCH") == "snapshots" ? String.v
 
 def yarnVersion = "${minecraft_version}+build${build_version}"
 
-println yarnVersion
-
 repositories {
 	mavenCentral()
 	maven {

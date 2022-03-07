@@ -178,7 +178,6 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 		ARG 5 face
-	METHOD method_121 returnZero ()I
 	METHOD method_122 refreshHitbox (Lnet/minecraft/class_101;III)V
 		ARG 1 world
 		ARG 2 x

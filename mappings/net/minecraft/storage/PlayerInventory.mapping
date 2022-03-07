@@ -16,5 +16,5 @@ CLASS net/minecraft/class_153 net/minecraft/storage/PlayerInventory
 			COMMENT The item id
 	METHOD method_385 getHeldItem ()Lnet/minecraft/class_127;
 	METHOD method_386 calculateDurability ()I
-	METHOD method_387 throwItems ()V
+	METHOD method_387 dropItems ()V
 	METHOD method_388 getFirstEmptyIndex ()I

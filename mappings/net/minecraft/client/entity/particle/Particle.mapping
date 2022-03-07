@@ -17,5 +17,4 @@ CLASS net/minecraft/class_262 net/minecraft/client/entity/particle/Particle
 		ARG 12 velocityZ
 	METHOD method_650 render (Lnet/minecraft/class_188;FFFFFF)V
 		ARG 1 tesselator
-		ARG 2 g
 	METHOD method_652 scale (F)Lnet/minecraft/class_262;
