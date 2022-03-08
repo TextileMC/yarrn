@@ -7,4 +7,7 @@ CLASS net/minecraft/class_29 net/minecraft/util/SyncedPos
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 object
 	METHOD method_48 distanceTo (Lnet/minecraft/class_29;)F
+		ARG 1 pos2

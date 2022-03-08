@@ -1,3 +1,7 @@
 CLASS net/minecraft/class_46 net/minecraft/block/TransparentBlock
+	FIELD field_178 isTransparent Z
 	METHOD <init> (IILnet/minecraft/class_92;Z)V
+		ARG 1 id
+		ARG 2 textureIndex
 		ARG 3 material
+		ARG 4 transparent

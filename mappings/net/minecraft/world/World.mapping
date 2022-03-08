@@ -5,6 +5,7 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 	FIELD field_287 time J
 	FIELD field_288 lightOffset I
 	FIELD field_290 player Lnet/minecraft/class_140;
+	FIELD field_291 difficultyLevel I
 	FIELD field_293 random Ljava/util/Random;
 	FIELD field_294 spawnX I
 	FIELD field_295 spawnY I
@@ -14,6 +15,9 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 	FIELD field_299 diskSize J
 	FIELD field_300 illuminatedAreas Ljava/util/List;
 	FIELD field_301 tickableEntities Ljava/util/List;
+	FIELD field_302 nonSolidBlockTreeSet Ljava/util/TreeSet;
+	FIELD field_303 nonSolidBlockSet Ljava/util/Set;
+	FIELD field_309 brightnessLevels [F
 	FIELD field_310 listeners Ljava/util/List;
 	FIELD field_311 chunkAccess Lnet/minecraft/class_95;
 	METHOD <init> (Ljava/io/File;Ljava/lang/String;)V
@@ -23,6 +27,7 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 mcDir
 		ARG 2 worldName
 		ARG 3 seed
+	METHOD method_209 spawnPlayer ()V
 	METHOD method_210 playSound (DDDLjava/lang/String;FF)V
 		ARG 1 x
 		ARG 3 y
@@ -43,20 +48,24 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 		ARG 4 id
-	METHOD method_215 (IIIII)Z
+	METHOD method_215 setBlockWithMeta (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_217 (IIIIZ)Z
+		ARG 4 id
+		ARG 5 meta
+	METHOD method_217 canPlace (IIIIZ)Z
+		ARG 1 blockId
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 ignoreBox
 	METHOD method_218 setTileEntity (IIILnet/minecraft/class_35;)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 tileEntity
-	METHOD method_219 (IIIZ)I
+	METHOD method_219 getBrightness (IIIZ)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -101,13 +110,31 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 7 z2
 	METHOD method_229 spawnEntity (Lnet/minecraft/class_140;)V
 		ARG 1 entity
+	METHOD method_230 createExplosion (Lnet/minecraft/class_140;DDDF)V
+		ARG 1 entity
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 size
 	METHOD method_231 playSound (Lnet/minecraft/class_140;Ljava/lang/String;FF)V
 		ARG 1 entity
 		ARG 2 name
 		ARG 3 volume
 		ARG 4 pitch
+	METHOD method_232 getEntitiesinBox (Lnet/minecraft/class_140;Lnet/minecraft/class_156;)Ljava/util/List;
+		ARG 1 entity
+		ARG 2 box
+	METHOD method_233 getTargetFromVec3d (Lnet/minecraft/class_155;Lnet/minecraft/class_155;)Lnet/minecraft/class_157;
+		ARG 1 pos1
+		ARG 2 pos2
+	METHOD method_234 getTargetFromVec3d (Lnet/minecraft/class_155;Lnet/minecraft/class_155;Z)Lnet/minecraft/class_157;
+		ARG 1 pos1
+		ARG 2 pos2
+	METHOD method_236 getBlocksInBox (Lnet/minecraft/class_156;)Ljava/util/List;
+		ARG 1 box
 	METHOD method_240 recursivelyDelete ([Ljava/io/File;)V
 		ARG 0 filesInFolder
+	METHOD method_241 shouldBeIgnited ()Z
 	METHOD method_243 getTopY (II)I
 		ARG 1 x
 		ARG 2 z
@@ -120,10 +147,19 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 		ARG 4 meta
-	METHOD method_246 (IIIII)Z
+	METHOD method_246 updateBlockWithMeta (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 id
+		ARG 5 meta
+	METHOD method_247 isChunksLoadedInRange (IIIIII)Z
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 z1
+		ARG 4 x2
+		ARG 5 y2
+		ARG 6 z2
 	METHOD method_248 deleteWorld (Ljava/io/File;Ljava/lang/String;)V
 		ARG 0 mcDir
 		ARG 1 worldName
@@ -133,6 +169,8 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 listener
 	METHOD method_251 kill (Lnet/minecraft/class_140;)V
 		ARG 0 entity
+	METHOD method_252 (Lnet/minecraft/class_156;)Z
+		ARG 1 box
 	METHOD method_253 saveWorld (Z)V
 		ARG 1 checkEntities
 	METHOD method_254 tickEntities ()V
@@ -167,6 +205,10 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 	METHOD method_270 save ()V
+	METHOD method_272 getBrightness (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_273 (IIII)V
 		ARG 1 x
 		ARG 2 y
@@ -205,6 +247,9 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 			COMMENT </table>
 	METHOD method_277 refreshIlluminatedAreas ()Z
 	METHOD method_278 getLightBrightness (III)F
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD method_279 onLightUpdate (IIII)V
 		ARG 1 x
 		ARG 2 y

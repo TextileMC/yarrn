@@ -13,6 +13,9 @@ CLASS net/minecraft/class_236 net/minecraft/client/gui/screen/Screen
 		ARG 1 mouseX
 		ARG 2 mouseY
 		ARG 3 delta
+	METHOD method_575 onClick (III)V
+		ARG 1 mouseX
+		ARG 2 mouseY
 	METHOD method_576 onButtonClicked (Lnet/minecraft/class_242;)V
 		ARG 1 button
 	METHOD method_577 init (Lnet/minecraft/class_243;II)V
@@ -22,3 +25,4 @@ CLASS net/minecraft/class_236 net/minecraft/client/gui/screen/Screen
 	METHOD method_578 onYesNoConfirmation (ZI)V
 	METHOD method_579 init ()V
 	METHOD method_583 tick ()V
+	METHOD method_584 drawBackgroundTexture ()V

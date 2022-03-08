@@ -1,7 +1,16 @@
 CLASS net/minecraft/class_45 net/minecraft/block/Flower
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 textureIndex
 	METHOD method_127 canPlace (I)Z
 		ARG 1 blockId
-	METHOD method_128 (Lnet/minecraft/class_101;III)Z
+	METHOD method_128 canPlaceFlower (Lnet/minecraft/class_101;III)Z
 		ARG 1 world
-	METHOD method_129 (Lnet/minecraft/class_101;III)V
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_129 shouldBreak (Lnet/minecraft/class_101;III)V
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

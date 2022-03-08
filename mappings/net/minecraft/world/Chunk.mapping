@@ -65,8 +65,13 @@ CLASS net/minecraft/class_99 net/minecraft/world/Chunk
 	METHOD method_194 removeEntity (Lnet/minecraft/class_140;I)V
 		ARG 1 entity
 		ARG 2 syncId
+	METHOD method_195 fillListwithEntities (Lnet/minecraft/class_140;Lnet/minecraft/class_156;Ljava/util/List;)V
+		ARG 1 entity
+		ARG 2 box
+		ARG 3 entityList
 	METHOD method_196 shouldSave (Z)Z
 		ARG 1 saveEntities
+	METHOD method_197 addEntities ()V
 	METHOD method_198 getTopY (II)I
 		ARG 1 x
 		ARG 2 z
@@ -79,6 +84,7 @@ CLASS net/minecraft/class_99 net/minecraft/world/Chunk
 		ARG 2 y
 		ARG 3 z
 		ARG 4 value
+	METHOD method_201 removeEntities ()V
 	METHOD method_202 (II)V
 		ARG 1 x
 		ARG 2 z

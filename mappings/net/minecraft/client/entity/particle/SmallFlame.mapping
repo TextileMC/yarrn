@@ -1,1 +1,6 @@
 CLASS net/minecraft/class_254 net/minecraft/client/entity/particle/SmallFlame
+	METHOD <init> (Lnet/minecraft/class_101;DDD)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z

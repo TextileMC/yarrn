@@ -1,4 +1,7 @@
 CLASS net/minecraft/class_39 net/minecraft/block/Block
+
+	COMMENT This class is central in defining all the blocks in this version of the game.
+
 	FIELD field_100 LIGHT_GRAY_WOOL Lnet/minecraft/class_39;
 	FIELD field_101 WHITE_WOOL Lnet/minecraft/class_39;
 	FIELD field_102 DANDELION Lnet/minecraft/class_45;
@@ -123,12 +126,14 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 		ARG 5 rand
-	METHOD method_106 (Lnet/minecraft/class_101;IIILnet/minecraft/class_152;)V
+	METHOD method_106 useDoor (Lnet/minecraft/class_101;IIILnet/minecraft/class_152;)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 player
+	METHOD method_107 InXZBounds (Lnet/minecraft/class_155;)Z
+		ARG 1 pos
 	METHOD method_108 setTickOnLoad (Z)V
 		ARG 1 isTicking
 	METHOD method_109 renderNormalBlock ()Z
@@ -147,8 +152,10 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 		ARG 5 side
+	METHOD method_114 InXYBounds (Lnet/minecraft/class_155;)Z
+		ARG 1 pos
 	METHOD method_115 isCollidable ()Z
-	METHOD method_116 getCollisionBoxFromPool (Lnet/minecraft/class_101;III)Lnet/minecraft/class_156;
+	METHOD method_116 getCollisionBoxFromPos (Lnet/minecraft/class_101;III)Lnet/minecraft/class_156;
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
@@ -181,6 +188,7 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+		ARG 5 id
 	METHOD method_125 getBlockBrightness (Lnet/minecraft/class_101;III)F
 		ARG 1 world
 		ARG 2 x
@@ -205,7 +213,7 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 	METHOD method_87 getDrop (ILjava/util/Random;)I
 		ARG 1 id
 		ARG 2 rand
-	METHOD method_88 (IZ)Z
+	METHOD method_88 isCollidable (IZ)Z
 		ARG 1 meta
 	METHOD method_89 getDroppedStackCount (Ljava/util/Random;)I
 		ARG 1 rand
@@ -222,6 +230,11 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 5 side
 	METHOD method_92 dropStacks (Lnet/minecraft/class_101;IIIIF)V
 		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 id
+		ARG 6 random
 	METHOD method_93 randomTick (Lnet/minecraft/class_101;IIILjava/util/Random;)V
 		ARG 1 world
 		ARG 2 x
@@ -251,5 +264,9 @@ CLASS net/minecraft/class_39 net/minecraft/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD method_98 (Lnet/minecraft/class_152;)F
+		ARG 5 pos1
+		ARG 6 pos2
+	METHOD method_98 calculateMiningSpeed (Lnet/minecraft/class_152;)F
 		ARG 1 player
+	METHOD method_99 InYZBounds (Lnet/minecraft/class_155;)Z
+		ARG 1 pos

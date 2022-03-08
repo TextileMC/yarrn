@@ -1,1 +1,2 @@
 CLASS net/minecraft/class_138 net/minecraft/entity/living/HostileMob
+	FIELD field_438 attackDamage I
