@@ -771,7 +771,7 @@ publishing {
 	repositories {
 		if (System.getenv("MAVEN_PUSH_BRANCH") != null) {
 			maven {
-				url "https://maven.concern.i.ng/releases/${System.getenv('MAVEN_PUSH_BRANCH')}/"
+				url "https://maven.concern.i.ng/${System.getenv('MAVEN_PUSH_BRANCH')}/"
 				credentials {
 					username System.getenv("MAVEN_AUTH_USERNAME")
 					password System.getenv("MAVEN_AUTH_PASSWORD")
