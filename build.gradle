@@ -431,11 +431,19 @@ task buildYarnTiny(dependsOn: mapIntermediaryJar, type: WithV2FileOutput) {
 			v2Output.getAbsolutePath()
 		)
 
+		// weird bug where a mysterious mapping that shouldn't exist gets inserted
+		// so we have to manually remove it
+		String contents = v2Output.text
+		contents = contents.replace("c\torg/lwjgl/opengl/GL11\torg/lwjgl/opengl/GL11\n\tm\t(FFF)V\tglScalef\tmethod_447\n", "")
+		v2Output.text = contents
+		// end weird bug
+
 		new ConvertMappingsCommand().run(
 			"tinyv2",
 			v2Output.getAbsolutePath(),
 			"tiny:intermediary:named",
 			v1Output.getAbsolutePath())
+
 	}
 }
 
