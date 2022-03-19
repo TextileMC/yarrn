@@ -1,0 +1,20 @@
+name: Publish to Releases
+on: workflow_dispatch
+jobs:
+  publish:
+    strategy:
+      matrix:
+        java: [17-jdk]
+    runs-on: ubuntu-20.04
+    container:
+      image: openjdk:${{ matrix.java }}
+      options: --user root
+    steps:
+      - uses: actions/checkout@v1
+      - uses: gradle/wrapper-validation-action@v1
+      - run: chmod +x gradlew
+      - run: ./gradlew build javadocJar checkMappings publish --stacktrace
+        env:
+          MAVEN_PUSH_BRANCH: releases
+          MAVEN_AUTH_USERNAME: ${{ secrets.MAVEN_AUTH_USERNAME }}
+          MAVEN_AUTH_PASSWORD: ${{ secrets.MAVEN_AUTH_PASSWORD }}

@@ -1,0 +1,5 @@
+CLASS org/lwjgl/opengl/GL11
+	METHOD glScaleF glScaleF (FFF)V
+		COMMENT This mapping definition is only here because
+		COMMENT for some reason the mapping generation gives
+		COMMENT this method in particular an incorrect name.

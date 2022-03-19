@@ -39,7 +39,11 @@ def build_version = System.getenv("MAVEN_PUSH_BRANCH") == "snapshots" ? String.v
 def yarnVersion = "${minecraft_version}+build${build_version}"
 
 repositories {
-	mavenCentral()
+	mavenLocal()
+	maven {
+		name "QuiltMC Snapshots"
+		url 'https://maven.quiltmc.org/repository/snapshot'
+	}
 	maven {
 		name "Fabric Repository"
 		url 'https://maven.fabricmc.net'
@@ -48,6 +52,11 @@ repositories {
 		name "Mojang"
 		url 'https://libraries.minecraft.net/'
 	}
+	maven {
+		name "QuiltMC Repository"
+		url 'https://maven.quiltmc.org/repository/release'
+	}
+	mavenCentral()
 }
 
 configurations {
@@ -66,7 +75,7 @@ dependencies {
 	enigmaRuntime "net.fabricmc:stitch:${project.stitch_version}"
 	javadocClasspath "net.fabricmc:fabric-loader:0.8.2+build.194"
 	javadocClasspath "com.google.code.findbugs:jsr305:3.0.2"
-	decompileClasspath "org.benf:cfr:0.150"
+	decompileClasspath "org.quiltmc:quiltflower:1.8.0-SNAPSHOT"
 }
 
 def setupGroup = "jar setup"
@@ -199,14 +208,14 @@ task downloadMcJars(dependsOn: downloadWantedVersionManifest) {
 
 task downloadIntermediary(type: Download) {
 	group = buildMappingGroup
-	def url = "https://maven.concern.i.ng/net/textilemc/intermediary/${minecraft_version}/${minecraft_version}.tiny"
+	def url = "https://maven.concern.i.ng/releases/net/textilemc/intermediary/${minecraft_version}/${minecraft_version}.tiny"
 	src com.google.common.net.UrlEscapers.urlFragmentEscaper().escape(url)
 	dest new File(cacheFilesMinecraft, "${minecraft_version}-intermediary.tiny")
 }
 
 task downloadIntermediaryV2(type: Download) {
 	group = buildMappingGroup
-	def url = "https://maven.concern.i.ng/net/textilemc/intermediary/${minecraft_version}/intermediary-${minecraft_version}-v2.jar"
+	def url = "https://maven.concern.i.ng/releases/net/textilemc/intermediary/${minecraft_version}/intermediary-${minecraft_version}-v2.jar"
 	src com.google.common.net.UrlEscapers.urlFragmentEscaper().escape(url)
 	dest new File(cacheFilesMinecraft, "${minecraft_version}-intermediary-v2.jar")
 }
@@ -272,7 +281,7 @@ task downloadMcLibs(dependsOn: downloadWantedVersionManifest) {
 					overwrite false
 				}
 
-				project.dependencies.add("decompileClasspath", it.name)
+				// project.dependencies.add("decompileClasspath", it.name)
 			}
 		}
 	}
@@ -676,11 +685,11 @@ task genFakeSource(dependsOn: ["buildYarnTiny", "mapNamedJar"]) {
 	}
 }
 
-task decompileCFR(type: JavaExec, dependsOn: "mapNamedJar") {
+task decompile(type: JavaExec, dependsOn: "mapNamedJar") {
 	classpath = configurations.decompileClasspath
-	main = "org.benf.cfr.reader.Main"
+	main = "org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler"
 
-	args namedJar.getAbsolutePath(), "--outputdir", file("namedSrc").absolutePath
+	args "-log=WARN -jvn=1 --folder", namedJar.getAbsolutePath(), file("namedSrc").absolutePath
 
 	doFirst {
 		file("namedSrc").deleteDir()
@@ -754,7 +763,7 @@ publishing {
 	repositories {
 		if (System.getenv("MAVEN_PUSH_BRANCH") != null) {
 			maven {
-				url "https://maven.concern.i.ng/${System.getenv('MAVEN_PUSH_BRANCH')}/"
+				url "https://maven.concern.i.ng/releases/${System.getenv('MAVEN_PUSH_BRANCH')}/"
 				credentials {
 					username System.getenv("MAVEN_AUTH_USERNAME")
 					password System.getenv("MAVEN_AUTH_PASSWORD")
