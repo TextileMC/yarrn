@@ -169,8 +169,8 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 listener
 	METHOD method_251 kill (Lnet/minecraft/class_140;)V
 		ARG 0 entity
-	METHOD method_252 (Lnet/minecraft/class_156;)Z
-		ARG 1 box
+	METHOD method_252 isBlockedByEntity (Lnet/minecraft/class_156;)Z
+		ARG 1 boundingBox
 	METHOD method_253 saveWorld (Z)V
 		ARG 1 checkEntities
 	METHOD method_254 tickEntities ()V
@@ -186,6 +186,8 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
+	METHOD method_259 (Lnet/minecraft/class_156;)Z
+		ARG 1 box
 	METHOD method_260 getDebugStringT ()Ljava/lang/String;
 		COMMENT Documentation on what this is meant to give is unclear. The name is set because it shows up as {@code T: text}
 	METHOD method_262 isChunkLoaded (II)Z

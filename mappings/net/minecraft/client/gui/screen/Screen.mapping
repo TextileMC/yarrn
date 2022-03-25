@@ -24,5 +24,6 @@ CLASS net/minecraft/class_236 net/minecraft/client/gui/screen/Screen
 		ARG 3 screenHeight
 	METHOD method_578 onYesNoConfirmation (ZI)V
 	METHOD method_579 init ()V
+	METHOD method_580 shouldTrackTicks ()Z
 	METHOD method_583 tick ()V
 	METHOD method_584 drawBackgroundTexture ()V
