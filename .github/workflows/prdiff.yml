@@ -19,8 +19,9 @@ jobs:
       - name: Install diffutils
         run: |
           brew install diffutils
-      - name: Set up gradle
+      - name: Validate gradle wrapper
         uses: gradle/wrapper-validation-action@v1
+      - name: Make gradlew executable
         run: chmod +x gradlew
       - name: Generate pre-PR sources
         run: |
