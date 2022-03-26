@@ -1,7 +1,8 @@
 name: Generate source code diff
 on: [pull_request]
 jobs:
-  - name: Diff source code
+  diff:
+    name: Diff source code
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
