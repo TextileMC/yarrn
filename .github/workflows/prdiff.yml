@@ -5,11 +5,24 @@ jobs:
     name: Diff source code
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Clone repository
+        uses: actions/checkout@v3
         with:
           # reference the PR's base commit
           ref: ${{ github.event.pull_request.base.ref }}
-      - name: Generate sources
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: gradle
+      - name: Install diffutils
+        run: |
+          brew install diffutils
+      - name: Set up gradle
+        uses: gradle/wrapper-validation-action@v1
+        run: chmod +x gradlew
+      - name: Generate pre-PR sources
         run: |
           ./gradlew decompile --stacktrace
       - name: Rename generated source folder
@@ -19,7 +32,10 @@ jobs:
         with:
           # reference the PR's head commit
           ref: ${{ github.event.pull_request.head.ref }}
-      - name: Generate sources
+      - name: Double check gradle wrapper post-checkout
+        uses: gradle/wrapper-validation-action@v1
+        run: chmod +x gradlew
+      - name: Generate post-PR sources
         run: |
           ./gradlew decompile --stacktrace
       - name: Rename generated source folder
