@@ -75,12 +75,12 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: pre-pr-src.zip
-          path: ~/pre-pr-src.zip
+          path: ~
       - name: Get post-PR sources
         uses: actions/download-artifact@v3
         with:
           name: post-pr-src.zip
-          path: ~/post-pr-src.zip
+          path: ~
       - name: Decompress sources
         run: |
           unzip pre-pr-src.zip
