@@ -1,8 +1,8 @@
 name: Generate source code diff
 on: [pull_request]
 jobs:
-  diff:
-    name: Diff source code
+  pre:
+    name: Gen pre-commit sources
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
@@ -16,9 +16,6 @@ jobs:
           distribution: temurin
           java-version: 17
           cache: gradle
-      - name: Install diffutils
-        run: |
-          brew install diffutils
       - name: Validate gradle wrapper
         uses: gradle/wrapper-validation-action@v1
       - name: Make gradlew executable
@@ -29,11 +26,29 @@ jobs:
       - name: Rename generated source folder
         run: |
           mv ./namedSrc ./pre-pr-src
+      - name: Compress pre-PR sources
+        run: |
+          zip -r pre-pr-src.zip ./pre-pr-src
+      - name: Upload pre-PR sources
+        uses: actions/upload-artifact@v3
+        with:
+          name: pre-pr-src.zip
+          path: pre-pr-src.zip
+  post:
+    name: Gen post-commit sources
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v3
         with:
           # reference the PR's head commit
           ref: ${{ github.event.pull_request.head.ref }}
-      - name: Double check gradle wrapper post-checkout
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: gradle
+      - name: Validate gradle wrapper
         uses: gradle/wrapper-validation-action@v1
       - name: Make gradlew executable
         run: chmod +x gradlew
@@ -43,6 +58,32 @@ jobs:
       - name: Rename generated source folder
         run: |
           mv ./namedSrc ./post-pr-src
+      - name: Compress post-PR sources
+        run: |
+          zip -r post-pr-src.zip ./post-pr-src
+      - name: Upload post-PR sources
+        uses: actions/upload-artifact@v3
+        with:
+          name: post-pr-src.zip
+          path: post-pr-src.zip
+  diff:
+    name: Generate diff
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get pre-PR sources
+        uses: actions/download-artifact@v3
+        with:
+          name: pre-pr-src.zip
+          path: pre-pr-src.zip
+      - name: Get post-PR sources
+        uses: actions/download-artifact@v3
+        with:
+          name: post-pr-src.zip
+          path: post-pr-src.zip
+      - name: Decompress sources
+        run: |
+          unzip pre-pr-src.zip
+          unzip post-pr-src.zip
       - name: Diff source code
         run: |
           diff ./pre-pr-src ./post-pr-src > sources.diff
@@ -50,5 +91,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           path: sources.diff
-          name: Decompiled source diff
+          name: sources.diff
         
