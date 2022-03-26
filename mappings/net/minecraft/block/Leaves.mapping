@@ -1,2 +1,9 @@
 CLASS net/minecraft/class_68 net/minecraft/block/Leaves
+	FIELD field_192 myTextureIndex I
+	COMMENT @param id Id is ignored by the constructor
+	COMMENT @param textureIndex Texture Index is ignored by the constructor
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 textureIndex
 	METHOD method_145 setFancy (Z)V
+		ARG 1 isTransparent

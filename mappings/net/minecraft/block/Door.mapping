@@ -1,3 +1,6 @@
 CLASS net/minecraft/class_49 net/minecraft/block/Door
+	COMMENT @param id Id is ignored by the constructor
+	METHOD <init> (I)V
+		ARG 1 id
 	METHOD method_130 getDirection (I)I
 		ARG 0 metadata

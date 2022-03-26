@@ -1,1 +1,6 @@
 CLASS net/minecraft/class_65 net/minecraft/block/Dirt
+	COMMENT @param id Id is ignored by the constructor
+	COMMENT @param textureIndex Index is ignored by the parameter
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 textureIndex

@@ -1,2 +1,3 @@
 CLASS net/minecraft/class_38 net/minecraft/block/tile/Sign
 	FIELD field_84 text [Ljava/lang/String;
+	FIELD field_85 signRendererRow I

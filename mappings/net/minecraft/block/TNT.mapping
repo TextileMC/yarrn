@@ -1,4 +1,9 @@
 CLASS net/minecraft/class_60 net/minecraft/block/TNT
+	COMMENT @param id Id is ignored by the constructor
+	COMMENT @param textureIndex Texture Index is ignored by the constructor
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 textureIndex
 	METHOD method_85 (I)I
 		ARG 1 side
 			COMMENT

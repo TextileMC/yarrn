@@ -1,2 +1,7 @@
 CLASS net/minecraft/class_58 net/minecraft/block/ToggleableTransparentBlock
 	FIELD field_185 isTransparent Z
+	METHOD <init> (IILnet/minecraft/class_92;Z)V
+		ARG 1 id
+		ARG 2 textureIndex
+		ARG 3 material
+		ARG 4 unusedParameter

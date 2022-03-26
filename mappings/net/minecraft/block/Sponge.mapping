@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_48 net/minecraft/block/Sponge
+	COMMENT @param id Id is ignored by the constructor
+	METHOD <init> (I)V
+		ARG 1 id

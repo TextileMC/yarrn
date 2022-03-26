@@ -1,3 +1,8 @@
 CLASS net/minecraft/class_50 net/minecraft/block/SignBlock
 	FIELD field_179 signId I
 	FIELD field_180 signClass Ljava/lang/Class;
+	COMMENT @param id Id is ignored by the constructor
+	METHOD <init> (ILjava/lang/Class;I)V
+		ARG 1 id
+		ARG 2 signClass
+		ARG 3 signId

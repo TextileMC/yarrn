@@ -1,3 +1,34 @@
 CLASS net/minecraft/class_51 net/minecraft/block/Fire
-	METHOD method_131 (III)V
+	FIELD field_181 burnDestroyChangeIdMap [I
+	FIELD field_182 flamabilityIdMap [I
+	COMMENT @param id Id is ignored by the constructor
+	COMMENT @param textureIndex Texture Index is ignored by the constructor
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 textureIndex
+	METHOD method_131 registerFlammableBlock (III)V
 		ARG 1 blockId
+		ARG 2 flammability
+		ARG 3 burnDestroyChange
+	METHOD method_132 fireTick (Lnet/minecraft/class_101;IIIILjava/util/Random;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 inverseBurnSpreadChance
+		ARG 6 random
+	METHOD method_133 (Lnet/minecraft/class_101;IIII)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_134 isFlammable (Lnet/minecraft/class_101;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_135 isAdjacentFlammable (Lnet/minecraft/class_101;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

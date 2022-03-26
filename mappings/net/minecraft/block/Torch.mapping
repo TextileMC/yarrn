@@ -1,1 +1,11 @@
 CLASS net/minecraft/class_44 net/minecraft/block/Torch
+	COMMENT @param id Id is ignored by the constructor
+	COMMENT @param textureIndex Texture Index is ignored by the constructor
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 textureIndex
+	METHOD method_126 isValidTorchLocation (Lnet/minecraft/class_101;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
