@@ -33,8 +33,4 @@ jobs:
         with:
           path: sources.diff
           name: Decompiled source diff
-          mime-type: text/plain
-          labels:
-            - source-code-diff
-          overwrite: true
         
