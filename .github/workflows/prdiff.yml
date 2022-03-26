@@ -69,6 +69,7 @@ jobs:
   diff:
     name: Generate diff
     runs-on: ubuntu-latest
+    needs: [pre, post]
     steps:
       - name: Get pre-PR sources
         uses: actions/download-artifact@v3
