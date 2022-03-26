@@ -35,6 +35,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
       - name: Double check gradle wrapper post-checkout
         uses: gradle/wrapper-validation-action@v1
+      - name: Make gradlew executable
         run: chmod +x gradlew
       - name: Generate post-PR sources
         run: |
