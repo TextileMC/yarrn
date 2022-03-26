@@ -1,1 +1,4 @@
 CLASS net/minecraft/class_137 net/minecraft/entity/living/Creeper
+	FIELD field_434 explosionTickCounter I
+	FIELD field_436 ticksToExplode I
+	FIELD field_437 explosionState I

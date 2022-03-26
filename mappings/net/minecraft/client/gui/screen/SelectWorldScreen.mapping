@@ -5,6 +5,6 @@ CLASS net/minecraft/class_237 net/minecraft/client/gui/screen/SelectWorldScreen
 		ARG 1 screen
 	METHOD method_585 loadWorld (I)V
 		ARG 1 worldId
-	METHOD method_586 getWorldName (I)Ljava/lang/String;
+	METHOD method_586 getWorldNameById (I)Ljava/lang/String;
 		ARG 0 worldId
 	METHOD method_587 addCancelButton ()V

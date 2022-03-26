@@ -10,6 +10,6 @@ CLASS net/minecraft/class_33 net/minecraft/entity/NaturalEntitySpawn
 		ARG 3 entities
 	METHOD method_66 trySpawnEntity (Lnet/minecraft/class_101;)V
 		ARG 1 world
-	METHOD method_67 spawnEntity (Lnet/minecraft/class_101;ILnet/minecraft/class_140;Lnet/minecraft/class_2;)I
+	METHOD method_67 spawnEntities (Lnet/minecraft/class_101;ILnet/minecraft/class_140;Lnet/minecraft/class_2;)I
 		ARG 1 world
 		ARG 3 player

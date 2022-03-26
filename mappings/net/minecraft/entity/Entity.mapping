@@ -56,6 +56,8 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 		ARG 8 pitch
 	METHOD method_337 handleFallDistance (F)V
 		ARG 1 fallDistance
+	METHOD method_339 recieveDamage (I)V
+		ARG 1 amount
 	METHOD method_340 spawnSingleDroppedItem (II)Lnet/minecraft/class_146;
 		ARG 1 itemId
 	METHOD method_341 deserialize (Lnet/minecraft/class_5;)V
@@ -81,6 +83,7 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 	METHOD method_352 initPlayer ()V
 	METHOD method_353 markForRemoval ()V
 	METHOD method_355 verticalOffset ()F
+	METHOD method_357 isMinecart ()Z
 	METHOD method_358 getTextureLocation ()Ljava/lang/String;
 	METHOD method_359 isAlive ()Z
 	METHOD method_360 isInBlock ()Z

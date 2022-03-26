@@ -2,3 +2,9 @@ CLASS net/minecraft/class_235 net/minecraft/client/gui/screen/YesNoScreen
 	FIELD field_908 parent Lnet/minecraft/class_236;
 	FIELD field_909 line1 Ljava/lang/String;
 	FIELD field_910 line2 Ljava/lang/String;
+	FIELD field_911 worldId I
+	METHOD <init> (Lnet/minecraft/class_236;Ljava/lang/String;Ljava/lang/String;I)V
+		ARG 1 parent
+		ARG 2 line1
+		ARG 3 line2
+		ARG 4 worldId

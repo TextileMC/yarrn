@@ -1,4 +1,6 @@
 CLASS net/minecraft/class_227 net/minecraft/client/gui/screen/InventoryScreen
+	COMMENT The base for all inventory screens in the game. (Chest, Furnace, PlayerInventory)
+	COMMENT This class is purely for handling the rendering. If you want to access the Player's Inventory, look into PlayerInventory.
 	FIELD field_892 backgroundWidth I
 	FIELD field_893 backgroundHeight I
 	FIELD field_894 visibleItems Ljava/util/List;
