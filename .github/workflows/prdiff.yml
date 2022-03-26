@@ -1,0 +1,39 @@
+name: Generate source code diff
+on: [pull_request]
+jobs:
+  - name: Diff source code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          # reference the PR's base commit
+          ref: ${{ github.event.pull_request.base.ref }}
+      - name: Generate sources
+        run: |
+          ./gradlew decompile --stacktrace
+      - name: Rename generated source folder
+        run: |
+          mv ./namedSrc ./pre-pr-src
+      - uses: actions/checkout@v3
+        with:
+          # reference the PR's head commit
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Generate sources
+        run: |
+          ./gradlew decompile --stacktrace
+      - name: Rename generated source folder
+        run: |
+          mv ./namedSrc ./post-pr-src
+      - name: Diff source code
+        run: |
+          diff ./pre-pr-src ./post-pr-src > sources.diff
+      - name: Upload diff
+        uses: actions/upload-artifact@v3
+        with:
+          path: sources.diff
+          name: Decompiled source diff
+          mime-type: text/plain
+          labels:
+            - source-code-diff
+          overwrite: true
+        
