@@ -34,6 +34,7 @@ jobs:
         with:
           name: pre-pr-src.zip
           path: pre-pr-src.zip
+          retention-days: 1 # temporary
   post:
     name: Gen post-commit sources
     runs-on: ubuntu-latest
@@ -66,6 +67,7 @@ jobs:
         with:
           name: post-pr-src.zip
           path: post-pr-src.zip
+          retention-days: 1 # temporary
   diff:
     name: Generate diff
     runs-on: ubuntu-latest
@@ -87,7 +89,7 @@ jobs:
           unzip post-pr-src.zip
       - name: Diff source code
         run: |
-          diff ./pre-pr-src ./post-pr-src > sources.diff
+          diff -r ./pre-pr-src ./post-pr-src > sources.diff
       - name: Upload diff
         uses: actions/upload-artifact@v3
         with:
