@@ -56,7 +56,7 @@ CLASS net/minecraft/class_140 net/minecraft/entity/Entity
 		ARG 8 pitch
 	METHOD method_337 handleFallDistance (F)V
 		ARG 1 fallDistance
-	METHOD method_339 recieveDamage (I)V
+	METHOD method_339 receiveDamage (I)V
 		ARG 1 amount
 	METHOD method_340 spawnSingleDroppedItem (II)Lnet/minecraft/class_146;
 		ARG 1 itemId
