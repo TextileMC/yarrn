@@ -1,3 +1,5 @@
 CLASS net/minecraft/class_114 net/minecraft/item/Bucket
+	FIELD field_330 fluidId I
 	METHOD <init> (II)V
 		ARG 1 id
+		ARG 2 fluidId

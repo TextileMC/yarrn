@@ -1,1 +1,11 @@
 CLASS net/minecraft/class_66 net/minecraft/block/Rail
+	METHOD method_141 (Lnet/minecraft/class_101;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD method_142 isRailAt (Lnet/minecraft/class_101;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

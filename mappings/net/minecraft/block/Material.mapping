@@ -17,4 +17,5 @@ CLASS net/minecraft/class_92 net/minecraft/block/Material
 	FIELD field_242 GLASS Lnet/minecraft/class_92;
 	FIELD field_243 TNT Lnet/minecraft/class_92;
 	METHOD method_166 isSolid ()Z
+	METHOD method_167 isReplaceable ()Z
 	METHOD method_169 isFluid ()Z

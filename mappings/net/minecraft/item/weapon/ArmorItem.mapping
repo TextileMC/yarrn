@@ -1,8 +1,11 @@
 CLASS net/minecraft/class_126 net/minecraft/item/weapon/ArmorItem
+	COMMENT armorType is a field that defines the type of armor (Helmet, Chestplate, Leggings, Boots)
+	COMMENT (0 = HELMET) (1 = CHESTPLATE) (2 = LEGGINGS) (3 = BOOTS)
 	FIELD field_417 tierLevel I
 	FIELD field_418 armorValue I
 	FIELD field_420 ARMOR_VALUES [I
 	FIELD field_421 DURABILITY_BASES [I
 	METHOD <init> (IIII)V
 		ARG 1 id
-		ARG 4 tierLevel
+		ARG 2 armorToughness
+		ARG 4 armorType

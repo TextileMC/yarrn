@@ -4,6 +4,7 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 	FIELD field_286 tickableTileEntities Ljava/util/List;
 	FIELD field_287 time J
 	FIELD field_288 lightOffset I
+	FIELD field_289 ignoreNeighorUpdates Z
 	FIELD field_290 player Lnet/minecraft/class_140;
 	FIELD field_291 difficultyLevel I
 	FIELD field_293 random Ljava/util/Random;
@@ -100,7 +101,7 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 3 y
 		ARG 4 z
 		ARG 5 defaultLightLevel
-	METHOD method_228 (Lnet/minecraft/class_94;IIIIII)V
+	METHOD method_228 setIlluminationSource (Lnet/minecraft/class_94;IIIIII)V
 		ARG 1 illuminationSource
 		ARG 2 x1
 		ARG 3 y1
@@ -169,8 +170,8 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 listener
 	METHOD method_251 kill (Lnet/minecraft/class_140;)V
 		ARG 0 entity
-	METHOD method_252 (Lnet/minecraft/class_156;)Z
-		ARG 1 box
+	METHOD method_252 isBlockedByEntity (Lnet/minecraft/class_156;)Z
+		ARG 1 boundingBox
 	METHOD method_253 saveWorld (Z)V
 		ARG 1 checkEntities
 	METHOD method_254 tickEntities ()V
@@ -186,6 +187,8 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
+	METHOD method_259 (Lnet/minecraft/class_156;)Z
+		ARG 1 box
 	METHOD method_260 getDebugStringT ()Ljava/lang/String;
 		COMMENT Documentation on what this is meant to give is unclear. The name is set because it shows up as {@code T: text}
 	METHOD method_262 isChunkLoaded (II)Z
@@ -200,16 +203,17 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_269 (IIII)V
+	METHOD method_269 updateBlocks (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 side
 	METHOD method_270 save ()V
 	METHOD method_272 getBrightness (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_273 (IIII)V
+	METHOD method_273 addToSets (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
@@ -260,10 +264,11 @@ CLASS net/minecraft/class_101 net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD method_282 (IIII)V
+	METHOD method_282 updateNeighbors (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+		ARG 4 side
 	METHOD method_283 getTickableEntities ()Ljava/util/List;
 	METHOD method_284 removeTileEntity (III)V
 		ARG 1 x

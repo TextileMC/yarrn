@@ -2,6 +2,7 @@ CLASS net/minecraft/class_83 net/minecraft/world/gen/noise/OctavePerlinNoiseSamp
 	FIELD field_222 samplers [Lnet/minecraft/class_81;
 	FIELD field_223 octaves I
 	METHOD <init> (Ljava/util/Random;I)V
+		ARG 1 random
 		ARG 2 octaves
 	METHOD method_162 sample (DD)D
 		ARG 1 x

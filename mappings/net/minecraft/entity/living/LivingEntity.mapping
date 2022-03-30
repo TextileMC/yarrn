@@ -12,7 +12,8 @@ CLASS net/minecraft/class_154 net/minecraft/entity/living/LivingEntity
 	FIELD field_568 leftwardVelocity F
 	FIELD field_569 forwardVelocity F
 	FIELD field_570 isJumping Z
-	METHOD method_389 (FFF)Z
+	FIELD field_571 baseSpeed F
+	METHOD method_389 canSpawn (FFF)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

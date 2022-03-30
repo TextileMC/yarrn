@@ -6,6 +6,7 @@ CLASS net/minecraft/class_98 net/minecraft/world/FileChunkAccess
 	METHOD <init> (Lnet/minecraft/class_101;Ljava/io/File;Lnet/minecraft/class_95;)V
 		ARG 1 world
 		ARG 2 worldDir
+		ARG 3 chunkAccess
 	METHOD method_180 writeChunkToFile (Lnet/minecraft/class_99;)V
 		ARG 1 chunk
 	METHOD method_181 getChunkFile (II)Ljava/io/File;

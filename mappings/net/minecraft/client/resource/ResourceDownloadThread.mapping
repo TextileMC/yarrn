@@ -9,4 +9,4 @@ CLASS net/minecraft/class_268 net/minecraft/client/resource/ResourceDownloadThre
 	METHOD method_658 downloadResource (Ljava/net/URL;Ljava/io/File;)V
 		ARG 1 downloadUrl
 		ARG 2 outputFile
-	METHOD run ()V
+	METHOD run run ()V

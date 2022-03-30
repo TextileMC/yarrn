@@ -36,5 +36,8 @@ CLASS net/minecraft/class_255 net/minecraft/client/render/ParticleManager
 		ARG 4 direction
 	METHOD method_646 reload (Lnet/minecraft/class_101;)V
 		ARG 1 world
+	METHOD method_647 (Lnet/minecraft/class_140;F)V
+		ARG 1 entity
 	METHOD method_648 addParticle (Lnet/minecraft/class_262;)V
+		ARG 1 particle
 	METHOD method_649 getParticleCount ()Ljava/lang/String;
